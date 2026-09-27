@@ -1,4 +1,6 @@
 import { writeFileSync } from "node:fs";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 import {
   computeBuild,
@@ -76,7 +78,7 @@ describe("computeBuild profiling", () => {
       tryTakeMs,
       tryTakePerCall: tryTakeMs / 50,
     };
-    writeFileSync("/tmp/compute-profile.json", JSON.stringify(results, null, 2));
+    writeFileSync(join(tmpdir(), "compute-profile.json"), JSON.stringify(results, null, 2));
 
     expect(selected).toBeGreaterThan(0);
     expect(results.computePerCall).toBeLessThan(25);
