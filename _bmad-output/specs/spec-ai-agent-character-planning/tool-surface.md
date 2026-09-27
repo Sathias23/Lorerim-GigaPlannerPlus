@@ -14,8 +14,8 @@ Small and workflow-shaped (consolidate over CRUD), every tool prefixed `lorerim_
 
 | Tool | Input | Returns | CAP |
 |---|---|---|---|
-| `lorerim_search_perks` | `query`, `skill`, `tree`, `maxSkillReq`, `maxPlayerLevel`, `limit`, `offset`, `response_format` | compact rows: id, name, skill/tree, `skillReq`, `playerLevelReq`, one-line effect | CAP-1 |
-| `lorerim_get_entity` | `kind` (perk, race, trait, skill, supernatural option), `id` | full entity detail; unknown id → close-match suggestions | CAP-2 |
+| `lorerim_search_perks` | `query`, `skill`, `maxSkillReq`, `maxPlayerLevel`, `limit`, `offset`, `response_format` | compact rows: id, name, skill, `skillReq`, `playerLevelReq`, one-line summary of the description (no `tree` filter: tree ids equal skill ids) | CAP-1 |
+| `lorerim_get_entity` | `kind` (perk, race, trait, skill, option, birthsign, deity), `id` (optional), `limit`, `offset` | with `id`: full entity detail; unknown id → close-match suggestions. Without `id`: that kind's ids, names, and one-line summaries, paginated | CAP-2 |
 | `lorerim_evaluate_build` | `code` | code; budgets used/available for perk points, skill points, skill levels; **all** violations; unknown ids with did-you-mean | CAP-3 |
 | `lorerim_apply_changes` | `code` (optional; omitted = fresh build), `ops[]` | new code, readable diff, evaluation (as above) | CAP-4 |
 
