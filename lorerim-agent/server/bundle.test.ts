@@ -13,6 +13,8 @@ import { formatReadyLine } from "./main";
 
 const agentRoot = fileURLToPath(new URL("..", import.meta.url));
 
+const EXPECTED_TOOL_NAMES = ["lorerim_get_entity", "lorerim_search_perks"];
+
 interface BuiltChunk {
   type: "chunk";
   fileName: string;
@@ -121,7 +123,7 @@ describe("dist/server.js bundle", () => {
     expect(lines[0]).toBe(formatReadyLine(getTestAppData()).trimEnd());
   });
 
-  it("answers tools/list with an empty list over stdio", async () => {
+  it("answers tools/list with the catalog tools over stdio", async () => {
     const transport = new StdioClientTransport({
       command: process.execPath,
       args: [serverPath],
@@ -132,7 +134,22 @@ describe("dist/server.js bundle", () => {
     try {
       await client.connect(transport);
       const { tools } = await client.listTools();
-      expect(tools).toEqual([]);
+      expect(tools.map((tool) => tool.name).sort()).toEqual(EXPECTED_TOOL_NAMES);
+
+      // Handler code runs from the bundle, not just the tool list.
+      const search = await client.callTool({
+        name: "lorerim_search_perks",
+        arguments: { query: "sneak attack" },
+      });
+      expect(search.isError).not.toBe(true);
+      expect((search.structuredContent as { rows: unknown[] }).rows.length).toBeGreaterThan(0);
+
+      const unknown = await client.callTool({
+        name: "lorerim_get_entity",
+        arguments: { kind: "perk", id: "anatomical-lore" },
+      });
+      expect(unknown.isError).toBe(true);
+      expect(JSON.stringify(unknown.content)).toContain("Did you mean");
     } finally {
       // Never let a failing close mask the connect/listTools failure.
       await client.close().catch(() => {});
@@ -176,6 +193,20 @@ describe("dist/server.js bundle", () => {
     const initialize = messages.find((message) => message.id === 1)?.result;
     expect(initialize?.serverInfo).toMatchObject({ name: "lorerim" });
     expect(initialize?.capabilities).toHaveProperty("tools");
-    expect(messages.find((message) => message.id === 2)?.result).toMatchObject({ tools: [] });
+    const listed = messages.find((message) => message.id === 2)?.result as
+      | {
+          tools: Array<{
+            name: string;
+            inputSchema?: { type?: string };
+            outputSchema?: { type?: string };
+          }>;
+        }
+      | undefined;
+    expect(listed?.tools.map((tool) => tool.name).sort()).toEqual(EXPECTED_TOOL_NAMES);
+    // 2025-era clients require object-root schemas.
+    for (const tool of listed?.tools ?? []) {
+      expect(tool.inputSchema?.type, tool.name).toBe("object");
+      expect(tool.outputSchema?.type, tool.name).toBe("object");
+    }
   });
 });
