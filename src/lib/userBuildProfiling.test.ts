@@ -1,4 +1,6 @@
 import { writeFileSync } from "node:fs";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 import {
   computeBuild,
@@ -79,7 +81,7 @@ describe("user build profiling", () => {
       ),
     };
 
-    writeFileSync("/tmp/user-build-profile.json", JSON.stringify(results, null, 2));
+    writeFileSync(join(tmpdir(), "user-build-profile.json"), JSON.stringify(results, null, 2));
 
     expect(build.selectedPerkIds.length).toBeGreaterThan(0);
     expect(results.computeBuildMs).toBeLessThan(50);

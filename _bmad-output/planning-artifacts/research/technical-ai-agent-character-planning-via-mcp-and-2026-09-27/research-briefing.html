@@ -1,0 +1,300 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Research briefing: AI agent character planning via MCP and a skill</title><style>
+:root{--bg:#fbfbfa;--fg:#1d1d1f;--muted:#5f6368;--card:#fff;--line:#e3e3e0;--accent:#2f5d8a;
+--hi:#1e7a46;--hibg:#e3f4ea;--me:#8a6100;--mebg:#fdf1d6;--lo:#a3261b;--lobg:#fbe3e0;--un:#7a1f8a;--unbg:#f5e1f8;--inf:#3b4a5a;--infbg:#e6ebf0}
+@media (prefers-color-scheme:dark){:root{--bg:#141517;--fg:#e8e8e6;--muted:#a0a4a8;--card:#1d1f22;--line:#33363a;--accent:#8db8e3;
+--hi:#7fd3a0;--hibg:#1d3a2a;--me:#f0c46a;--mebg:#3b3018;--lo:#f29a90;--lobg:#452320;--un:#e3a2ef;--unbg:#3b2242;--inf:#c4cfdb;--infbg:#2a323b}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{display:grid;grid-template-columns:260px minmax(0,1fr);gap:40px;max-width:1200px;margin:0 auto;padding:32px 24px}
+nav{position:sticky;top:16px;align-self:start;max-height:calc(100vh - 32px);overflow:auto;font-size:14px}
+nav ul{list-style:none;padding-left:12px;margin:4px 0}nav>div>ul{padding-left:0}nav a{color:var(--muted);text-decoration:none}nav a:hover{color:var(--accent)}
+header{border-bottom:1px solid var(--line);margin-bottom:24px;padding-bottom:16px}.kicker{color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-size:12px;margin:0}
+h1{font-size:30px;line-height:1.2;margin:6px 0 12px}h2{margin-top:40px;border-bottom:1px solid var(--line);padding-bottom:6px}
+.meta{display:flex;flex-wrap:wrap;gap:8px 20px;list-style:none;padding:0;color:var(--muted);font-size:14px}
+.card{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:4px 24px 12px}
+.card h2{border:0;margin-top:16px}
+a{color:var(--accent)}a.cite{font-size:.8em;text-decoration:none;vertical-align:super;margin-left:1px}
+code{background:var(--infbg);padding:1px 5px;border-radius:4px;font-size:.9em}pre{overflow:auto;background:var(--card);border:1px solid var(--line);padding:12px;border-radius:6px}pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;font-size:14px;margin:12px 0;display:block;overflow-x:auto}th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{background:var(--card)}
+tr:target{outline:2px solid var(--accent)}
+.badge{display:inline-block;border-radius:4px;padding:0 6px;font-size:.82em;font-weight:600;line-height:1.5;border:1px solid transparent}
+.badge.high{color:var(--hi);background:var(--hibg)}.badge.medium{color:var(--me);background:var(--mebg)}
+.badge.low{color:var(--lo);background:var(--lobg);border-color:var(--lo)}
+.badge.unverified{color:var(--un);background:var(--unbg);border-color:var(--un);text-transform:uppercase;letter-spacing:.03em}
+.badge.inference{color:var(--inf);background:var(--infbg);border:1px dashed var(--inf)}
+.badge.stale{color:var(--lo);background:var(--lobg);border-color:var(--lo);text-transform:uppercase}
+details{margin:16px 0}summary{cursor:pointer;font-weight:600}
+@media (max-width:860px){.wrap{grid-template-columns:1fr}nav{position:static;max-height:none;border-bottom:1px solid var(--line);padding-bottom:12px}}
+</style></head>
+<body><div class="wrap"><nav aria-label="Contents"><strong>Contents</strong><div class="toc">
+<ul>
+<li><a href="#technical-research-ai-agent-character-planning-via-mcp-and-a-skill">Technical research: AI agent character planning via MCP and a skill</a><ul>
+<li><a href="#executive-summary">Executive summary</a></li>
+<li><a href="#1-building-the-mcp-server-for-claude-code-and-desktop">1. Building the MCP server for Claude Code and Desktop</a></li>
+<li><a href="#2-skill-and-mcp-working-together-and-designing-tools-for-agents">2. Skill and MCP working together, and designing tools for agents</a></li>
+<li><a href="#3-prior-art-and-how-an-llm-does-constrained-design-reliably">3. Prior art, and how an LLM does constrained design reliably</a></li>
+<li><a href="#insights-that-come-from-combining-the-three-topics">Insights that come from combining the three topics</a></li>
+<li><a href="#recommendations">Recommendations</a></li>
+<li><a href="#open-questions">Open questions</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<ul><li><a href="#source-appendix">Source appendix</a></li><li><a href="#staleness-map">Staleness map</a></li></ul></nav><main><header>
+<p class="kicker">Technical research · 2026-09-27</p>
+<h1>AI agent character planning via MCP and a skill</h1>
+<p class="decision"><strong>Decision:</strong> How to build an MCP server + companion skill so Claude Code/Desktop can design LoreRim characters from user input, reusing the planner TS engine and data (personal use)</p>
+<ul class="meta">
+<li>Preset: standard</li><li>Validation: normal</li>
+<li>Claims: 12 verified · 9 unverified</li>
+<li>Sources: 33</li></ul>
+<p class="legend">Badges: <span class="badge high">high</span> <span class="badge medium">medium</span> <span class="badge low">low</span> <span class="badge unverified">unverified</span> <span class="badge inference">inference</span> <span class="badge stale">stale</span></p>
+</header>
+<section class="card"><h2 id="executive-summary">Executive summary</h2>
+<p><strong>Build it.</strong> The server does all the computing and the skill holds all the know-how. The server is a stdio MCP server on the official TypeScript SDK v2 (<code>@modelcontextprotocol/server</code> 2.1.0) <a class="cite" href="#src-1">[1]</a><a class="cite" href="#src-2">[2]</a>. It is bundled into one <code>server.js</code> with esbuild, together with the engine and the <code>data/</code> JSON. For Claude Code, ship it in a <strong>Claude Code plugin</strong> together with a <code>lorerim-build</code> skill <a class="cite" href="#src-5">[5]</a>. For Claude Desktop, ship the same server as a <code>.mcpb</code> bundle and the skill as a ZIP upload <a class="cite" href="#src-6">[6]</a><a class="cite" href="#src-16">[16]</a>.</p>
+<p>Three findings drive this answer:</p>
+<ol>
+<li><strong>Let the engine decide what is legal and what is best, including all budget arithmetic and requirement checks. The LLM should only interpret intent and choose.</strong> When LLMs solved budgeted, constrained problems on their own, the best model produced a legal answer only 65% of the time. Structural misunderstanding caused most failures, but made-up entities and small budget overshoots were among them too <a class="cite" href="#src-29">[29]</a>. <span class="badge inference">By inference</span>, those are exactly the risks in a perk-point build. On a different benchmark (TravelPlanner), an LLM proposing while critics pushed back reached a 20.6% success rate <a class="cite" href="#src-27">[27]</a>, and an LLM formulating the problem while a solver searched reached 93.9% <a class="cite" href="#src-28">[28]</a>. Those two studies used different base models, so treat the gap as indicative, not controlled <span class="badge medium">(medium confidence)</span>. The one mature build-planner MCP, pob-mcp for Path of Exile, follows this pattern: its engine lists and ranks options, and its validator reports each finding with a severity <a class="cite" href="#src-24">[24]</a>.</li>
+<li><strong>The share code is the MCP "handle".</strong> The current MCP spec (2026-07-28) has no sessions. It recommends passing an explicit handle back and forth between calls <a class="cite" href="#src-3">[3]</a><a class="cite" href="#src-21">[21]</a>. The planner's share code already is one. Each tool takes a code and returns the new code, a readable summary, the remaining budgets and every violation. Builds then survive a server restart, paste straight into the web app, and give repeatable eval results.</li>
+<li><strong>Only the MCP server can reach your local engine from both clients.</strong> Skills in Claude Desktop and claude.ai require code execution to be enabled <a class="cite" href="#src-16">[16]</a>. From that I infer they run in Anthropic's code-execution sandbox, not on your machine; no source states this directly. Anthropic's own split puts data and connectivity in MCP and process in skills <a class="cite" href="#src-17">[17]</a>. Following that <span class="badge inference">(inference)</span>, the skill should be pure method: how to ask the user questions, the draft → validate → repair loop, archetype strategy and presentation. Everything that computes lives in the server.</li>
+</ol>
+<p><strong>Biggest caveat:</strong> nobody has published results on how good LLM-designed game builds are, including for pob-mcp. No Skyrim or LoreRim build MCP exists to learn from <a class="cite" href="#src-26">[26]</a>. The strongest evidence comes from general benchmarks, each figure from a single paper <a class="cite" href="#src-27">[27]</a><a class="cite" href="#src-28">[28]</a><a class="cite" href="#src-29">[29]</a>. Plan to measure quality with your own small set of eval tasks from day one <a class="cite" href="#src-14">[14]</a><a class="cite" href="#src-18">[18]</a>.</p>
+</section><h2 id="1-building-the-mcp-server-for-claude-code-and-desktop">1. Building the MCP server for Claude Code and Desktop</h2>
+<p><strong>SDK and spec.</strong> The official TypeScript SDK went GA as v2 on 2026-07-27. The current version is <code>@modelcontextprotocol/server</code> 2.1.0, released 2026-09-23 <a class="cite" href="#src-1">[1]</a>. The v1 line (<code>@modelcontextprotocol/sdk</code> 1.30.1) will keep receiving fixes for at least six months after v2 <a class="cite" href="#src-1">[1]</a><a class="cite" href="#src-2">[2]</a>.</p>
+<p>The v2 API looks like this <a class="cite" href="#src-2">[2]</a>:</p>
+<pre><code class="language-ts">new McpServer({ name, version })
+server.registerTool(name, { description, inputSchema: z.object(...), outputSchema? }, handler)
+server.connect(new StdioServerTransport())
+</code></pre>
+<p>Schemas use Standard Schema, so Zod v4, Valibot and ArkType all work. The current MCP spec revision, 2026-07-28, is stateless: it has no initialize handshake <a class="cite" href="#src-21">[21]</a> and states that "MCP has no protocol-level session" <a class="cite" href="#src-3">[3]</a>. For state that must carry across calls, its non-normative guidance is to return an explicit handle from a create tool and pass it back as an argument <a class="cite" href="#src-3">[3]</a>.</p>
+<p>Tools that declare <code>outputSchema</code> must return a conforming <code>structuredContent</code>, and should also return the same JSON as text <a class="cite" href="#src-3">[3]</a>. Input and business-rule failures should be returned as tool errors (<code>isError: true</code>) rather than protocol errors, so the model can self-correct <a class="cite" href="#src-3">[3]</a>. Tools, resources, prompts and stdio are all still supported. The revision deprecates Roots, Sampling, Logging (stdio servers are told to log to stderr instead) and HTTP+SSE <a class="cite" href="#src-33">[33]</a>.</p>
+<p><strong>Install paths.</strong>
+- <strong>Claude Code:</strong> <code>claude mcp add --scope local|project|user &lt;name&gt; -- &lt;command&gt; [args]</code>. The <code>--</code> is required. Alternatively, commit a <code>.mcp.json</code> at the repo root <a class="cite" href="#src-4">[4]</a>.
+- <strong>Claude Desktop:</strong> the one-click path is an MCPB (<code>.mcpb</code>) bundle, a zip of <code>manifest.json</code> plus the server, built with <code>mcpb init</code> and <code>mcpb pack</code>. Desktop ships its own Node on macOS and Windows, so the bundle should include the server's <code>node_modules</code> <a class="cite" href="#src-6">[6]</a> (single source).
+- <strong>Plugins:</strong> a Claude Code plugin can bundle <strong>skills and MCP servers together</strong>. The layout is <code>.claude-plugin/plugin.json</code> plus <code>skills/&lt;name&gt;/SKILL.md</code> plus a <code>.mcp.json</code> or inline <code>mcpServers</code>, and the MCP server entry can even point at a <code>.mcpb</code>. Paths use <code>${CLAUDE_PLUGIN_ROOT}</code>, and development loading uses <code>--plugin-dir</code> <a class="cite" href="#src-5">[5]</a><a class="cite" href="#src-10">[10]</a>. That makes one plugin the natural single artifact for Claude Code, with a <code>.mcpb</code> build of the same server for Desktop.</p>
+<p><strong>Limits that affect design.</strong>
+- <strong>Output size:</strong> Claude Code warns at 10k tokens of MCP tool output and caps it at 25k tokens by default. <code>MAX_MCP_OUTPUT_TOKENS</code> raises the cap, and anything over the cap is spilled to a file and replaced by a path reference <a class="cite" href="#src-4">[4]</a><a class="cite" href="#src-11">[11]</a>. One measurement reports that a ~50k-token result slipped past the check, so enforcement may be imprecise; do not rely on that slack <span class="badge low">(low confidence)</span> <a class="cite" href="#src-12">[12]</a>.
+- <strong>Tool count:</strong> tool search, i.e. deferred loading of tool schemas, is on by default in Claude Code <a class="cite" href="#src-4">[4]</a>, which makes tool count cheaper in context. This run found no primary numeric guideline for how many tools is too many.
+- <strong>Windows:</strong> a bare <code>npx</code> fails to spawn (it is <code>npx.cmd</code>), and <code>claude mcp add … cmd /c npx</code> has been reported to mangle <code>/c</code> into <code>C:/</code>. That issue was closed as not planned <a class="cite" href="#src-7">[7]</a> <span class="badge medium">(medium confidence; not re-checked against the current build)</span>. The recommended workaround <span class="badge inference">(inference, <span class="badge unverified">unverified</span>)</span> is to point the config at <code>node &lt;abs path&gt;/dist/server.js</code> directly.</p>
+<p><strong>Tools vs resources vs prompts.</strong> Claude Code supports all three. Prompts appear as slash commands, and resources can be attached with <code>@server:uri</code> or read by the model through list/read resource tools <a class="cite" href="#src-9">[9]</a> (secondary source, medium confidence). Outside Claude Code the picture is weaker: on claude.ai connectors, only tools are reliable <a class="cite" href="#src-9">[9]</a>. Desktop-specific support was not verified.</p>
+<p>For a dataset of several hundred perks, that uneven support argues for <strong>narrow, filtered query tools</strong> as the primary surface. An exposed resource can be a Claude Code-only extra.</p>
+<p><strong>Reusing the Vite/React engine code in Node.</strong> Node's native TypeScript type stripping (on by default from 22.18) handles only erasable syntax. It requires:
+- no enums or parameter properties
+- explicit <code>.ts</code> import specifiers
+- <code>import type</code> for type-only imports
+- <strong>no tsconfig <code>paths</code></strong> aliases</p>
+<p>The constraints above come from a single source <a class="cite" href="#src-8">[8]</a> <span class="badge medium">(medium confidence)</span>.</p>
+<p>Typical Vite source violates some of these. Bundling the server entry point to a single <code>server.js</code> with esbuild or tsup avoids all of them: it resolves aliases, inlines the JSON data, and produces exactly the minimal artifact that MCPB and plugins want. tsx is fine for development. Vite-only constructs (<code>import.meta.env</code>, <code>import.meta.glob</code>) are the main hazard in shared modules. The statements in this paragraph are a belief, not a sourced finding.</p>
+<p><em>Research on this topic stopped once the first round covered it, plus spot-checks of key claims.</em></p>
+<h2 id="2-skill-and-mcp-working-together-and-designing-tools-for-agents">2. Skill and MCP working together, and designing tools for agents</h2>
+<p><strong>The skill format.</strong> A skill is a folder containing a <code>SKILL.md</code>: YAML frontmatter followed by a Markdown body. Optional <code>scripts/</code>, <code>references/</code> and <code>assets/</code> folders can sit beside it. The format is an open spec published at agentskills.io <a class="cite" href="#src-13">[13]</a>.</p>
+<p>Two frontmatter fields are required:
+- <code>name</code>: up to 64 characters, lowercase letters and hyphens, and it must match the folder name.
+- <code>description</code>: up to 1,024 characters, saying what the skill does and when to use it.</p>
+<p>Loading is progressive. The name and description (about 100 tokens) are always in context. The body loads when the skill activates and should stay under about 500 lines or 5k tokens. Reference files and script output load only when used <a class="cite" href="#src-13">[13]</a><a class="cite" href="#src-14">[14]</a>. Descriptions should be written in the third person, because Claude uses them to pick among possibly 100+ skills <a class="cite" href="#src-14">[14]</a>.</p>
+<p>In Claude Code, each skill is also a <code>/slash-command</code>. The skill listing truncates <code>description</code> plus <code>when_to_use</code> at 1,536 characters <a class="cite" href="#src-15">[15]</a>. A December 2025 report said skills silently dropped out once a global description budget was exceeded. Current docs do not mention that budget, so the problem may be fixed (<span class="badge unverified">unverified</span>) <a class="cite" href="#src-22">[22]</a>. Practitioners report that auto-activation is unreliable. These reports come from secondary blogs and have no source in the appendix <span class="badge low">(low confidence)</span>, so the design should allow explicit <code>/lorerim-build</code> invocation.</p>
+<p>Claude Desktop and claude.ai handle skills differently:
+- Skills are ZIP uploads under <em>Customize &gt; Skills</em> <a class="cite" href="#src-16">[16]</a><a class="cite" href="#src-23">[23]</a>.
+- They require code execution to be enabled.
+- <span class="badge inference">By inference</span>, they therefore run in Anthropic's sandbox, <strong>not on your machine</strong>. No source states this directly; see Open questions.
+- Skills synced from claude.ai never run their <code>!</code> shell injections locally <a class="cite" href="#src-15">[15]</a>.</p>
+<p><strong>What goes where.</strong> Anthropic's stated split <a class="cite" href="#src-17">[17]</a>:
+- <strong>MCP server:</strong> connectivity, data access, and correct use of its own tools.
+- <strong>Skill:</strong> process — domain method, workflow order, orchestration and presentation.</p>
+<p>Anthropic also names an anti-pattern: giving conflicting format instructions in both places <a class="cite" href="#src-17">[17]</a>.</p>
+<p>Anthropic says to prefer bundled scripts for deterministic work, because only a script's output costs tokens <a class="cite" href="#src-14">[14]</a>. So if you targeted only Claude Code, a skill that shells out to <code>node validate.js &lt;code&gt;</code> would work. In Desktop, though, skills need code execution <a class="cite" href="#src-16">[16]</a> and so, <span class="badge inference">by inference</span>, run in the cloud sandbox. That makes the <strong>MCP server the only way to bring the local TypeScript engine to both clients</strong>, which settles the split:
+- <strong>Server:</strong> catalog lookups, legality checks, budget arithmetic, share-code encode/decode.
+- <strong>Skill:</strong> LoreRim build strategy, how to ask the user questions, the draft→validate→repair workflow, and how to present the final build.</p>
+<p><strong>Tool design.</strong> Anthropic's engineering guidance <a class="cite" href="#src-18">[18]</a>:
+- Build <strong>workflow-shaped tools</strong> rather than CRUD. One <code>schedule_event</code> beats <code>list_users</code> + <code>list_events</code> + <code>create_event</code>.
+- <strong>Namespace</strong> tools with a consistent prefix; this measurably changes eval results.
+- Return <strong>human-meaningful identifiers</strong>. Agents do "significantly" better with these than with opaque ids.
+- Offer a <code>response_format</code> parameter with <code>concise</code> and <code>detailed</code> options.
+- <strong>Paginate, filter and truncate</strong> with sensible defaults, and make truncation notes point to a narrower query.
+- Write <strong>errors as actionable instructions</strong>, not error codes. The skills doc's own example is "Field X not found. Available fields: …" <a class="cite" href="#src-14">[14]</a>.
+- Treat tool descriptions as prompts.
+- Iterate against realistic multi-call evals, reviewing the transcripts <a class="cite" href="#src-18">[18]</a>.</p>
+<p>The skills guidance adds evaluation-first development: at least 3 scenarios, compared against a baseline without the skill, and tested across model sizes <a class="cite" href="#src-14">[14]</a>.</p>
+<p><strong>Searching several hundred perks cheaply.</strong> Every Anthropic pattern avoids putting the whole catalog into context:
+- <strong>Search and filter tools</strong> that return compact rows <a class="cite" href="#src-18">[18]</a>. This is the portable option.
+- <strong>Code execution over tools exposed as files.</strong> In one example this cut 150k tokens to 2k, but it needs a sandbox <a class="cite" href="#src-19">[19]</a>.
+- <strong>API-side Tool Search and Programmatic Tool Calling</strong> <a class="cite" href="#src-20">[20]</a>. These are Claude Developer Platform features that a local MCP server does not control.</p>
+<p>Claude Code's MCP tool search defers only tool <em>definitions</em>, not data <a class="cite" href="#src-4">[4]</a>. Given the 25k-token output cap <a class="cite" href="#src-4">[4]</a>, compact filtered queries plus a <code>get_perk</code> detail tool is the low-risk design.</p>
+<p><strong>Stateful vs stateless.</strong> MCP 2026-07-28 removed protocol sessions. It recommends minting an <strong>explicit handle</strong> and having the model pass it back, because "the model can see the handle and thread it between tools" <a class="cite" href="#src-21">[21]</a><a class="cite" href="#src-3">[3]</a>.</p>
+<p>The planner already has a natural handle: <strong>the share code</strong>. Tools that take a share code and return the updated code, plus a readable summary and diff, follow the spec. They also:
+- survive a restart of the stdio server process;
+- paste straight into the web planner;
+- make evals deterministic.</p>
+<p>A server-side <code>draft_id</code> saves tokens but loses the draft whenever the server restarts. This comparison is <span class="badge inference">my inference</span>; I found no A/B evidence either way.</p>
+<p><strong>Open contradiction.</strong> Anthropic's skills best practices say to reference MCP tools as <code>ServerName:tool_name</code> <a class="cite" href="#src-14">[14]</a>. Claude Code actually names them <code>mcp__&lt;server&gt;__&lt;tool&gt;</code> <a class="cite" href="#src-4">[4]</a>, or <code>mcp__plugin_&lt;plugin&gt;_&lt;server&gt;__&lt;tool&gt;</code> inside a plugin <a class="cite" href="#src-5">[5]</a>. Claude Code's skills doc gives no guidance either way <a class="cite" href="#src-15">[15]</a>. This is unresolved; see Open questions.</p>
+<p><em>Research on this topic stopped after the first round plus targeted follow-up checks.</em></p>
+<h2 id="3-prior-art-and-how-an-llm-does-constrained-design-reliably">3. Prior art, and how an LLM does constrained design reliably</h2>
+<p><strong>Prior art.</strong> Build-planner MCP servers exist and are actively maintained, but <strong>only for Path of Exile</strong>.</p>
+<ul>
+<li><strong>pob-mcp</strong> is the most mature and the closest template <a class="cite" href="#src-24">[24]</a>. It runs Path of Building's own headless calculation engine through a Lua bridge, so its numbers match the GUI. It exposes 99 tools across 10 categories. The most instructive are <em>engine-driven enumerate-and-rank</em> tools:</li>
+<li><code>optimize_tree</code> suggests nearby node allocations for a goal.</li>
+<li><code>find_best_anointment</code> simulates every option and ranks them by DPS/EHP change.</li>
+<li><code>validate_build</code> returns Critical/Warning/Info findings and a 0–10 health score <a class="cite" href="#src-24">[24]</a>.</li>
+<li>Its README flags two anti-patterns <a class="cite" href="#src-24">[24]</a>:</li>
+<li>Disconnected nodes are <em>silently dropped</em>, so an illegal edit looks as if it was accepted.</li>
+<li>In-memory edits and on-disk files are two separate sources of truth.</li>
+<li><strong>poe2-mcp</strong> grounds the model in a database extracted from game files: about 14k mods and 5k passives, with <code>inspect_*</code>, <code>list_*</code> and <code>search_*</code> lookups plus validators. It fingerprints the data schema so a game patch "fails loudly instead of serving silently-wrong data" <a class="cite" href="#src-25">[25]</a> <span class="badge medium">(medium confidence; from its README)</span>.</li>
+</ul>
+<p>I found no user-reported measure of build quality for any of them.</p>
+<p><strong>No Skyrim, LoreRim or other Bethesda character-build MCP exists.</strong> Every Skyrim MCP I found targets mod authoring, load-order diagnostics or live game state <a class="cite" href="#src-26">[26]</a>. A LoreRim planner MCP would appear to be the first of its kind.</p>
+<p><strong>Generate → validate → repair works if the feedback is external.</strong> Surveys and controlled studies agree: LLMs do not reliably self-correct from their own critique, and can get worse. They do improve when the feedback comes from a reliable outside source <a class="cite" href="#src-30">[30]</a><a class="cite" href="#src-31">[31]</a>.</p>
+<p>On the TravelPlanner benchmark, an LLM-Modulo loop lifted GPT-4-Turbo from 4.4% to 20.6%. In that loop, binary critics sent failures back to the model for up to 10 iterations, and using all critics together beat any single critic type <a class="cite" href="#src-27">[27]</a>. That argues for returning <strong>all</strong> violations at once. Each should name the entity, the requirement it breaks, and by how much.</p>
+<p><strong>Delegate optimization and feasibility to code, not the model.</strong> When the LLM translated the request into an SMT problem and the Z3 solver did the search, success reached 93.9%, against about 10% for the LLM planning directly <a class="cite" href="#src-28">[28]</a>. When LLMs solved constrained optimization problems themselves, the best model found a feasible answer 65% of the time and the optimal one 30.5% of the time. Feasibility, not objective quality, was the bottleneck <a class="cite" href="#src-29">[29]</a>. The failures included made-up entities and small budget or threshold overshoots, which are exactly what a perk-budget planner would see <a class="cite" href="#src-29">[29]</a>.</p>
+<p>Each figure comes from a single paper, and the papers used different base models <span class="badge medium">(medium confidence)</span>. The direction is consistent across <a class="cite" href="#src-27">[27]</a><a class="cite" href="#src-28">[28]</a><a class="cite" href="#src-29">[29]</a>. It also matches pob-mcp's design: the engine enumerates and scores options, and the LLM translates the user's intent and chooses among the ranked results <a class="cite" href="#src-24">[24]</a>.</p>
+<p><strong>Grounding.</strong> Hallucinated entities are a measured failure class <a class="cite" href="#src-29">[29]</a>. The practice in prior art is to bind every name against the real database through search and inspect tools, and to fail loudly on unknown ids <a class="cite" href="#src-25">[25]</a>. I found no study comparing grounding techniques (enum schemas vs search-then-select vs "did you mean" errors). With hundreds of perks, enum schemas are probably impractical, so strict id validation with close-match suggestions is the natural fit <span class="badge inference">(inference)</span>.</p>
+<p><strong>Judging whether a build is "good".</strong> LLM judges agree with themselves far more than with humans. Their agreement with humans is only κ ≈ 0.38–0.51 on MT-Bench and 0.27–0.88 on JudgeBench. Position bias reaches 0.19, and their rankings are unstable across benchmarks. The recommended use is pairwise comparison with positions swapped, over several runs <a class="cite" href="#src-32">[32]</a> (single source).</p>
+<p>So anything measurable should be scored by the engine: budget use, defensive layers, how much slack each requirement has. An LLM or rubric judgment should be kept for qualitative fit to what the user asked for, and the user is the final judge.</p>
+<p><em>Research on this topic stopped after the first round plus verification. Grounding techniques remain an evidence gap.</em></p>
+<h2 id="insights-that-come-from-combining-the-three-topics">Insights that come from combining the three topics</h2>
+<ul>
+<li><strong>One mechanism solves three problems at once.</strong> Neither the protocol finding nor the prior art gives this on its own; it shows up when you put them together. The stateless MCP spec asks for a visible handle <a class="cite" href="#src-3">[3]</a><a class="cite" href="#src-21">[21]</a>. pob-mcp's worst pitfall is keeping in-memory state and on-disk state as two separate sources of truth <a class="cite" href="#src-24">[24]</a>. The planner already has a canonical, portable build encoding: its share code. Using the share code as the only state removes the session problem, the drift problem, and the "how do I open what the agent made" problem in one move.</li>
+<li><strong>Three constraints push toward the same catalog design: where skills run in Desktop, the output cap, and hallucination risk.</strong> Skills on Desktop most likely run in the cloud <span class="badge inference">(inference from <a class="cite" href="#src-16">[16]</a>)</span>, so they cannot read the data locally. Tool output is capped at 25k tokens <a class="cite" href="#src-4">[4]</a>. Entity hallucination is a measured failure mode <a class="cite" href="#src-29">[29]</a>. Together these rule out both "dump the catalog" and "bundle the data in the skill". What remains is filtered search tools, plus strict, fail-loud id validation with actionable errors <a class="cite" href="#src-18">[18]</a><a class="cite" href="#src-25">[25]</a>. Adding close-match suggestions to those errors is <span class="badge inference">my inference</span>.</li>
+<li><strong>Validator feedback quality matters more than how many repair loops you allow.</strong> Critics help only because the feedback is external <a class="cite" href="#src-30">[30]</a><a class="cite" href="#src-31">[31]</a>. Combining all critic types beat any single one <a class="cite" href="#src-27">[27]</a>. pob-mcp's silent-drop bug is the counter-example <a class="cite" href="#src-24">[24]</a>. So <code>lorerim_evaluate_build</code> must reject and explain; it must never quietly normalize. <em>Project context, not research evidence:</em> the planner's codec drops unknown ids silently by design. The MCP layer therefore has to check ids <em>before</em> encoding and must not rely on decode round-trips.</li>
+</ul>
+<h2 id="recommendations">Recommendations</h2>
+<p>These feed the <strong>architecture spine</strong> (tool surface, packaging, runtime) and the <strong>brief</strong> (feasibility, risks). They are listed in a sensible order of work. <strong>Before implementing, re-check the SDK and Claude Code version facts</strong>; they fall due for re-check on 2026-10-01 (see Staleness map).</p>
+<ol>
+<li>
+<p><strong>Tool surface: small, workflow-shaped, all prefixed <code>lorerim_</code></strong> (confidence: high on the pattern <a class="cite" href="#src-18">[18]</a>; the specific tool set is my design inference):
+   - <strong>Catalog lookup:</strong></p>
+<ul>
+<li><code>lorerim_search_perks</code>: query, skill, tree, max skill requirement, max player level, limit/offset, and <code>response_format</code> concise|detailed. It returns compact rows keyed by real perk ids.</li>
+<li><code>lorerim_get_entity</code>: a perk, race, trait, skill or supernatural option, in detail.</li>
+<li><strong>Build evaluation:</strong> <code>lorerim_evaluate_build(code | partial spec)</code>. It returns:</li>
+<li>the share code;</li>
+<li>perk, skill-point and skill-level budgets, used vs available;</li>
+<li><strong>all</strong> violations at once, each naming the perk, the unmet requirement and the shortfall;</li>
+<li>unknown ids, with "did you mean" suggestions.</li>
+</ul>
+<p>Check ids <em>before</em> encoding, and never rely on a decode round-trip, because the planner's codec drops unknown ids silently (project context). Reject and explain; never normalize quietly.
+   - <strong>Build editing:</strong> <code>lorerim_apply_changes(code, ops[])</code>, applied as a batch. It returns the new code, a readable diff and the evaluation above. Every edit is stateless, with the share code as the handle <a class="cite" href="#src-3">[3]</a><a class="cite" href="#src-21">[21]</a>.
+   - <strong>Ranked suggestions (phase 2, following pob-mcp <a class="cite" href="#src-24">[24]</a>):</strong>
+ - <code>lorerim_suggest_perks(code, goals)</code>: the legal next perks, ranked by the engine.
+ - <code>lorerim_cost_to_reach(code, perk, level)</code>: the skill levels and points needed to reach a perk.</p>
+<p>The LLM chooses among options the engine has scored, and never does the arithmetic itself <a class="cite" href="#src-28">[28]</a><a class="cite" href="#src-29">[29]</a>.
+   - Return <code>structuredContent</code> with an <code>outputSchema</code>, plus a text copy <a class="cite" href="#src-3">[3]</a>. Keep typical responses well under 10k tokens <a class="cite" href="#src-4">[4]</a>.
+2. <strong>Evals before polish:</strong> write three to five realistic prompts, for example "stealth archer vampire, level 40" or "a lich mage that never uses destruction". Measure legality automatically through <code>lorerim_evaluate_build</code>, and judge how well each build fits the request pairwise, yourself or with position-swapped LLM judging <a class="cite" href="#src-14">[14]</a><a class="cite" href="#src-18">[18]</a><a class="cite" href="#src-32">[32]</a>.
+3. <strong>Skill (<code>lorerim-build</code>):</strong> put trigger phrases first in the description. Also make it invocable explicitly as <code>/lorerim-build</code> <a class="cite" href="#src-15">[15]</a>. Explicit invocation matters because practitioners report auto-activation is unreliable <span class="badge low">(low confidence, secondary reports)</span>. The body covers:
+   - intake questions: playstyle, difficulty, supernatural path, level target;
+   - the draft → <code>lorerim_evaluate_build</code> → repair loop, until there are zero violations;
+   - a rule that every perk named must come from a tool result;
+   - the output format: build summary plus share code plus a planner link.</p>
+</li>
+</ol>
+<p>Keep output formatting in the skill only <a class="cite" href="#src-17">[17]</a>. Put any LoreRim strategy notes in <code>references/</code> (progressive disclosure) <a class="cite" href="#src-13">[13]</a>.
+4. <strong>Build path:</strong> bundle with esbuild or tsup to a single ESM file, inlining the engine, codec and JSON data. <span class="badge inference">This is inference</span>: native type stripping has constraints that typical Vite source breaks <a class="cite" href="#src-8">[8]</a>, and I found no primary source on bundling practice. Log to stderr only, because stdout carries the protocol <a class="cite" href="#src-33">[33]</a>. Use SDK v2, not v1; v1 is in maintenance <a class="cite" href="#src-1">[1]</a><a class="cite" href="#src-2">[2]</a>.
+5. <strong>Packaging:</strong>
+   - <strong>Claude Code:</strong> a plugin with <code>.claude-plugin/plugin.json</code>, <code>skills/lorerim-build/</code>, and <code>mcpServers</code> pointing to <code>node ${CLAUDE_PLUGIN_ROOT}/dist/server.js</code> <a class="cite" href="#src-5">[5]</a>. Develop with <code>--plugin-dir</code>.
+   - <strong>Claude Desktop:</strong> a <code>.mcpb</code> of the same <code>dist/</code> <a class="cite" href="#src-6">[6]</a>, plus the skill as a ZIP <a class="cite" href="#src-16">[16]</a>.
+   - Call <code>node</code> directly, never <code>npx</code>. This sidesteps the Windows <code>cmd /c</code> problem <a class="cite" href="#src-7">[7]</a> <span class="badge medium">(medium confidence; <span class="badge unverified">unverified</span> in the current build)</span>.</p>
+<h2 id="open-questions">Open questions</h2>
+<ul>
+<li><strong>How should a skill name MCP tools: <code>ServerName:tool</code> <a class="cite" href="#src-14">[14]</a> or <code>mcp__…__tool</code> <a class="cite" href="#src-4">[4]</a><a class="cite" href="#src-5">[5]</a>?</strong> To answer it, try both in a plugin skill in Claude Code and in Desktop.</li>
+<li><strong>Do Desktop's local MCP servers support resources and prompts, and does Desktop apply a 25k-style output cap?</strong> No primary source was found. Test it directly, or do a deeper research pass.</li>
+<li><strong>Where do Claude Desktop skills actually execute?</strong> The docs say only that skills need code execution <a class="cite" href="#src-16">[16]</a>. The claim that they run in Anthropic's sandbox rather than locally is an inference, and the "only MCP reaches the local engine from Desktop" argument rests on it. To settle it, upload a test skill whose script prints its hostname and working directory. Also check whether Desktop's Cowork mode behaves differently.</li>
+<li><strong>Which grounding technique works best at the planner's scale?</strong> No comparative study exists. The answer would come from an eval: search-then-select vs close-match errors, measured as the rate of hallucinated ids.</li>
+<li><strong>How well does Claude know LoreRim strategy (as opposed to vanilla Skyrim) without reference notes?</strong> Unknown. Compare evals with and without a <code>references/strategy.md</code>.</li>
+<li><strong>Is the Windows <code>/c</code>→<code>C:/</code> mangling still present?</strong> The report dates from 2026-01 and the issue was closed as not planned <a class="cite" href="#src-7">[7]</a>. Moot if the config calls <code>node</code> directly.</li>
+<li><strong>Do the engine modules use Vite-only constructs (<code>import.meta.env</code>/<code>glob</code>)?</strong> A codebase check, not research. A trial esbuild bundle answers it.</li>
+</ul>
+<h2 id="source-appendix">Source appendix</h2>
+<details open><summary>33 sources (click to collapse)</summary><table class="sources"><thead><tr><th>#</th><th>Supports</th><th>Publisher</th><th>Pub</th><th>Accessed</th><th>Confidence</th></tr></thead><tbody><tr id="src-1"><td>[1]</td><td>TS SDK v2 GA 2026-07-27, 2.1.0 current; v1 1.30.1 maintained</td><td><a href="https://www.npmjs.com/package/@modelcontextprotocol/server" target="_blank" rel="noopener">npm registry — @modelcontextprotocol/server</a></td><td>2026-09</td><td>2026-09-27</td><td><span class="badge high">high</span></td></tr><tr id="src-2"><td>[2]</td><td>v2 API shape (McpServer, registerTool, StdioServerTransport, Standard Schema); v1 support window</td><td><a href="https://github.com/modelcontextprotocol/typescript-sdk" target="_blank" rel="noopener">modelcontextprotocol/typescript-sdk (GitHub)</a></td><td>2026-09</td><td>2026-09-27</td><td><span class="badge high">high</span></td></tr><tr id="src-3"><td>[3]</td><td>Spec 2026-07-28: no session, explicit-handle state, outputSchema/structuredContent, isError, deprecations</td><td><a href="https://modelcontextprotocol.io/specification/2026-07-28/server/tools" target="_blank" rel="noopener">MCP specification — tools</a></td><td>2026-07</td><td>2026-09-27</td><td><span class="badge high">high</span></td></tr><tr id="src-4"><td>[4]</td><td>Claude Code MCP install/scopes, 10k/25k output limits, tool search default</td><td><a href="https://code.claude.com/docs/en/mcp" target="_blank" rel="noopener">Claude Code docs — MCP</a></td><td>2026-09</td><td>2026-09-27</td><td><span class="badge high">high</span></td></tr><tr id="src-5"><td>[5]</td><td>Plugins bundle skills + MCP; `${CLAUDE_PLUGIN_ROOT}`; tool namespacing</td><td><a href="https://code.claude.com/docs/en/plugins-reference" target="_blank" rel="noopener">Claude Code docs — plugins reference</a></td><td>2026-09</td><td>2026-09-27</td><td><span class="badge high">high</span></td></tr><tr id="src-6"><td>[6]</td><td>MCPB bundles for Desktop; Desktop ships Node</td><td><a href="https://github.com/modelcontextprotocol/mcpb" target="_blank" rel="noopener">modelcontextprotocol/mcpb (GitHub)</a></td><td>2026</td><td>2026-09-27</td><td><span class="badge medium">medium</span></td></tr><tr id="src-7"><td>[7]</td><td>Windows npx needs cmd /c; `/c` mangled by `claude mcp add`</td><td><a href="https://github.com/anthropics/claude-code/issues/20061" target="_blank" rel="noopener">anthropics/claude-code #20061</a></td><td>2026-01</td><td>2026-09-27</td><td><span class="badge medium">medium</span></td></tr><tr id="src-8"><td>[8]</td><td>Node type-stripping constraints (erasable syntax, .ts extensions, no paths)</td><td><a href="https://nodejs.org/api/typescript.html" target="_blank" rel="noopener">Node.js docs — TypeScript</a></td><td>2026</td><td>2026-09-27</td><td><span class="badge medium">medium</span></td></tr><tr id="src-9"><td>[9]</td><td>Resources/prompts supported in Claude Code; tools-only reliability on claude.ai connectors</td><td><a href="https://github.com/davidharting/davidharting.com/pull/221" target="_blank" rel="noopener">davidharting.com PR #221 (research note)</a></td><td>2026-09</td><td>2026-09-27</td><td><span class="badge medium">medium</span></td></tr><tr id="src-10"><td>[10]</td><td>Independent confirmation: plugins bundle skills and MCP servers</td><td><a href="https://hidekazu-konishi.com/entry/claude_code_plugins_complete_guide.html" target="_blank" rel="noopener">hidekazu-konishi.com</a></td><td>n.d.</td><td>2026-09-27</td><td><span class="badge medium">medium</span></td></tr><tr id="src-11"><td>[11]</td><td>Independent confirmation: 25k default, MAX_MCP_OUTPUT_TOKENS</td><td><a href="https://help.xpoz.ai/en/articles/12681842-claude-code-mcp-tool-exceeds-maximum-allowed-tokens-25000" target="_blank" rel="noopener">Xpoz Help Center</a></td><td>n.d.</td><td>2026-09-27</td><td><span class="badge medium">medium</span></td></tr><tr id="src-12"><td>[12]</td><td>25k limit enforcement measured as inexact</td><td><a href="https://dev.to/rulestack/claude-codes-25000-token-mcp-limit-let-a-49964-token-result-through-we-measured-both-checks-54nc" target="_blank" rel="noopener">DEV Community — rulestack</a></td><td>n.d.</td><td>2026-09-27</td><td><span class="badge low">low</span></td></tr><tr id="src-13"><td>[13]</td><td>Agent Skills open spec: fields, limits, progressive disclosure</td><td><a href="https://agentskills.io/specification" target="_blank" rel="noopener">agentskills.io specification</a></td><td>n.d. (live)</td><td>2026-09-27</td><td><span class="badge high">high</span></td></tr><tr id="src-14"><td>[14]</td><td>Skill authoring best practices: third-person descriptions, scripts for deterministic ops, actionable errors, eval-first; `ServerName:tool` naming</td><td><a href="https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices" target="_blank" rel="noopener">Claude Platform docs — skill best practices</a></td><td>n.d. (live)</td><td>2026-09-27</td><td><span class="badge high">high</span></td></tr><tr id="src-15"><td>[15]</td><td>Claude Code skill locations, slash commands, 1,536-char listing truncation</td><td><a href="https://code.claude.com/docs/en/skills" target="_blank" rel="noopener">Claude Code docs — skills</a></td><td>2026-09</td><td>2026-09-27</td><td><span class="badge high">high</span></td></tr><tr id="src-16"><td>[16]</td><td>claude.ai/Desktop skills: ZIP upload, need code execution (sandbox)</td><td><a href="https://support.claude.com/en/articles/12512180-using-skills-in-claude" target="_blank" rel="noopener">Claude Help Center — using skills</a></td><td>2026-09</td><td>2026-09-27</td><td><span class="badge high">high</span></td></tr><tr id="src-17"><td>[17]</td><td>Division of labor: MCP = connectivity/data; skills = process/presentation</td><td><a href="https://claude.com/blog/extending-claude-capabilities-with-skills-mcp-servers" target="_blank" rel="noopener">Claude blog — skills and MCP servers</a></td><td>2025-12</td><td>2026-09-27</td><td><span class="badge high">high</span></td></tr><tr id="src-18"><td>[18]</td><td>Tool design: consolidation, namespacing, meaningful ids, response_format, pagination, actionable errors, evals</td><td><a href="https://www.anthropic.com/engineering/writing-tools-for-agents" target="_blank" rel="noopener">Anthropic Engineering — writing tools for agents</a></td><td>2025-09</td><td>2026-09-27</td><td><span class="badge high">high</span></td></tr><tr id="src-19"><td>[19]</td><td>Code execution with MCP: 150k→2k tokens; needs sandbox</td><td><a href="https://www.anthropic.com/engineering/code-execution-with-mcp" target="_blank" rel="noopener">Anthropic Engineering — code execution with MCP</a></td><td>2025-11</td><td>2026-09-27</td><td><span class="badge high">high</span></td></tr><tr id="src-20"><td>[20]</td><td>API-side Tool Search / Programmatic Tool Calling</td><td><a href="https://www.anthropic.com/engineering/advanced-tool-use" target="_blank" rel="noopener">Anthropic Engineering — advanced tool use</a></td><td>2025-11</td><td>2026-09-27</td><td><span class="badge high">high</span></td></tr><tr id="src-21"><td>[21]</td><td>Explicit-handle state recommendation; sessions removed</td><td><a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noopener">MCP blog — 2026-07-28 release</a></td><td>2026-07</td><td>2026-09-27</td><td><span class="badge high">high</span></td></tr><tr id="src-22"><td>[22]</td><td>Skills silently dropped past a global description budget (possibly fixed)</td><td><a href="https://blog.fsck.com/2025/12/17/claude-code-skills-not-triggering/" target="_blank" rel="noopener">fsck.com — Jesse Vincent</a></td><td>2025-12</td><td>2026-09-27</td><td><span class="badge low">low</span></td></tr><tr id="src-23"><td>[23]</td><td>Independent confirmation: Desktop skills ZIP upload via Customize &gt; Skills</td><td><a href="https://www.adventuresincre.com/claude-skills-practical-guide/" target="_blank" rel="noopener">Adventures in CRE</a></td><td>n.d.</td><td>2026-09-27</td><td><span class="badge medium">medium</span></td></tr><tr id="src-24"><td>[24]</td><td>pob-mcp: headless PoB engine, 99 tools, enumerate-and-rank, validate_build; silent-drop and dual-state pitfalls</td><td><a href="https://github.com/ianderse/pob-mcp" target="_blank" rel="noopener">ianderse/pob-mcp (GitHub)</a></td><td>2026 (commit date not visible)</td><td>2026-09-27</td><td><span class="badge high">high</span></td></tr><tr id="src-25"><td>[25]</td><td>poe2-mcp: game-file DB grounding, inspect/list/search, fail-loud schema fingerprints</td><td><a href="https://github.com/HivemindOverlord/poe2-mcp" target="_blank" rel="noopener">HivemindOverlord/poe2-mcp (GitHub)</a></td><td>n.d.</td><td>2026-09-27</td><td><span class="badge medium">medium</span></td></tr><tr id="src-26"><td>[26]</td><td>Skyrim MCPs target modding/runtime; no build-planner MCP</td><td><a href="https://github.com/Pyrhame/SkyrimCK-MCP" target="_blank" rel="noopener">Pyrhame/SkyrimCK-MCP (GitHub)</a> + search absence check</td><td>2026-09</td><td>2026-09-27</td><td><span class="badge medium">medium</span></td></tr><tr id="src-27"><td>[27]</td><td>LLM-Modulo on TravelPlanner: 4.4%→20.6%; combined critics best</td><td><a href="https://arxiv.org/abs/2405.20625" target="_blank" rel="noopener">arXiv 2405.20625 (Gundawar, Kambhampati et al.)</a></td><td>2024-05</td><td>2026-09-27</td><td><span class="badge medium">medium</span></td></tr><tr id="src-28"><td>[28]</td><td>LLM→SMT + Z3: 93.9% vs ~10% direct planning</td><td><a href="https://arxiv.org/abs/2404.11891" target="_blank" rel="noopener">arXiv 2404.11891 (Hao et al., NAACL 2025)</a></td><td>2025-01</td><td>2026-09-27</td><td><span class="badge medium">medium</span></td></tr><tr id="src-29"><td>[29]</td><td>ConstraintBench: 65% feasible / 30.5% optimal; entity hallucination and budget overshoot failures</td><td><a href="https://arxiv.org/abs/2602.22465" target="_blank" rel="noopener">arXiv 2602.22465</a></td><td>2026-02</td><td>2026-09-27</td><td><span class="badge medium">medium</span></td></tr><tr id="src-30"><td>[30]</td><td>Self-correction works only with reliable external feedback (survey)</td><td><a href="https://arxiv.org/abs/2406.01297" target="_blank" rel="noopener">arXiv 2406.01297 (Kamoi et al., TACL)</a></td><td>2024-12</td><td>2026-09-27</td><td><span class="badge high">high</span></td></tr><tr id="src-31"><td>[31]</td><td>LLMs cannot intrinsically self-correct reasoning; can degrade</td><td><a href="https://arxiv.org/abs/2310.01798" target="_blank" rel="noopener">arXiv 2310.01798 (Huang et al., ICLR 2024)</a></td><td>2023-10</td><td>2026-09-27</td><td><span class="badge high">high</span></td></tr><tr id="src-32"><td>[32]</td><td>LLM-as-judge: κ≈0.3–0.5 vs humans, position bias, pairwise+swap recommended</td><td><a href="https://arxiv.org/abs/2606.19544" target="_blank" rel="noopener">arXiv 2606.19544</a></td><td>2026-06</td><td>2026-09-27</td><td><span class="badge medium">medium</span></td></tr><tr id="src-33"><td>[33]</td><td>Spec 2026-07-28 deprecations (Roots, Sampling, Logging → log to stderr for stdio, HTTP+SSE); tools/resources/prompts/stdio kept</td><td><a href="https://modelcontextprotocol.io/specification/2026-07-28/deprecated" target="_blank" rel="noopener">MCP specification — deprecated features</a></td><td>2026-07</td><td>2026-09-27</td><td><span class="badge high">high</span></td></tr></tbody></table></details>
+<h2 id="staleness-map">Staleness map</h2><p>Re-check windows by claim class: version and compatibility 1 month, pain point 6 months, landscape 3 months, pattern 24 months.</p>
+<table>
+<thead>
+<tr>
+<th>Claim</th>
+<th>Class</th>
+<th>Pub</th>
+<th>Re-check by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="cite" href="#src-1">[1]</a> SDK v2.1.0 current</td>
+<td>version</td>
+<td>2026-09</td>
+<td>2026-10-01</td>
+</tr>
+<tr>
+<td><a class="cite" href="#src-4">[4]</a> Claude Code 25k/10k output limits</td>
+<td>version</td>
+<td>2026-09</td>
+<td>2026-10-01</td>
+</tr>
+<tr>
+<td><a class="cite" href="#src-5">[5]</a> Plugins bundle skills + MCP</td>
+<td>version</td>
+<td>2026-09</td>
+<td>2026-10-01</td>
+</tr>
+<tr>
+<td><a class="cite" href="#src-6">[6]</a> Desktop <code>.mcpb</code> install</td>
+<td>version</td>
+<td>2026-09</td>
+<td>2026-10-01</td>
+</tr>
+<tr>
+<td><a class="cite" href="#src-15">[15]</a> 1,536-char skill listing truncation</td>
+<td>version</td>
+<td>2026-09</td>
+<td>2026-10-01</td>
+</tr>
+<tr>
+<td><a class="cite" href="#src-16">[16]</a> Desktop skills run in sandbox</td>
+<td>version</td>
+<td>2026-09</td>
+<td>2026-10-01</td>
+</tr>
+<tr>
+<td><a class="cite" href="#src-3">[3]</a> Spec 2026-07-28 is current</td>
+<td>version</td>
+<td>2026-07</td>
+<td><strong>stale</strong> (2026-08-01)</td>
+</tr>
+<tr>
+<td><a class="cite" href="#src-7">[7]</a> Windows <code>cmd /c</code> mangling</td>
+<td>pain-point</td>
+<td>2026-01</td>
+<td><strong>stale</strong> (2026-07-01)</td>
+</tr>
+<tr>
+<td><a class="cite" href="#src-24">[24]</a><a class="cite" href="#src-26">[26]</a> Prior art / no Skyrim MCP</td>
+<td>landscape</td>
+<td>2026-09</td>
+<td>2026-12-01</td>
+</tr>
+<tr>
+<td><a class="cite" href="#src-30">[30]</a><a class="cite" href="#src-31">[31]</a> Self-correction needs external feedback</td>
+<td>pattern</td>
+<td>2024-12</td>
+<td>2026-12-01</td>
+</tr>
+<tr>
+<td><a class="cite" href="#src-28">[28]</a> LLM→SMT 93.9%</td>
+<td>pattern</td>
+<td>2025-01</td>
+<td>2027-01-01</td>
+</tr>
+<tr>
+<td><a class="cite" href="#src-27">[27]</a> LLM-Modulo 4.4%→20.6%</td>
+<td>pattern</td>
+<td>2024-05</td>
+<td><strong>stale</strong> (2026-05-01)</td>
+</tr>
+</tbody>
+</table>
+<p>Three claims are already past their window, and all three are low-risk:
+- <strong><a class="cite" href="#src-3">[3]</a>:</strong> the next spec revision cannot remove the deprecated features before 2027-07.
+- <strong><a class="cite" href="#src-7">[7]</a>:</strong> avoided by calling <code>node</code> directly.
+- <strong><a class="cite" href="#src-27">[27]</a>:</strong> a benchmark result that <a class="cite" href="#src-28">[28]</a> and <a class="cite" href="#src-29">[29]</a> corroborate in direction.</p>
+<p>The earliest re-check that matters is <strong>2026-10-01</strong>, for the Claude Code and SDK version facts. If implementation starts after 2026-10-01, refresh them first.</p>
+<p class="legend" style="color:var(--muted);font-size:13px">Generated from research.md. The markdown report is the source of truth.</p>
+</main></div>
+<script>document.querySelectorAll('a.cite').forEach(a=>a.addEventListener('click',()=>{const d=document.querySelector('details');if(d)d.open=true;}));</script>
+</body></html>

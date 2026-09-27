@@ -1,0 +1,5 @@
+# D1 landing verification (lead, 2026-09-27)
+
+- SDK versions (two-source class): `npm view @modelcontextprotocol/server` → version 2.1.0; 2.0.0 published 2026-07-27T23:55Z; 2.1.0 2026-09-23. `@modelcontextprotocol/sdk` 1.30.1 (2026-09-23), 1.30.0 (2026-07-27). Resolves the digest's garbled "2024" dates. Source: npm registry (registry.npmjs.org), accessed 2026-09-27. → D1 finding 1 VERIFIED.
+- Plugin bundles skills + MCP servers: independent secondary confirmation — hidekazu-konishi.com "Claude Code Plugins Complete Guide – Bundling Skills, Hooks, Agents, and MCP Servers"; morphllm.com "Skills vs MCP vs Plugins" ("a plugin can contain skills; a skill can use MCP tools"). → finding 13 VERIFIED.
+- 25k MCP output limit / MAX_MCP_OUTPUT_TOKENS / spill-to-file: independent — help.xpoz.ai article; dev.to/rulestack measured that a 49,964-token result passed the check (limit enforcement imperfect). → finding 10 VERIFIED (with nuance: enforcement reportedly inexact, single measurement, low confidence).

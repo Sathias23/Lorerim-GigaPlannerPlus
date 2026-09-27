@@ -1,0 +1,54 @@
+- id: "1"
+  title: Agent package skeleton and server bundle
+  description: >-
+    Create lorerim-agent/ with its own package, configs, and a Vite SSR build to
+    dist/server.js that loads game data and starts over stdio with no tools; add
+    boundary tests (no react/zustand in bundle). See SPEC.md Constraints and brownfield.md.
+  spec_checkpoint: true
+  invoke_dev_with: >-
+    First re-verify the SDK and Claude Code version facts in stack.md (due 2026-10-01).
+    Existing files may change only per the brownfield.md allowlist.
+- id: "2"
+  title: Catalog tools — search perks and get entity
+  description: >-
+    Implement lorerim_search_perks and lorerim_get_entity (CAP-1, CAP-2) plus the shared
+    id validation with close-match suggestions every later tool reuses.
+  invoke_dev_with: >-
+    Reuse src/lib/perkSearch.ts and perkRequirements.ts; keep typical responses under 10k tokens.
+- id: "3"
+  title: Build evaluation tool
+  description: >-
+    Implement lorerim_evaluate_build (CAP-3): budgets used vs available and every violation
+    for a share code, with parity tests against computeBuild and the web app's decodeBuild.
+- id: "4"
+  title: Build editing tool with v1 ops
+  description: >-
+    Implement lorerim_apply_changes (CAP-4) with the v1 op set in tool-surface.md: optional
+    code, atomic batches, and a diff that shows engine adjustments.
+  spec_checkpoint: true
+- id: "5"
+  title: Claude Code plugin and lorerim-build skill
+  description: >-
+    Package the server and the lorerim-build skill as a Claude Code plugin (CAP-5, CAP-8 for
+    Code) and settle how the skill names the tools by testing both forms.
+  done_checkpoint: true
+- id: "6"
+  title: Eval set
+  description: >-
+    Build 3-5 realistic prompts run with and without the skill (CAP-9); score legality via
+    lorerim_evaluate_build and track the hallucinated-id rate.
+  done_checkpoint: true
+- id: "7"
+  title: Claude Desktop packaging
+  description: >-
+    Produce the .mcpb bundle and skill ZIP from the same dist (CAP-8 for Desktop) and answer
+    the Desktop open questions: resources/prompts, output cap, where skills execute.
+- id: "8"
+  title: Phase 2 — perk suggestions and cost to reach
+  description: >-
+    Implement lorerim_suggest_perks and lorerim_cost_to_reach (CAP-6, CAP-7), with the engine
+    doing all ranking and arithmetic.
+  spec_checkpoint: true
+  invoke_dev_with: >-
+    How perks are ranked against goals is not defined in the spec; propose it in the story
+    spec for review.
