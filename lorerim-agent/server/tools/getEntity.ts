@@ -14,12 +14,13 @@ import { paginate, summarize } from "../format";
 import {
   ENTITY_KINDS,
   getEntityName,
+  getSkillName,
   listEntities,
+  perkRef,
   resolveEntity,
   resolveOptionLabel,
   type EntityByKind,
   type EntityKind,
-  type EntityRef,
   type OptionLabels,
 } from "../ids";
 import { READ_ONLY_TOOL_ANNOTATIONS, errorResult, jsonResult } from "../toolResult";
@@ -92,21 +93,9 @@ const SUPERNATURAL_DATA_KEY_BY_OPTION: Record<SupernaturalOptionId, Supernatural
   lich: "lichdom",
 };
 
-function getOptionLabels(appData: AppData): OptionLabels {
+/** Labels that title and describe character options, as the web app shows them. */
+export function getOptionLabels(appData: AppData): OptionLabels {
   return appData.ui.labels.panels[OPTION_LABEL_PANEL] ?? {};
-}
-
-function getSkillName(game: GameData, skillId: string): string {
-  return (
-    game.skills.find((skill) => skill.id === skillId)?.name ??
-    game.perkTrees[skillId]?.skillName ??
-    skillId
-  );
-}
-
-function perkRef(game: GameData, perkId: string): EntityRef {
-  const perk = Object.hasOwn(game.perkById, perkId) ? game.perkById[perkId] : undefined;
-  return { id: perkId, name: perk?.name ?? perkId };
 }
 
 function getEntitySummary<K extends EntityKind>(

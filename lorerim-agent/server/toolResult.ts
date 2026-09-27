@@ -1,6 +1,6 @@
 import type { CallToolResult, ToolAnnotations } from "@modelcontextprotocol/server";
 
-/** The catalog tools only read static game data. */
+/** The catalog and evaluation tools only read static game data and their input. */
 export const READ_ONLY_TOOL_ANNOTATIONS: ToolAnnotations = {
   readOnlyHint: true,
   idempotentHint: true,

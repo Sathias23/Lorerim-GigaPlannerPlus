@@ -245,6 +245,7 @@ function mapIndexedIds(list: readonly string[], indices: number[] | undefined): 
 function buildStateFromCompactPayload(
   payload: CompactBuildPayload,
   registry: BuildCodecRegistry,
+  reconcile: boolean = true,
 ): BuildState {
   const attrs = payload.a ?? [0, 0, 0];
   const skillLevels = Object.fromEntries(
@@ -308,13 +309,14 @@ function buildStateFromCompactPayload(
     characterOptionChoices,
     playerLevel: payload.lv ?? registry.game.mechanics.leveling.baseLevel,
     description: payload.d ?? "",
-  }, registry.game);
+  }, registry.game, reconcile);
 }
 
 function buildStateFromIdPayload(
   payload: CompactBuildPayloadV3,
   game: GameData,
   modpackVersion: string = game.manifest.version,
+  reconcile: boolean = true,
 ): BuildState {
   const attrs = payload.a ?? [0, 0, 0];
   const skillLevels = Object.fromEntries(payload.l ?? []);
@@ -350,7 +352,7 @@ function buildStateFromIdPayload(
     characterOptionChoices,
     playerLevel: payload.lv ?? game.mechanics.leveling.baseLevel,
     description: payload.d ?? "",
-  }, game);
+  }, game, reconcile);
 }
 
 function encodeCompactBuildV3(payload: CompactBuildV3): string {
@@ -442,6 +444,7 @@ function decodeBuildV1(code: string): BuildState {
 function sharedPackageFromPayload(
   payload: CompactBuildV2,
   registry: BuildCodecRegistry,
+  reconcile: boolean,
 ): SharedBuildPackage | undefined {
   const hasMetadata =
     payload.bn !== undefined ||
@@ -460,7 +463,7 @@ function sharedPackageFromPayload(
       const [name, compact, notes] = milestone;
       return {
         name,
-        build: buildStateFromCompactPayload(compact, registry),
+        build: buildStateFromCompactPayload(compact, registry, reconcile),
         notes: notes ?? "",
       };
     }),
@@ -472,6 +475,7 @@ function sharedPackageFromPayloadV3(
   payload: CompactBuildV3,
   game: GameData,
   modpackVersion: string,
+  reconcile: boolean,
 ): SharedBuildPackage | undefined {
   const hasMetadata =
     payload.bn !== undefined ||
@@ -490,7 +494,7 @@ function sharedPackageFromPayloadV3(
       const [name, compact, notes] = milestone;
       return {
         name,
-        build: buildStateFromIdPayload(compact, game, modpackVersion),
+        build: buildStateFromIdPayload(compact, game, modpackVersion, reconcile),
         notes: notes ?? "",
       };
     }),
@@ -498,7 +502,7 @@ function sharedPackageFromPayloadV3(
   };
 }
 
-function decodeBuildV3(code: string, game: GameData): DecodedBuildPackage {
+function decodeBuildV3(code: string, game: GameData, reconcile: boolean): DecodedBuildPackage {
   const bytes = fromBase64Url(code);
   const json = new TextDecoder().decode(gunzipSync(bytes));
   const payload = JSON.parse(json) as CompactBuildV3;
@@ -511,13 +515,13 @@ function decodeBuildV3(code: string, game: GameData): DecodedBuildPackage {
   const modpackVersion = sourceModpackVersion || game.manifest.version;
 
   return {
-    build: buildStateFromIdPayload(payload, game, modpackVersion),
-    shared: sharedPackageFromPayloadV3(payload, game, modpackVersion),
+    build: buildStateFromIdPayload(payload, game, modpackVersion, reconcile),
+    shared: sharedPackageFromPayloadV3(payload, game, modpackVersion, reconcile),
     sourceModpackVersion: sourceModpackVersion || undefined,
   };
 }
 
-function decodeBuildV2(code: string, game: GameData): DecodedBuildPackage {
+function decodeBuildV2(code: string, game: GameData, reconcile: boolean): DecodedBuildPackage {
   const bytes = fromBase64Url(code);
   const json = new TextDecoder().decode(gunzipSync(bytes));
   const payload = JSON.parse(json) as CompactBuildV2;
@@ -529,8 +533,8 @@ function decodeBuildV2(code: string, game: GameData): DecodedBuildPackage {
   const sourceModpackVersion = payload.mv.trim();
   const registry = createBuildCodecRegistryForVersion(game, sourceModpackVersion);
 
-  const shared = sharedPackageFromPayload(payload, registry);
-  const build = buildStateFromCompactPayload(payload, registry);
+  const shared = sharedPackageFromPayload(payload, registry, reconcile);
+  const build = buildStateFromCompactPayload(payload, registry, reconcile);
 
   return {
     build,
@@ -554,7 +558,7 @@ function payloadToBuildState(partial: {
   skillTrainingRanges?: BuildState["skillTrainingRanges"];
   playerLevel?: number;
   description: string;
-}, game?: GameData): BuildState {
+}, game?: GameData, reconcile: boolean = true): BuildState {
   const build: BuildState = {
     raceId: partial.raceId,
     birthsignId: partial.birthsignId,
@@ -572,7 +576,7 @@ function payloadToBuildState(partial: {
     description: partial.description,
   };
 
-  return game ? reconcileImportedBuild(game, build) : build;
+  return game && reconcile ? reconcileImportedBuild(game, build) : build;
 }
 
 export function encodeBuild(state: BuildState, game: GameData): string {
@@ -593,19 +597,41 @@ export function tryEncodeSavedBuild(entry: SavedBuild, game: GameData): string {
   }
 }
 
-export function decodeBuildPackage(code: string, game: GameData): DecodedBuildPackage {
+function decodeBuildPackageInternal(
+  code: string,
+  game: GameData,
+  reconcile: boolean,
+): DecodedBuildPackage {
   const trimmed = code.trim();
   if (trimmed.startsWith(V3_PREFIX)) {
-    return decodeBuildV3(trimmed.slice(V3_PREFIX.length), game);
+    return decodeBuildV3(trimmed.slice(V3_PREFIX.length), game, reconcile);
   }
   if (trimmed.startsWith(V2_PREFIX)) {
-    return decodeBuildV2(trimmed.slice(V2_PREFIX.length), game);
+    return decodeBuildV2(trimmed.slice(V2_PREFIX.length), game, reconcile);
   }
-  return { build: reconcileImportedBuild(game, decodeBuildV1(trimmed)) };
+  const build = decodeBuildV1(trimmed);
+  return { build: reconcile ? reconcileImportedBuild(game, build) : build };
+}
+
+export function decodeBuildPackage(code: string, game: GameData): DecodedBuildPackage {
+  return decodeBuildPackageInternal(code, game, true);
 }
 
 export function decodeBuild(code: string, game: GameData): BuildState {
   return decodeBuildPackage(code, game).build;
+}
+
+/**
+ * The build the planner opens from `code` (the active variant of a shared
+ * package), exactly as the code encodes it: nothing is sanitized or
+ * reconciled, so ids the current game data no longer knows are still
+ * present. Throws like `decodeBuildPackage` on a code it cannot parse.
+ */
+export function decodeUnreconciledBuild(code: string, game: GameData): BuildState {
+  const decoded = decodeBuildPackageInternal(code, game, false);
+  const activeVariantIndex = decoded.shared?.activeVariantIndex ?? 0;
+  if (activeVariantIndex === 0) return decoded.build;
+  return decoded.shared?.milestones[activeVariantIndex - 1]?.build ?? decoded.build;
 }
 
 export function getBuildFromUrl(): string | null {
