@@ -24,7 +24,9 @@
     "import:supernatural": "node tools/import/import-supernatural.mjs",
     "export:codec-registry": "node tools/export-codec-registry.mjs",
     "regen:effects": "node tools/import/lib/regenerate-option-effects.mjs",
-    "regen:extension-stub": "node tools/regen-extension-stub.mjs"
+    "regen:extension-stub": "node tools/regen-extension-stub.mjs",
+    "agent:build": "npm --prefix lorerim-agent run build",
+    "agent:test": "npm --prefix lorerim-agent test"
   },
   "dependencies": {
     "@radix-ui/react-label": "^2.1.11",

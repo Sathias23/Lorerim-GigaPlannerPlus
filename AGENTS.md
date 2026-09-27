@@ -53,3 +53,5 @@ Client-only character build planner for the LoreRim modpack: React 19, TypeScrip
 - `npm install` on Windows can add platform-only packages (e.g. `@rolldown/binding-win32-x64-msvc`) to `package.json`, which breaks `npm ci` in CI. Prefer `npm ci`, and check the `package.json`/lockfile diff after any install.
 
 <!-- /bmad:context -->
+
+AI agent MCP server: `lorerim-agent/` (own package; tests in `lorerim-agent/server/*.test.ts`) — after the root `npm ci`, run `npm --prefix lorerim-agent ci`, then `npm run agent:test` / `npm run agent:build` (emits `lorerim-agent/dist/server.js`).
