@@ -12,7 +12,15 @@ import { version as packageVersion } from "../package.json";
 import { SERVER_NAME } from "../server/createServer";
 import { connectTestClient } from "../server/testClient";
 import { PLANNER_URL_ENV } from "../server/plannerLink";
-import { PLUGIN_SERVER_FILE, PLUGIN_SOURCE_DIR, assemblePlugin } from "./assemblePlugin";
+import {
+  MARKETPLACE_FILE,
+  MARKETPLACE_NAME,
+  MARKETPLACE_PLUGIN_SOURCE,
+  PLUGIN_SERVER_FILE,
+  PLUGIN_SOURCE_DIR,
+  assemblePlugin,
+  buildMarketplaceManifest,
+} from "./assemblePlugin";
 
 const agentRoot = fileURLToPath(new URL("..", import.meta.url));
 const PLUGIN_NAME = "lorerim";
@@ -194,6 +202,15 @@ describe("lorerim-build skill", () => {
   });
 });
 
+describe("buildMarketplaceManifest", () => {
+  it("falls back to the plugin name for an owner when the manifest has no author", () => {
+    expect(buildMarketplaceManifest({ name: "p", version: "1.0.0", description: "d" })).toMatchObject({
+      owner: { name: "p" },
+      plugins: [{ name: "p", source: "./plugin", description: "d", version: "1.0.0" }],
+    });
+  });
+});
+
 describe("assemblePlugin", () => {
   let outDir: string;
 
@@ -246,6 +263,28 @@ describe("assembled plugin", () => {
 
   afterAll(async () => {
     if (outDir) await rm(outDir, { recursive: true, force: true });
+  });
+
+  it("declares the lorerim-local marketplace listing the plugin at ./plugin", () => {
+    const marketplace = readJson<Record<string, unknown>>(join(outDir, MARKETPLACE_FILE));
+    const manifest = readJson<Record<string, unknown>>(join(pluginDir, ".claude-plugin", "plugin.json"));
+
+    expect(MARKETPLACE_NAME).toBe("lorerim-local");
+    expect(marketplace).toEqual({
+      name: MARKETPLACE_NAME,
+      description: expect.any(String),
+      owner: { name: "Sathias" },
+      plugins: [
+        {
+          name: PLUGIN_NAME,
+          source: MARKETPLACE_PLUGIN_SOURCE,
+          description: manifest.description,
+          version: packageVersion,
+        },
+      ],
+    });
+    expect(readdirSync(join(outDir, MARKETPLACE_PLUGIN_SOURCE)).sort()).toEqual(readdirSync(pluginDir).sort());
+    expect(readdirSync(outDir).sort()).toEqual([".claude-plugin", "plugin", PLUGIN_SERVER_FILE]);
   });
 
   it("holds the plugin source plus server.js", () => {

@@ -94,11 +94,11 @@ describe("dist/server.js bundle", () => {
     if (outDir) await rm(outDir, { recursive: true, force: true });
   });
 
-  it("emits one self-contained ESM chunk, plus the plugin assembled beside it", async () => {
+  it("emits one self-contained ESM chunk, plus the plugin and its marketplace assembled beside it", async () => {
     expect(output).toHaveLength(1);
     expect(chunk.type).toBe("chunk");
     expect(chunk.fileName).toBe("server.js");
-    expect((await readdir(outDir)).sort()).toEqual(["plugin", "server.js"]);
+    expect((await readdir(outDir)).sort()).toEqual([".claude-plugin", "plugin", "server.js"]);
   });
 
   it("puts a byte-identical copy of server.js in the plugin", async () => {
