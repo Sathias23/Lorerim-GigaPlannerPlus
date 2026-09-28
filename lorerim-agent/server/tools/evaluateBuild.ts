@@ -26,13 +26,14 @@ import {
 import { normalizeCharacterOptionChoices } from "@/lib/characterOptions";
 import {
   ENTITY_KINDS,
+  findRef,
   formatEntityRef,
   getEntityName,
-  getSkillName,
   perkRef,
   rankCloseMatches,
   resolveEntity,
   resolveOptionLabel,
+  skillRef,
   type EntityKind,
   type EntityRef,
   type OptionLabels,
@@ -170,22 +171,12 @@ export const DECODE_ERROR_MESSAGE =
   'Could not decode this as a planner share code. Share codes start with "3." (or "2." for older links). ' +
   "If you have a planner link, pass only the value after build=, not the whole URL.";
 
-function findRef(list: readonly { id: string; name: string }[], id: string | null): EntityRef | null {
-  if (id === null) return null;
-  const entry = list.find((item) => item.id === id);
-  return { id, name: entry?.name ?? id };
-}
-
-function skillRef(game: GameData, skillId: string): EntityRef {
-  return { id: skillId, name: getSkillName(game, skillId) };
-}
-
 function getOwnPerk(game: GameData, perkId: string): Perk | undefined {
   return Object.hasOwn(game.perkById, perkId) ? game.perkById[perkId] : undefined;
 }
 
 /** The planner opens the active variant of a shared package (`buildStore` mirrors this). */
-function getActiveBuild(decoded: DecodedBuildPackage): BuildState {
+export function getActiveBuild(decoded: DecodedBuildPackage): BuildState {
   const activeVariantIndex = decoded.shared?.activeVariantIndex ?? 0;
   if (activeVariantIndex === 0) return decoded.build;
   return decoded.shared?.milestones[activeVariantIndex - 1]?.build ?? decoded.build;
@@ -320,6 +311,15 @@ function findPrerequisiteViolations(game: GameData, build: BuildState): Violatio
   }
 
   return violations;
+}
+
+/**
+ * Every violation of `build` exactly as `lorerim_evaluate_build` reports it,
+ * computed on the build as given (callers reconcile first when the planner would).
+ */
+export function findBuildViolations(game: GameData, build: BuildState): Violation[] {
+  const computed = computeBuild(game, build);
+  return findViolations(game, build, computed, describeBudgets(game, build, computed));
 }
 
 function findViolations(
