@@ -10,9 +10,9 @@ export default defineConfig({
   },
   test: {
     environment: "node",
-    include: ["server/**/*.test.ts"],
+    include: ["server/**/*.test.ts", "packaging/**/*.test.ts"],
     globals: false,
-    // bundle.test.ts runs a full Vite build and spawns the bundled server.
+    // bundle.test.ts and plugin.test.ts run a full Vite build and spawn the bundled server.
     testTimeout: 120_000,
     hookTimeout: 180_000,
   },

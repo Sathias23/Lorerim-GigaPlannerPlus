@@ -1,11 +1,13 @@
 import type { Transport } from "@modelcontextprotocol/server";
 import { serveStdio } from "@modelcontextprotocol/server/stdio";
 import type { AppData } from "@/data/schemas";
-import { createServer, SERVER_NAME } from "./createServer";
+import { createServer, SERVER_NAME, type ServerConfig } from "./createServer";
 
 export interface RunDeps {
   /** Loads and Zod-validates game data; throws when the data is invalid. */
   loadAppData: () => AppData;
+  /** Deployment settings, read from the environment by the entry point only. */
+  config: ServerConfig;
   /** Wire transport; stdio in production. It carries protocol only. */
   transport: Transport;
   /** Diagnostics sink (stderr in production). Never the protocol stream. */
@@ -30,7 +32,7 @@ function describeError(error: unknown): string {
  * the transport) and 0 when the transport closes (the client went away).
  */
 export function run(deps: RunDeps): void {
-  const { transport, writeStderr, exit } = deps;
+  const { config, transport, writeStderr, exit } = deps;
 
   let appData: AppData;
   try {
@@ -45,7 +47,7 @@ export function run(deps: RunDeps): void {
 
   // serveStdio serves both protocol eras (2026-07-28 and a 2025 `initialize`
   // opening) from one factory, and owns the transport from here on.
-  serveStdio(() => createServer(appData), {
+  serveStdio(() => createServer(appData, config), {
     transport,
     onerror: (error) => writeStderr(`${SERVER_NAME}: ${describeError(error)}\n`),
   });

@@ -2,7 +2,7 @@ import { Client } from "@modelcontextprotocol/client";
 import { InMemoryTransport } from "@modelcontextprotocol/server";
 import type { AppData } from "@/data/schemas";
 import { getTestAppData } from "@/test/helpers";
-import { createServer } from "./createServer";
+import { createServer, DEFAULT_SERVER_CONFIG, type ServerConfig } from "./createServer";
 
 export interface ToolCallOutcome {
   isError: boolean;
@@ -17,9 +17,12 @@ export interface TestClient {
 }
 
 /** Connects a real MCP client to `createServer(appData)` over an in-memory transport pair. */
-export async function connectTestClient(appData: AppData = getTestAppData()): Promise<TestClient> {
+export async function connectTestClient(
+  appData: AppData = getTestAppData(),
+  config: ServerConfig = DEFAULT_SERVER_CONFIG,
+): Promise<TestClient> {
   const [clientTransport, serverTransport] = InMemoryTransport.createLinkedPair();
-  const server = createServer(appData);
+  const server = createServer(appData, config);
   await server.connect(serverTransport);
   const client = new Client({ name: "lorerim-agent-test", version: "0.0.0" });
   await client.connect(clientTransport);

@@ -26,6 +26,7 @@
   },
   "include": [
     "server/**/*.ts",
+    "packaging/**/*.ts",
     "vite.config.ts",
     "vitest.config.ts",
     "../src/vite-env.d.ts"

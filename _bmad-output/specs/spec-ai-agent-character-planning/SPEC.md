@@ -89,6 +89,7 @@ A vision plus an opportunity, for personal use. The owner wants Claude Code and 
 ## Open Questions
 
 - How should the skill name tools: `ServerName:tool` or `mcp__plugin_<plugin>_<server>__<tool>`? Test both in Code and Desktop.
+  - **Code: answered 2026-09-28 (story 5).** Bare names (`lorerim_apply_changes`). Headless Claude Code 2.1.283 runs (Sonnet) with bare names and with full `mcp__plugin_lorerim_lorerim__…` names behaved identically: one `ToolSearch` `select:` on the full names, then the first MCP call succeeded. The skill keeps bare names because they are unique and the same in Code and Desktop. Desktop is still open (story 7).
 - Does Desktop support MCP resources/prompts and apply a 25k-style output cap?
 - Where do Desktop skills actually execute? Test with a skill script that prints hostname and working directory; check Cowork mode too.
 - Which grounding technique (search-then-select vs close-match errors) minimizes hallucinated ids? Measure in CAP-9 evals.
