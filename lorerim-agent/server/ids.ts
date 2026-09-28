@@ -82,6 +82,21 @@ export function listEntities<K extends EntityKind>(game: GameData, kind: K): Ent
   return lists[kind]();
 }
 
+/** Display name of a skill (or perk tree) id; falls back to the id. */
+export function getSkillName(game: GameData, skillId: string): string {
+  return (
+    game.skills.find((skill) => skill.id === skillId)?.name ??
+    game.perkTrees[skillId]?.skillName ??
+    skillId
+  );
+}
+
+/** `{id, name}` for a perk id; an unknown id names itself. */
+export function perkRef(game: GameData, perkId: string): EntityRef {
+  const perk = Object.hasOwn(game.perkById, perkId) ? game.perkById[perkId] : undefined;
+  return { id: perkId, name: perk?.name ?? perkId };
+}
+
 /** Resolves an option label key; falls back to the key, as the web app does. */
 export function resolveOptionLabel(key: string, labels: OptionLabels | undefined): string {
   return labels?.[key] ?? key;

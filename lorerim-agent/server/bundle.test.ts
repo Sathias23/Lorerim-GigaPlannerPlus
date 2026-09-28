@@ -8,12 +8,17 @@ import { Client } from "@modelcontextprotocol/client";
 import { StdioClientTransport } from "@modelcontextprotocol/client/stdio";
 import { build } from "vite";
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
-import { getTestAppData } from "@/test/helpers";
+import { encodeBuild } from "@/engine/buildCodec";
+import { createTestBuildState, getTestAppData, getTestGameData } from "@/test/helpers";
 import { formatReadyLine } from "./main";
 
 const agentRoot = fileURLToPath(new URL("..", import.meta.url));
 
-const EXPECTED_TOOL_NAMES = ["lorerim_get_entity", "lorerim_search_perks"];
+const EXPECTED_TOOL_NAMES = [
+  "lorerim_evaluate_build",
+  "lorerim_get_entity",
+  "lorerim_search_perks",
+];
 
 interface BuiltChunk {
   type: "chunk";
@@ -123,7 +128,7 @@ describe("dist/server.js bundle", () => {
     expect(lines[0]).toBe(formatReadyLine(getTestAppData()).trimEnd());
   });
 
-  it("answers tools/list with the catalog tools over stdio", async () => {
+  it("answers tools/list with every tool over stdio", async () => {
     const transport = new StdioClientTransport({
       command: process.execPath,
       args: [serverPath],
@@ -150,6 +155,35 @@ describe("dist/server.js bundle", () => {
       });
       expect(unknown.isError).toBe(true);
       expect(JSON.stringify(unknown.content)).toContain("Did you mean");
+
+      const game = getTestGameData();
+      const code = encodeBuild(
+        createTestBuildState({
+          raceId: "nord",
+          playerLevel: game.mechanics.leveling.baseLevel,
+          selectedPerkIds: ["sneak-anatomical-lore"],
+        }),
+        game,
+      );
+      const evaluated = await client.callTool({
+        name: "lorerim_evaluate_build",
+        arguments: { code },
+      });
+      expect(evaluated.isError).not.toBe(true);
+      const evaluation = evaluated.structuredContent as {
+        code: string;
+        legal: boolean;
+        violations: Array<{ type: string }>;
+      };
+      expect(evaluation.code).toBe(code);
+      expect(evaluation.legal).toBe(false);
+      expect(evaluation.violations.map((violation) => violation.type)).toContain("prerequisite");
+
+      const notACode = await client.callTool({
+        name: "lorerim_evaluate_build",
+        arguments: { code: "hello" },
+      });
+      expect(notACode.isError).toBe(true);
     } finally {
       // Never let a failing close mask the connect/listTools failure.
       await client.close().catch(() => {});
