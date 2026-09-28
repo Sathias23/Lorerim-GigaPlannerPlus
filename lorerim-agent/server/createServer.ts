@@ -1,6 +1,7 @@
 import { McpServer } from "@modelcontextprotocol/server";
 import type { AppData } from "@/data/schemas";
 import { version } from "../package.json";
+import { registerApplyChangesTool } from "./tools/applyChanges";
 import { registerEvaluateBuildTool } from "./tools/evaluateBuild";
 import { registerGetEntityTool } from "./tools/getEntity";
 import { registerSearchPerksTool } from "./tools/searchPerks";
@@ -20,5 +21,6 @@ export function createServer(appData: AppData): McpServer {
   registerSearchPerksTool(server, appData);
   registerGetEntityTool(server, appData);
   registerEvaluateBuildTool(server, appData);
+  registerApplyChangesTool(server, appData);
   return server;
 }

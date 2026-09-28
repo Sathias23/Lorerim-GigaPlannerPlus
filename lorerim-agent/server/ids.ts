@@ -91,6 +91,21 @@ export function getSkillName(game: GameData, skillId: string): string {
   );
 }
 
+/** `{id, name}` for a skill (or perk tree) id; an unknown id names itself. */
+export function skillRef(game: GameData, skillId: string): EntityRef {
+  return { id: skillId, name: getSkillName(game, skillId) };
+}
+
+/** `{id, name}` for an id in a named list (races, birthsigns, deities, traits); null stays null. */
+export function findRef(
+  list: readonly { id: string; name: string }[],
+  id: string | null,
+): EntityRef | null {
+  if (id === null) return null;
+  const entry = list.find((item) => item.id === id);
+  return { id, name: entry?.name ?? id };
+}
+
 /** `{id, name}` for a perk id; an unknown id names itself. */
 export function perkRef(game: GameData, perkId: string): EntityRef {
   const perk = Object.hasOwn(game.perkById, perkId) ? game.perkById[perkId] : undefined;

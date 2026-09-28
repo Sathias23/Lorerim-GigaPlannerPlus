@@ -15,6 +15,7 @@ import { formatReadyLine } from "./main";
 const agentRoot = fileURLToPath(new URL("..", import.meta.url));
 
 const EXPECTED_TOOL_NAMES = [
+  "lorerim_apply_changes",
   "lorerim_evaluate_build",
   "lorerim_get_entity",
   "lorerim_search_perks",
@@ -178,6 +179,34 @@ describe("dist/server.js bundle", () => {
       expect(evaluation.code).toBe(code);
       expect(evaluation.legal).toBe(false);
       expect(evaluation.violations.map((violation) => violation.type)).toContain("prerequisite");
+
+      const applied = await client.callTool({
+        name: "lorerim_apply_changes",
+        arguments: {
+          ops: [
+            { op: "set_race", id: "nord" },
+            { op: "take_perk", id: "sneak-stealth" },
+          ],
+        },
+      });
+      expect(applied.isError).not.toBe(true);
+      const change = applied.structuredContent as {
+        code: string;
+        baseCode: string | null;
+        evaluation: { code: string; legal: boolean };
+        diff: Array<{ field: string; cause: string }>;
+      };
+      expect(change.baseCode).toBeNull();
+      expect(change.evaluation.code).toBe(change.code);
+      expect(change.evaluation.legal).toBe(true);
+      expect(change.diff).toContainEqual(expect.objectContaining({ field: "race", cause: "requested" }));
+
+      const failedChange = await client.callTool({
+        name: "lorerim_apply_changes",
+        arguments: { code, ops: [{ op: "take_perk", id: "sneak-archery" }] },
+      });
+      expect(failedChange.isError).toBe(true);
+      expect(JSON.stringify(failedChange.content)).toContain("op #0 (take_perk)");
 
       const notACode = await client.callTool({
         name: "lorerim_evaluate_build",
