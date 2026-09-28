@@ -1,0 +1,32 @@
+{
+  "scenarios": [
+    {
+      "id": "stealth-archer-vampire",
+      "prompt": "stealth archer vampire, level 40",
+      "levelTarget": 40,
+      "forbiddenSkills": [],
+      "supernatural": "vampire"
+    },
+    {
+      "id": "lich-no-destruction",
+      "prompt": "a lich mage that never uses destruction, level 40",
+      "levelTarget": 40,
+      "forbiddenSkills": ["destruction"],
+      "supernatural": "lich"
+    },
+    {
+      "id": "werewolf-two-hander",
+      "prompt": "a heavy-armor two-handed warrior who is a werewolf, level 30",
+      "levelTarget": 30,
+      "forbiddenSkills": [],
+      "supernatural": "werewolf"
+    },
+    {
+      "id": "spellsword-mortal",
+      "prompt": "a light-armor spellsword using one-handed and restoration, no vampire, werewolf, or lich, level 25",
+      "levelTarget": 25,
+      "forbiddenSkills": [],
+      "supernatural": "none"
+    }
+  ]
+}

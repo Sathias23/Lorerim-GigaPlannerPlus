@@ -82,3 +82,37 @@ LORERIM_PLANNER_URL=http://localhost:5173/Lorerim-GigaPlannerPlus/ claude --plug
 
 A code opens as the same build only when the planner and the server use the same data
 version; every tool response carries `dataVersion`.
+
+## Evals
+
+`evals/` measures whether the `lorerim-build` skill makes Claude's builds better (CAP-9). The
+owner runs interactive Claude Code sessions in two prepared folders outside the repo: `skill`
+(the plugin installed from the local `lorerim-local` marketplace that `agent:build` writes to
+`dist/.claude-plugin/marketplace.json`) and `baseline` (the same server from `.mcp.json`, no
+skill). Both deny Bash, PowerShell, Write, Edit, WebFetch, and WebSearch and pre-allow the
+lorerim tools. The eval CLIs run with Node's type stripping, so they need Node 22.18 or later.
+
+```sh
+npm run agent:build
+npm run agent:eval:setup                  # ~/lorerim-evals/{skill,baseline}; -- --root <dir> to change
+# run the sessions: lorerim-agent/evals/RUN_SHEET.md
+npm run agent:eval:score                  # -> lorerim-agent/evals/results/ (git-ignored)
+npm run agent:eval:judge -- --model haiku # optional, calls claude -p twice per pair
+```
+
+- **Setup** makes no model calls. It runs `claude plugin marketplace add` and
+  `claude plugin install lorerim@lorerim-local --scope project` in the skill folder, writes the
+  baseline's `.mcp.json`, and writes `.claude/settings.local.json` in both. It is idempotent
+  and refuses a root inside the repo, whose `AGENTS.md` would brief both variants.
+- **Scenarios** live in `evals/scenarios.json`: the prompt, the level target, forbidden
+  skills, and the supernatural path each run is checked against.
+- **Score** reads `~/.claude/projects/<folder slug>/*.jsonl` (or under `CLAUDE_CONFIG_DIR`),
+  keeps sessions whose `cwd` is the folder, and matches each to a scenario by the prompt in its
+  first answered message. It re-checks every final code with `dist/server.js` over stdio:
+  legality, violations, and budgets from `lorerim_evaluate_build`; id existence and perk skills
+  from `lorerim_get_entity`. It writes `scores.json` (identical for identical transcripts),
+  `report.md`, the blind `pairwise.md`, and its `pairwise-key.json`. It calls no model.
+- **Judge** is the only eval command that calls Claude: per pair, `claude -p` in both A/B
+  orders with no tools, no saved session, a JSON-schema verdict, and `--max-budget-usd` per
+  call (default 0.25). A build wins only if it wins both orders; it writes `judge.json` and adds
+  a Fit column to `report.md`. The owner's own pairwise verdicts are final.

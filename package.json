@@ -26,7 +26,10 @@
     "regen:effects": "node tools/import/lib/regenerate-option-effects.mjs",
     "regen:extension-stub": "node tools/regen-extension-stub.mjs",
     "agent:build": "npm --prefix lorerim-agent run build",
-    "agent:test": "npm --prefix lorerim-agent test"
+    "agent:test": "npm --prefix lorerim-agent test",
+    "agent:eval:setup": "npm --prefix lorerim-agent run eval:setup --",
+    "agent:eval:score": "npm --prefix lorerim-agent run eval:score --",
+    "agent:eval:judge": "npm --prefix lorerim-agent run eval:judge --"
   },
   "dependencies": {
     "@radix-ui/react-label": "^2.1.11",

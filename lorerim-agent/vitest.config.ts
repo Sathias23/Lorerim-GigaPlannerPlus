@@ -10,7 +10,7 @@ export default defineConfig({
   },
   test: {
     environment: "node",
-    include: ["server/**/*.test.ts", "packaging/**/*.test.ts"],
+    include: ["server/**/*.test.ts", "packaging/**/*.test.ts", "evals/**/*.test.ts"],
     globals: false,
     // bundle.test.ts and plugin.test.ts run a full Vite build and spawn the bundled server.
     testTimeout: 120_000,
