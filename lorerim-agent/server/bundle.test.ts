@@ -1,5 +1,5 @@
 import { spawn } from "node:child_process";
-import { mkdtemp, readdir, rm } from "node:fs/promises";
+import { mkdtemp, readFile, readdir, rm } from "node:fs/promises";
 import { isBuiltin } from "node:module";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
@@ -94,11 +94,18 @@ describe("dist/server.js bundle", () => {
     if (outDir) await rm(outDir, { recursive: true, force: true });
   });
 
-  it("emits one self-contained ESM chunk and nothing else", async () => {
+  it("emits one self-contained ESM chunk, plus the plugin assembled beside it", async () => {
     expect(output).toHaveLength(1);
     expect(chunk.type).toBe("chunk");
     expect(chunk.fileName).toBe("server.js");
-    expect(await readdir(outDir)).toEqual(["server.js"]);
+    expect((await readdir(outDir)).sort()).toEqual(["plugin", "server.js"]);
+  });
+
+  it("puts a byte-identical copy of server.js in the plugin", async () => {
+    const pluginServer = await readFile(join(outDir, "plugin", "server.js"));
+
+    expect(pluginServer.equals(await readFile(serverPath))).toBe(true);
+    expect(pluginServer.length).toBeGreaterThan(0);
   });
 
   it("imports only Node built-ins at runtime", () => {

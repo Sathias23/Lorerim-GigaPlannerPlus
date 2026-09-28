@@ -38,6 +38,7 @@ import {
   type EntityRef,
   type OptionLabels,
 } from "../ids";
+import { DEFAULT_PLANNER_URL, buildPlannerUrl } from "../plannerLink";
 import { READ_ONLY_TOOL_ANNOTATIONS, errorResult, jsonResult } from "../toolResult";
 import { getOptionLabels } from "./getEntity";
 
@@ -141,6 +142,7 @@ export type EvaluatedBuildBlock = z.infer<typeof buildBlockSchema>;
 
 export const evaluateBuildOutputSchema = z.object({
   code: z.string(),
+  plannerUrl: z.string(),
   dataVersion: z.string(),
   codeDataVersion: z.string().nullable(),
   playerLevel: z.number(),
@@ -540,6 +542,7 @@ function describeVariant(decoded: DecodedBuildPackage): string | null {
 export function evaluateBuild(
   appData: AppData,
   code: string,
+  plannerBaseUrl: string = DEFAULT_PLANNER_URL,
 ): { ok: true; output: EvaluateBuildOutput } | { ok: false; message: string } {
   const { game } = appData;
   const labels = getOptionLabels(appData);
@@ -556,7 +559,7 @@ export function evaluateBuild(
 
   let output: EvaluateBuildOutput;
   try {
-    output = evaluateDecoded(appData, labels, trimmed, decoded, raw);
+    output = evaluateDecoded(appData, labels, trimmed, decoded, raw, plannerBaseUrl);
   } catch (error) {
     const reason = error instanceof Error ? error.message : String(error);
     return {
@@ -573,6 +576,7 @@ function evaluateDecoded(
   code: string,
   decoded: DecodedBuildPackage,
   raw: BuildState,
+  plannerBaseUrl: string,
 ): EvaluateBuildOutput {
   const { game } = appData;
   // What the planner's store does with a decoded build before computing it.
@@ -604,6 +608,7 @@ function evaluateDecoded(
 
   return {
     code,
+    plannerUrl: buildPlannerUrl(plannerBaseUrl, code),
     dataVersion,
     codeDataVersion,
     playerLevel: build.playerLevel,
@@ -618,14 +623,18 @@ function evaluateDecoded(
   };
 }
 
-export function registerEvaluateBuildTool(server: McpServer, appData: AppData): void {
+export function registerEvaluateBuildTool(
+  server: McpServer,
+  appData: AppData,
+  plannerBaseUrl: string = DEFAULT_PLANNER_URL,
+): void {
   server.registerTool(
     EVALUATE_BUILD_TOOL,
     {
       title: "Evaluate a LoreRim build",
       description:
         "Check a LoreRim build, given as a planner share code, with the planner's own engine. " +
-        "Returns what the build contains, perk-point, skill-point, training, and attribute budgets used vs available, skill levels against the level cap, " +
+        "Returns the code, a plannerUrl that opens it in the web planner, what the build contains, perk-point, skill-point, training, and attribute budgets used vs available, skill levels against the level cap, " +
         "every violation (budget overruns, unmet skill or player-level requirements, missing prerequisite perks) with the entity, required vs actual, and shortfall, " +
         "and every id the current data does not know with did-you-mean suggestions. legal is true only when there are no violations, no unknown ids, and the planner opens the code without dropping anything (see notes). " +
         "Use it after every change to a build and trust its numbers over your own arithmetic.",
@@ -634,7 +643,7 @@ export function registerEvaluateBuildTool(server: McpServer, appData: AppData): 
       annotations: READ_ONLY_TOOL_ANNOTATIONS,
     },
     (input) => {
-      const result = evaluateBuild(appData, input.code);
+      const result = evaluateBuild(appData, input.code, plannerBaseUrl);
       return result.ok ? jsonResult(result.output) : errorResult(result.message);
     },
   );

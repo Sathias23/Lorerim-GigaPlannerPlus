@@ -17,6 +17,7 @@ import { getTrainingTierDefinitions } from "@/lib/skillTraining";
 import { createTestBuildState, getTestAppData, getTestGameData } from "@/test/helpers";
 import { diffBuildStates, isListField } from "../diff";
 import { MAX_OPS, applyOp, type Op } from "../ops";
+import { DEFAULT_PLANNER_URL } from "../plannerLink";
 import { connectTestClient, type TestClient, type ToolCallOutcome } from "../testClient";
 import {
   APPLY_CHANGES_TOOL,
@@ -211,6 +212,29 @@ describe(`${APPLY_CHANGES_TOOL} on a fresh build`, () => {
     const final = expectRoundTrip(output, undefined, STEALTH_ARCHER_OPS);
     expectDiffCoversChanges(openedBuild(), final, output.diff);
     expect(output.diff.filter((row) => row.cause === "requested").map((row) => row.op)).toEqual([0, 1, 2, 3, 4, 5]);
+  });
+
+  it("links the new code to the deployed planner, at the top level and in its evaluation", async () => {
+    const output = await applyOk({ ops: STEALTH_ARCHER_OPS });
+
+    const url = new URL(output.plannerUrl);
+    expect(`${url.origin}${url.pathname}`).toBe(`${DEFAULT_PLANNER_URL}/planner`);
+    expect(url.searchParams.get("build")).toBe(output.code);
+    expect(output.evaluation.plannerUrl).toBe(output.plannerUrl);
+  });
+
+  it("links to a configured planner base", async () => {
+    const local = await connectTestClient(appData, { plannerBaseUrl: "http://localhost:5173/Lorerim-GigaPlannerPlus" });
+    try {
+      const result = await local.call(APPLY_CHANGES_TOOL, { ops: STEALTH_ARCHER_OPS });
+
+      const output = result.structured as ApplyChangesOutput;
+      expect(output.plannerUrl.startsWith("http://localhost:5173/Lorerim-GigaPlannerPlus/planner?build=")).toBe(true);
+      expect(new URL(output.plannerUrl).searchParams.get("build")).toBe(output.code);
+      expect(output.evaluation.plannerUrl).toBe(output.plannerUrl);
+    } finally {
+      await local.close();
+    }
   });
 
   it("ties the player-level raise from a skill level to that op as an engine row", async () => {

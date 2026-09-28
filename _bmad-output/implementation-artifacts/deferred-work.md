@@ -7,3 +7,6 @@
 - source_spec: `_bmad-output/specs/spec-ai-agent-character-planning/stories/4-build-editing-tool-with-v1-ops.md`
   summary: Add a test that makes lorerim_apply_changes emit `stage: "encode"` diff rows and the "Encoding normalized…" note.
   evidence: Review probes found no op sequence whose final state encodeBuild changes, so the encode-row path in applyChanges.ts is unverified; a reachable fixture (or an injected post-ops state that reconcileImportedBuild alters) must be found first.
+- source_spec: `_bmad-output/specs/spec-ai-agent-character-planning/stories/5-claude-code-plugin-and-lorerim-build-skill.md`
+  summary: Add a CI job that runs `npm --prefix lorerim-agent ci` then `npm run agent:test` (which also builds and assembles the plugin), so lorerim-agent regressions cannot merge green.
+  evidence: `.github/workflows/test.yml` runs only root `npm test`, whose Vitest config never collects `lorerim-agent/**`; story 5's plannerUrl, env-var threading, and plugin-assembly tests run only by hand. SPEC assumes no CI job until release, so this needs the owner's go-ahead.

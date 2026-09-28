@@ -2,6 +2,7 @@ import type { JSONRPCMessage, Transport } from "@modelcontextprotocol/server";
 import { describe, expect, it, vi } from "vitest";
 import type { AppData } from "@/data/schemas";
 import { getTestAppData } from "@/test/helpers";
+import { DEFAULT_SERVER_CONFIG } from "./createServer";
 import { formatReadyLine, run, type RunDeps } from "./main";
 
 class FakeTransport implements Transport {
@@ -30,6 +31,7 @@ function createHarness(loadAppData: () => AppData) {
   const exits: number[] = [];
   const deps: RunDeps = {
     loadAppData,
+    config: DEFAULT_SERVER_CONFIG,
     transport,
     writeStderr: (text) => stderr.push(text),
     exit: (code) => exits.push(code),

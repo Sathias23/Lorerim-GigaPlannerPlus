@@ -1,0 +1,11 @@
+{
+  "name": "lorerim",
+  "version": "0.1.0",
+  "description": "Plan legal LoreRim (Skyrim modpack) character builds from a plain request: an MCP server that searches perks and evaluates and edits builds with the GigaPlanner engine, plus the lorerim-build skill that turns the request into a share code and planner link.",
+  "author": {
+    "name": "Sathias"
+  },
+  "homepage": "https://github.com/Sathias23/Lorerim-GigaPlannerPlus",
+  "repository": "https://github.com/Sathias23/Lorerim-GigaPlannerPlus",
+  "keywords": ["lorerim", "skyrim", "character-build", "planner", "mcp"]
+}

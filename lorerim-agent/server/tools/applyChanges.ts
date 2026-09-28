@@ -22,6 +22,7 @@ import {
   type DiffRow,
 } from "../diff";
 import { MAX_OPS, applyOp, opSchema, requestedItem, type Op } from "../ops";
+import { DEFAULT_PLANNER_URL } from "../plannerLink";
 import { READ_ONLY_TOOL_ANNOTATIONS, errorResult, jsonResult } from "../toolResult";
 import {
   DECODE_ERROR_MESSAGE,
@@ -73,6 +74,7 @@ export type AppliedDiffRow = z.infer<typeof appliedDiffRowSchema>;
 
 export const applyChangesOutputSchema = z.object({
   code: z.string(),
+  plannerUrl: z.string(),
   baseCode: z.string().nullable(),
   dataVersion: z.string(),
   diff: z.array(appliedDiffRowSchema),
@@ -174,7 +176,11 @@ type ApplyResult = { ok: true; output: ApplyChangesOutput } | { ok: false; messa
  * order, and either returns the new code with a diff and its evaluation, or
  * — when any op fails — an explanation of every failing op and no code.
  */
-export function applyChanges(appData: AppData, input: { code?: string; ops: readonly Op[] }): ApplyResult {
+export function applyChanges(
+  appData: AppData,
+  input: { code?: string; ops: readonly Op[] },
+  plannerBaseUrl: string = DEFAULT_PLANNER_URL,
+): ApplyResult {
   const baseCode = input.code === undefined ? null : input.code.trim();
 
   let opened: OpenedBuild;
@@ -185,7 +191,7 @@ export function applyChanges(appData: AppData, input: { code?: string; ops: read
   }
 
   try {
-    return applyToOpened(appData, baseCode, opened, input.ops);
+    return applyToOpened(appData, baseCode, opened, input.ops, plannerBaseUrl);
   } catch (error) {
     const reason = error instanceof Error ? error.message : String(error);
     return {
@@ -200,6 +206,7 @@ function applyToOpened(
   code: string | null,
   { raw, base, decoded }: OpenedBuild,
   ops: readonly Op[],
+  plannerBaseUrl: string,
 ): ApplyResult {
   const { game } = data;
   const diff: AppliedDiffRow[] = diffBuildStates(data, raw, base).map((row) =>
@@ -223,7 +230,7 @@ function applyToOpened(
   const final = decodeBuild(newCode, game);
   diff.push(...diffBuildStates(data, state, final).map((row) => tag(row, null, "encode", "engine")));
 
-  const evaluated = evaluateBuild(data, newCode);
+  const evaluated = evaluateBuild(data, newCode, plannerBaseUrl);
   if (!evaluated.ok) throw new Error(evaluated.message);
 
   const dataVersion = game.manifest.version;
@@ -247,11 +254,23 @@ function applyToOpened(
 
   return {
     ok: true,
-    output: { code: newCode, baseCode: code, dataVersion, diff, evaluation: evaluated.output, notes },
+    output: {
+      code: newCode,
+      plannerUrl: evaluated.output.plannerUrl,
+      baseCode: code,
+      dataVersion,
+      diff,
+      evaluation: evaluated.output,
+      notes,
+    },
   };
 }
 
-export function registerApplyChangesTool(server: McpServer, appData: AppData): void {
+export function registerApplyChangesTool(
+  server: McpServer,
+  appData: AppData,
+  plannerBaseUrl: string = DEFAULT_PLANNER_URL,
+): void {
   server.registerTool(
     APPLY_CHANGES_TOOL,
     {
@@ -264,14 +283,14 @@ export function registerApplyChangesTool(server: McpServer, appData: AppData): v
         "Ids must be exact; find them with lorerim_search_perks and lorerim_get_entity. " +
         "take_perk is strict: its prerequisites, skill level, player level, and a free perk point must already be in place, so raise levels and take prerequisites in earlier ops. " +
         "Out-of-range levels are rejected, never clamped. If any op fails, nothing is returned but an error explaining every failing op by index. " +
-        "On success returns the new share code, a diff of every change (cause \"requested\" for what an op asked for, \"engine\" for adjustments the engine made, such as player-level raises or dependent perks removed), " +
+        "On success returns the new share code, a plannerUrl that opens it in the web planner, a diff of every change (cause \"requested\" for what an op asked for, \"engine\" for adjustments the engine made, such as player-level raises or dependent perks removed), " +
         "and the lorerim_evaluate_build evaluation of the new code. A code holding several variants is edited through the one the planner opens and comes back as a single build.",
       inputSchema: applyChangesInputSchema,
       outputSchema: applyChangesOutputSchema,
       annotations: READ_ONLY_TOOL_ANNOTATIONS,
     },
     (input) => {
-      const result = applyChanges(appData, input);
+      const result = applyChanges(appData, input, plannerBaseUrl);
       return result.ok ? jsonResult(result.output) : errorResult(result.message);
     },
   );

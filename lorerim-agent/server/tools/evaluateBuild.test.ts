@@ -18,6 +18,7 @@ import {
   type BuildState,
 } from "@/engine/buildEngine";
 import { createTestBuildState, getTestAppData, getTestGameData } from "@/test/helpers";
+import { DEFAULT_PLANNER_URL } from "../plannerLink";
 import { connectTestClient, type TestClient, type ToolCallOutcome } from "../testClient";
 import {
   EVALUATE_BUILD_TOOL,
@@ -196,6 +197,33 @@ describe(`${EVALUATE_BUILD_TOOL} on a legal build`, () => {
     expect(output.dataVersion).toBe(game.manifest.version);
     expect(output.codeDataVersion).toBe(game.manifest.version);
     expectEngineParity(code, output);
+  });
+
+  it("links the code to the deployed planner", async () => {
+    const code = legalFixtureCode();
+
+    const output = await evaluateOk(`  ${code}
+`);
+
+    const url = new URL(output.plannerUrl);
+    expect(`${url.origin}${url.pathname}`).toBe(`${DEFAULT_PLANNER_URL}/planner`);
+    expect(url.searchParams.get("build")).toBe(code);
+  });
+
+  it("links to a configured planner base without doubling the slash", async () => {
+    const code = legalFixtureCode();
+    const local = await connectTestClient(getTestAppData(), {
+      plannerBaseUrl: "http://localhost:5173/Lorerim-GigaPlannerPlus/",
+    });
+    try {
+      const result = await local.call(EVALUATE_BUILD_TOOL, { code });
+
+      const { plannerUrl } = result.structured as EvaluateBuildOutput;
+      expect(plannerUrl.startsWith("http://localhost:5173/Lorerim-GigaPlannerPlus/planner?build=")).toBe(true);
+      expect(new URL(plannerUrl).searchParams.get("build")).toBe(code);
+    } finally {
+      await local.close();
+    }
   });
 
   it("echoes the code trimmed, never re-encoded", async () => {
