@@ -1,0 +1,228 @@
+{
+ "id": "vc-college",
+ "kind": "vanilla-changes",
+ "files": [
+  "college-of-winterhold"
+ ],
+ "questline": "college-of-winterhold",
+ "mods": [
+  {
+   "name": "Improved College Entry - Questline Tweaks",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/22184",
+   "version": "2.8.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/improved-college-entry-questline-tweaks.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Bards College Excavation",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/36950",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/bards-college-excavation.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Tome Trials - Bardic College Book Exams",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/113637",
+   "version": "1.0.2.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/tome-trials-bardic-college-book-exams.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Tome Trials - Experience Patch",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/113637",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/tome-trials-experience-patch.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "College of Winterhold - Quest Expansion",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/66666",
+   "version": "1.16.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/college-of-winterhold-quest-expansion.md",
+   "playableQuests": 8,
+   "newLocations": 0
+  },
+  {
+   "name": "OMEAR Addition - CoW Quest Expansion",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/67968",
+   "version": "1.8.2.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/omear-addition-cow-quest-expansion.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Choose Your Own Arch-Mage",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/30887",
+   "version": "1.0.1.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/choose-your-own-arch-mage.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Typography Training",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/125468",
+   "version": "1.0.1.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/typography-training.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  }
+ ],
+ "overrides": [
+  {
+   "edid": "MG01",
+   "name": "First Lessons",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "College of Winterhold - Quest Expansion",
+    "Improved College Entry - Questline Tweaks"
+   ]
+  },
+  {
+   "edid": "MG01Pointer",
+   "name": "College Objective Quest",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "MG02",
+   "name": "Under Saarthal",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Improved College Entry - Questline Tweaks"
+   ]
+  },
+  {
+   "edid": "MG03",
+   "name": "Hitting the Books",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "MG04",
+   "name": "Good Intentions",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "MG05",
+   "name": "Containment",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "College of Winterhold Quest Start Fixes"
+   ]
+  },
+  {
+   "edid": "mg06",
+   "name": "Revealing the Unseen",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "MG07",
+   "name": "The Staff of Magnus",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "College of Winterhold Quest Start Fixes"
+   ]
+  },
+  {
+   "edid": "MG08",
+   "name": "The Eye of Magnus",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "College of Winterhold Quest Start Fixes"
+   ]
+  },
+  {
+   "edid": "MGR21",
+   "name": "Shalidor's Insights",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Improved College Entry - Questline Tweaks"
+   ]
+  },
+  {
+   "edid": "MGR30",
+   "name": "Aftershock",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "MGRAppOnmund01",
+   "name": "Onmund's Request",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins"
+   ]
+  },
+  {
+   "edid": "MGRArniel01",
+   "name": "Arniel's Endeavor",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "[LoreRim] Economy Overhaul"
+   ]
+  },
+  {
+   "edid": "MGRArniel03",
+   "name": "Arniel's Endeavor",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins",
+    "Unofficial Skyrim Special Edition Patch",
+    "College of Winterhold Quest Start Fixes"
+   ]
+  },
+  {
+   "edid": "MGRitual02",
+   "name": "Illusion Ritual Spell",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "MGRitual03",
+   "name": "Conjuration Ritual Spell",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "MGRitual04",
+   "name": "Restoration Ritual Spell",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  }
+ ],
+ "overridesDroppedNonPlayerFacing": 2
+}

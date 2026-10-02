@@ -1,0 +1,236 @@
+{
+ "id": "ar-dungeons-landmarks",
+ "files": [
+  "new-dungeons",
+  "new-landmarks-and-shrines",
+  "dragons-awaken-lairs"
+ ],
+ "mods": [
+  {
+   "name": "Environs - The Shrines of Talos",
+   "separator": "Locations - Environs and Evolving",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/85141",
+   "version": "f3.02",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/environs-the-shrines-of-talos.md",
+   "playableQuests": 0,
+   "newLocations": 1
+  },
+  {
+   "name": "Environs - Riften Warehouse",
+   "separator": "Locations - Environs and Evolving",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/88024",
+   "version": "f2.01",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/environs-riften-warehouse.md",
+   "playableQuests": 0,
+   "newLocations": 1
+  },
+  {
+   "name": "Environs - Hroggar's House",
+   "separator": "Locations - Environs and Evolving",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/83457",
+   "version": "f2.02",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/environs-hroggars-house.md",
+   "playableQuests": 0,
+   "newLocations": 1
+  },
+  {
+   "name": "Environs - The Ruined Tundra Farmhouse",
+   "separator": "Locations - Environs and Evolving",
+   "nexus": "\"https://www.nexusmods.com/skyrimspecialedition/mods/72981?tab=description\"",
+   "version": "3.0.2.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/environs-the-ruined-tundra-farmhouse.md",
+   "playableQuests": 0,
+   "newLocations": 2
+  },
+  {
+   "name": "Environs - Kolskeggr",
+   "separator": "Locations - Environs and Evolving",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/78477",
+   "version": "f3.03",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/environs-kolskeggr.md",
+   "playableQuests": 0,
+   "newLocations": 1
+  },
+  {
+   "name": "Fort Dunstad",
+   "separator": "Locations - Snozz'",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/144471",
+   "version": "f1.01",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/fort-dunstad.md",
+   "playableQuests": 0,
+   "newLocations": 3
+  },
+  {
+   "name": "Ryn's Azura's Shrine",
+   "separator": "Locations - Ryn's",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/86592",
+   "version": "1.3.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/ryns-azuras-shrine.md",
+   "playableQuests": 0,
+   "newLocations": 1
+  },
+  {
+   "name": "Ryn's Snazzy Last Vigill",
+   "separator": "Locations - Ryn's",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/76385",
+   "version": "2.1.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/ryns-snazzy-last-vigill.md",
+   "playableQuests": 0,
+   "newLocations": 2
+  },
+  {
+   "name": "Dovahkiin's Vault SSE",
+   "separator": "Locations - New and Vanilla Overhauls",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/42237",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/dovahkiins-vault-sse.md",
+   "playableQuests": 0,
+   "newLocations": 1
+  },
+  {
+   "name": "Snowpoint Dungeon",
+   "separator": "Locations - New and Vanilla Overhauls",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/76186",
+   "version": "f1.01",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/snowpoint-dungeon.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Snowpoint - Snowpoint Dungeon",
+   "separator": "Locations - New and Vanilla Overhauls",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/146533",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/snowpoint-snowpoint-dungeon.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Solstheim Abandoned Lodge - Overhaul",
+   "separator": "Locations - New and Vanilla Overhauls",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/158503",
+   "version": "1.6.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/solstheim-abandoned-lodge-overhaul.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Luscious Mara's Eye - A Pond Overhaul",
+   "separator": "Locations - New and Vanilla Overhauls",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/158728",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/luscious-maras-eye-a-pond-overhaul.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Redwater Brewery - An Overhaul",
+   "separator": "Locations - New and Vanilla Overhauls",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/159104",
+   "version": "1.1.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/redwater-brewery-an-overhaul.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "The Chantry - An Overhaul",
+   "separator": "Locations - New and Vanilla Overhauls",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/171886",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-chantry-an-overhaul.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Ivy's Stendarr's Beacon Overhaul",
+   "separator": "Locations - New and Vanilla Overhauls",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/156160",
+   "version": "1.0.8.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/ivys-stendarrs-beacon-overhaul.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Forsaken Crypt",
+   "separator": "Locations - New and Vanilla Overhauls",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/139061",
+   "version": "1.0.4.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/forsaken-crypt.md",
+   "playableQuests": 0,
+   "newLocations": 1
+  },
+  {
+   "name": "Dragon's Teeth Prison - A Dungeon Mod",
+   "separator": "Locations - New and Vanilla Overhauls",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/111523",
+   "version": "1.4.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/dragons-teeth-prison-a-dungeon-mod.md",
+   "playableQuests": 0,
+   "newLocations": 1
+  },
+  {
+   "name": "Dragons Awaken",
+   "separator": "Gameplay - Progression & Abilities",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/44550",
+   "version": "2.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/dragons-awaken.md",
+   "playableQuests": 0,
+   "newLocations": 22
+  },
+  {
+   "name": "Morihaus' Refuge - No Bruma Version",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/68558",
+   "version": "1.0.1.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/morihaus-refuge-no-bruma-version.md",
+   "playableQuests": 0,
+   "newLocations": 1
+  },
+  {
+   "name": "Ascend - Hidden Peaks of Skyrim",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/120802",
+   "version": "f1.01",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/ascend-hidden-peaks-of-skyrim.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Heart of the Reach - New Quest - Dungeon - Weapons - 3 Creature Variants - Ring - Spell",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/76494",
+   "version": "1.0.7.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/heart-of-the-reach-new-quest-dungeon-weapons-3-creature-variants-ring-spell.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "SIRENROOT - Deluge of Deceit",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/70917",
+   "version": "1.21.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/sirenroot-deluge-of-deceit.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Legends of Aetherium - New Dungeon - Quest - Armour - Weapons",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/69807",
+   "version": "1.1.3.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/legends-of-aetherium-new-dungeon-quest-armour-weapons.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Miasma",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/149879",
+   "version": "1.1.6.1",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/miasma.md",
+   "playableQuests": 2,
+   "newLocations": 2
+  }
+ ],
+ "kind": "areas"
+}

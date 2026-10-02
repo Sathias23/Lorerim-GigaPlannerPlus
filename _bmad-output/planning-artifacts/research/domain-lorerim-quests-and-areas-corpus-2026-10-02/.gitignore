@@ -1,0 +1,4 @@
+# Regenerable from a local LoreRim install (scripts/extract_strings.py, scripts/build-inventory.mjs);
+# contains game and mod-author text, so it stays out of git.
+imports/strings/
+imports/mods/

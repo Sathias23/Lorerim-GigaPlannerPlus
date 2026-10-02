@@ -1,0 +1,446 @@
+{
+ "id": "mq-followers-b",
+ "files": [
+  "serana-dialogue-expansion",
+  "follower-dialogue-expansions",
+  "auri-song-of-the-green",
+  "taliesin-thalmors-shadow",
+  "the-frozen-heart",
+  "book-of-love-fastreds-awakening"
+ ],
+ "mods": [
+  {
+   "name": "Serana Dialogue Expansion",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/121920",
+   "version": "1.2.22.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/serana-dialogue-expansion.md",
+   "playableQuests": 5,
+   "newLocations": 0
+  },
+  {
+   "name": "Serana Dialogue Expansion - Romance ESL",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/121920",
+   "version": "1.0.21.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/serana-dialogue-expansion-romance-esl.md",
+   "playableQuests": 5,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Aranea Ienith",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/141907",
+   "version": "2.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-aranea-ienith.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Roggi Knot-Beard",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/134694",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-roggi-knot-beard.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Uthgerd the Unbroken",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/122487",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-uthgerd-the-unbroken.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Faendal",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/130418",
+   "version": "1.1.1.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-faendal.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Faralda",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/155510",
+   "version": "2.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-faralda.md",
+   "playableQuests": 2,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Ysolda",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/124787",
+   "version": "2.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-ysolda.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Camilla Valerius",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/128144",
+   "version": "2.0.1.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-camilla-valerius.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Sapphire (FDE)",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/147428",
+   "version": "1.0.1.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-sapphire-fde.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Lydia",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/119226",
+   "version": "1.5.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-lydia.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Jordis the Sword-Maiden",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/117930",
+   "version": "1.1.3.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-jordis-the-sword-maiden.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Erik the Slayer",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/116719",
+   "version": "2.0.1.1",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-erik-the-slayer.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Mjoll the Lioness",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/116025",
+   "version": "2.0.1.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-mjoll-the-lioness.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Brelyna Maryon",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/113359",
+   "version": "3.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-brelyna-maryon.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Brelyna Maryon - Auri",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/113359",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-brelyna-maryon-auri.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Brelyna Maryon - Inigo",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/113359",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-brelyna-maryon-inigo.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Aela the Huntress",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/114801",
+   "version": "d2025.12.21.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-aela-the-huntress.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Borgakh the Steel Heart",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/133571",
+   "version": "1.1.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-borgakh-the-steel-heart.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Illia",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/137845",
+   "version": "3.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-illia.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Illia - Inigo Banter",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/137845",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-illia-inigo-banter.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Jenassa",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/120255",
+   "version": "8.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-jenassa.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Jenassa - Auri",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/120255",
+   "version": "2.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-jenassa-auri.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Jenassa - Inigo",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/120255",
+   "version": "4.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-jenassa-inigo.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Rayya",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/143288",
+   "version": "3.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-rayya.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Aela the Huntress - Inigo",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/114801",
+   "version": "5.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-aela-the-huntress-inigo.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Eola",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/157012",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-eola.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Song of the Green (Auri Follower)",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/11278",
+   "version": "2.2.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/song-of-the-green-auri-follower.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Aela the Huntress - Auri",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/114801",
+   "version": "5.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-aela-the-huntress-auri.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Snazzy Items for Auri (Song of the Green)",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/57195",
+   "version": "2.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/snazzy-items-for-auri-song-of-the-green.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Auri's Unique Pod - Song of the Green Addon",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/128016",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/auris-unique-pod-song-of-the-green-addon.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Song of the Green (Auri Follower) - Inigo Banter",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/101336",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/song-of-the-green-auri-follower-inigo-banter.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Aela the Huntress - Remi",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/114801",
+   "version": "5.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-aela-the-huntress-remi.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Mjoll the Lioness - Remi",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/116025",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-mjoll-the-lioness-remi.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "The Thalmor's Shadow - Taliesin (Custom Voiced Follower)",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/93413",
+   "version": "f1.05",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-thalmors-shadow-taliesin-custom-voiced-follower.md",
+   "playableQuests": 1,
+   "newLocations": 1
+  },
+  {
+   "name": "Aurea Umbra - SerketHetyt's Taliesin Overhaul",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/124589",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/aurea-umbra-serkethetyts-taliesin-overhaul.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Aela the Huntress - Lucien",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/114801",
+   "version": "5.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-aela-the-huntress-lucien.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Brelyna Maryon - ILucien",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/113359",
+   "version": "2.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-brelyna-maryon-ilucien.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "(BEST EVIL FOLLOWER) Follower Dialogue Expansion - Fura Bloodmouth",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/165839",
+   "version": "1.1.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/best-evil-follower-follower-dialogue-expansion-fura-bloodmouth.md",
+   "playableQuests": 3,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Saadia",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/170684",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-saadia.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "The Frozen Heart - Quest Mod",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/159911",
+   "version": "0.6.5.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-frozen-heart-quest-mod.md",
+   "playableQuests": 4,
+   "newLocations": 14
+  },
+  {
+   "name": "The Frozen Heart - Quest Mod - 3BA",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/159911",
+   "version": "0.4.2.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-frozen-heart-quest-mod-3ba.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Lisette",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/177717",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-lisette.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Marcurio (FDE)",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/174725",
+   "version": "1.0.2.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-marcurio-fde.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "(ESL) Pure Auri Replacer - Song of the Green",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/163620",
+   "version": "f1.01",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/esl-pure-auri-replacer-song-of-the-green.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Follower Dialogue Expansion - Olfina Gray-Mane",
+   "separator": "Gameplay - Lines Expansions & Dialogue",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/172562",
+   "version": "2.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/follower-dialogue-expansion-olfina-gray-mane.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "The Book of Love - Fastred's Awakening",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/170043",
+   "version": "1.0.2.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-book-of-love-fastreds-awakening.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Song of the Green (Auri Follower) - VIGILANT",
+   "separator": "Quests - VIGILANT",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/11278",
+   "version": "0.2.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/song-of-the-green-auri-follower-vigilant.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  }
+ ],
+ "kind": "mod-added"
+}

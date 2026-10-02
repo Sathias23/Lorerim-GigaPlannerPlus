@@ -1,0 +1,103 @@
+{
+ "id": "ar-towns-north-east",
+ "files": [
+  "whiterun-hold",
+  "eastmarch-and-windhelm",
+  "winterhold",
+  "the-pale-and-dawnstar",
+  "hjaalmarch-and-morthal"
+ ],
+ "mods": [
+  {
+   "name": "The Great City Of Winterhold SSE Edition",
+   "separator": "Winterhold",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/17127",
+   "version": "4.2.3.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-great-city-of-winterhold-sse-edition.md",
+   "playableQuests": 0,
+   "newLocations": 10
+  },
+  {
+   "name": "The Great City Of Morthal SSE Edition",
+   "separator": "Morthal",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/19592",
+   "version": "1.1.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-great-city-of-morthal-sse-edition.md",
+   "playableQuests": 0,
+   "newLocations": 1
+  },
+  {
+   "name": "New Moon Cottage - A COTN Morthal Addon",
+   "separator": "Morthal",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/129512",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/new-moon-cottage-a-cotn-morthal-addon.md",
+   "playableQuests": 0,
+   "newLocations": 1
+  },
+  {
+   "name": "The Great City Of Dawnstar SSE Edition",
+   "separator": "Dawnstar",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/19491",
+   "version": "2.12.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-great-city-of-dawnstar-sse-edition.md",
+   "playableQuests": 0,
+   "newLocations": 1
+  },
+  {
+   "name": "Breaking Dawn Cottage - A COTN Dawnstar Addon",
+   "separator": "Dawnstar",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/130643",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/breaking-dawn-cottage-a-cotn-dawnstar-addon.md",
+   "playableQuests": 0,
+   "newLocations": 1
+  },
+  {
+   "name": "Rob's Bug Fixes - Capital Whiterun Expansion",
+   "separator": "Whiterun",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/63355",
+   "version": "3.3.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/robs-bug-fixes-capital-whiterun-expansion.md",
+   "playableQuests": 8,
+   "newLocations": 19
+  },
+  {
+   "name": "Capital Windhelm Expansion",
+   "separator": "Windhelm",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/42990",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/capital-windhelm-expansion.md",
+   "playableQuests": 13,
+   "newLocations": 32
+  },
+  {
+   "name": "Rob's Bug Fixes - TGC Kynesgrove",
+   "separator": "Towns",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/70694",
+   "version": "1.3.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/robs-bug-fixes-tgc-kynesgrove.md",
+   "playableQuests": 0,
+   "newLocations": 7
+  },
+  {
+   "name": "The Great City of Rorikstead (Rob's Bug Fixes Version)",
+   "separator": "Towns",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/68559",
+   "version": "1.2.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-great-city-of-rorikstead-robs-bug-fixes-version.md",
+   "playableQuests": 0,
+   "newLocations": 1
+  },
+  {
+   "name": "Rob's Bug Fixes - TGC Mixwater Mill",
+   "separator": "Towns",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/70567",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/robs-bug-fixes-tgc-mixwater-mill.md",
+   "playableQuests": 0,
+   "newLocations": 1
+  }
+ ],
+ "kind": "areas"
+}

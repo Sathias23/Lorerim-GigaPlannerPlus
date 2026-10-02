@@ -1,0 +1,207 @@
+{
+ "id": "vc-thane-hearthfire",
+ "kind": "vanilla-changes",
+ "files": [
+  "thane-hearthfire-and-favors"
+ ],
+ "questline": "thane-hearthfire-and-favors",
+ "mods": [
+  {
+   "name": "In My Time Of Need Early",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/93943",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/in-my-time-of-need-early.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  }
+ ],
+ "overrides": [
+  {
+   "edid": "Favor001",
+   "name": "Delivery",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Favor Quests Separated"
+   ]
+  },
+  {
+   "edid": "Favor013",
+   "name": "A Few Words with You",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Favor Quests Separated"
+   ]
+  },
+  {
+   "edid": "Favor018",
+   "name": "Some Light Theft",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Favor Quests Separated"
+   ]
+  },
+  {
+   "edid": "Favor104",
+   "name": "Kill the Bandit Leader",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Favor Quests Separated"
+   ]
+  },
+  {
+   "edid": "Favor109",
+   "name": "Kill the Vampire",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Timing is Everything SE"
+   ]
+  },
+  {
+   "edid": "Favor110",
+   "name": "Rare Gifts",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Favor Quests Separated"
+   ]
+  },
+  {
+   "edid": "Favor153",
+   "name": "Kill the Giant (Jarl)",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Timing is Everything SE"
+   ]
+  },
+  {
+   "edid": "Favor157",
+   "name": "Dungeon Delving (Jarl - Hagravens)",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Timing is Everything SE",
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)"
+   ]
+  },
+  {
+   "edid": "Favor158",
+   "name": "Dungeon Delving (Jarl - Caves)",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins"
+   ]
+  },
+  {
+   "edid": "Favor204",
+   "name": "Dungeon Delving (Bandits)",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Favor Quests Separated"
+   ]
+  },
+  {
+   "edid": "Favor205",
+   "name": "Dungeon Delving (Caves)",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Favor Quests Separated"
+   ]
+  },
+  {
+   "edid": "Favor250",
+   "name": "Thane of the Reach",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)",
+    "Unique Thane Weapons"
+   ]
+  },
+  {
+   "edid": "Favor252",
+   "name": "Thane of Haafingar",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)",
+    "Unique Thane Weapons"
+   ]
+  },
+  {
+   "edid": "Favor253",
+   "name": "Thane of Whiterun",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Unique Thane Weapons"
+   ]
+  },
+  {
+   "edid": "Favor254",
+   "name": "Thane of Eastmarch",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)",
+    "Unique Thane Weapons"
+   ]
+  },
+  {
+   "edid": "Favor255",
+   "name": "Thane of Hjaalmarch",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins",
+    "Unofficial Skyrim Special Edition Patch",
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)",
+    "Unique Thane Weapons"
+   ]
+  },
+  {
+   "edid": "Favor256",
+   "name": "Thane of the Pale",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins",
+    "Unofficial Skyrim Special Edition Patch",
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)",
+    "Unique Thane Weapons"
+   ]
+  },
+  {
+   "edid": "Favor257",
+   "name": "Thane of Winterhold",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)",
+    "Unique Thane Weapons"
+   ]
+  },
+  {
+   "edid": "Favor258",
+   "name": "Thane of Falkreath",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins",
+    "Unofficial Skyrim Special Edition Patch",
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)",
+    "Unique Thane Weapons"
+   ]
+  },
+  {
+   "edid": "FreeformRiftenThane",
+   "name": "I Done Got Thaned!",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)",
+    "Unique Thane Weapons"
+   ]
+  }
+ ],
+ "overridesDroppedNonPlayerFacing": 13
+}

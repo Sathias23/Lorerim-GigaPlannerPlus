@@ -1,0 +1,177 @@
+{
+ "id": "vc-dark-brotherhood",
+ "kind": "vanilla-changes",
+ "files": [
+  "dark-brotherhood"
+ ],
+ "questline": "dark-brotherhood",
+ "mods": [
+  {
+   "name": "CC Farming - Tweaks Enhancements and Quest Expansion",
+   "separator": "Creation Club - Gameplay Changes",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/69029",
+   "version": "1.5.6.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/cc-farming-tweaks-enhancements-and-quest-expansion.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "A Lovely Letter Alternate Routes",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/21916",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/a-lovely-letter-alternate-routes.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "ACDB - Additional Contracts for the Dark Brotherhood",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/59211",
+   "version": "1.4.1.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/acdb-additional-contracts-for-the-dark-brotherhood.md",
+   "playableQuests": 9,
+   "newLocations": 0
+  },
+  {
+   "name": "Harvest Your Blood for Septimus",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/69861",
+   "version": "1.1.3.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/harvest-your-blood-for-septimus.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "The Choice is Yours",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/3850",
+   "version": "2.7.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-choice-is-yours.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Skyrim Cut Content Restoration - Whiterun Stables Scene",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/90744",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/skyrim-cut-content-restoration-whiterun-stables-scene.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Destroy The Dark Brotherhood - Quest Expansion",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/118229",
+   "version": "f1.03",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/destroy-the-dark-brotherhood-quest-expansion.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "The Innocence Lost - Quest Expansion",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/80974",
+   "version": "1.12.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-innocence-lost-quest-expansion.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Listen - Dark Brotherhood Radiant Quests",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/59659",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/listen-dark-brotherhood-radiant-quests.md",
+   "playableQuests": 6,
+   "newLocations": 0
+  }
+ ],
+ "overrides": [
+  {
+   "edid": "DB01",
+   "name": "Innocence Lost",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "The Innocence Lost - Quest Expansion"
+   ]
+  },
+  {
+   "edid": "DB01Misc",
+   "name": "Delayed Burial",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "The Choice is Yours",
+    "Skyrim Cut Content Restoration - Whiterun Stables Scene"
+   ]
+  },
+  {
+   "edid": "DB02",
+   "name": "With Friends Like These...",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "DB03",
+   "name": "Mourning Never Comes",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "DB05",
+   "name": "Bound Until Death",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "DBDestroy",
+   "name": "Destroy the Dark Brotherhood!",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Destroy The Dark Brotherhood - Quest Expansion"
+   ]
+  },
+  {
+   "edid": "DBrecurring",
+   "name": "The Dark Brotherhood Forever",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Modder's Patch - USMP SE",
+    "Listen - Dark Brotherhood Radiant Quests"
+   ]
+  },
+  {
+   "edid": "DBSideContract01",
+   "name": "Contract: Kill Narfi",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "CC Farming - Tweaks Enhancements and Quest Expansion"
+   ]
+  },
+  {
+   "edid": "DBSideContract03",
+   "name": "Contract: Kill Beitild",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "DBSideContract11",
+   "name": "Contract: Kill Helvard",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  }
+ ],
+ "overridesDroppedNonPlayerFacing": 3
+}

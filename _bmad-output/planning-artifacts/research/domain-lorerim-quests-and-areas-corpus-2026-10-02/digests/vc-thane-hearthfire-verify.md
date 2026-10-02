@@ -1,0 +1,15 @@
+# Verify — vc-thane-hearthfire (normal)
+
+- verified | TIE level gates Hearthfire 9 / Kill the Giant 22 / Dungeon Delving 20 / Kill the Vampire 10 | install: Timing is Everything SE - Settings Loader/MCM/Config/TimingIsEverything/settings.ini; no TimingIsEverything ini in "LoreRim - MCM and INI Settings" (only MCM/Settings has Dynamic Weather…, UltimateImmersionToggle); UESP Kill the Giant (Jarl) = level 22, UESP Hagravens = level 20
+- verified | TIE can delay Hearthfire start / let you buy Pale land sooner | TIE meta.ini nexusDescription ("delay the start of Hearthfire … purchase land in the Pale sooner")
+- verified | FQS splits favors into 32 location copies (list of locations) | imports/mods/favor-quests-separated.md EDIDs (6+6+3+4+6+2+5=32) + FQS meta.ini ("this covers 32 quests. (In Vanilla, only 7…)")
+- verified | FQS per-hold bounty variants dormant (optional file not installed) | FQS meta.ini (bounty changes need the optional file); install folder holds only Favor Quests Seperated.esp/Scripts/sound; modlist.txt/plugins.txt have no FQS bounty mod
+- verified | Unique Thane Weapons names (Blade/Gilded Blade/Axe of Whiterun, Black Blade of the Rift, Sword of Haafingar, Hunter Axe of Falkreath, Blade of Winterhold, Evening Star of the Pale, …Warhammer of Eastmarch, …Warscythe of Hjaalmarch) | strings in Unique Thane Weapons.esp (install)
+- verified | Missives jobs count toward thaneship; Harder Quests not shipped | Missives Quests Raise Disposition meta.ini description; modlist.txt has no "Harder Quests" entry
+- verified | Requiem: building a Hearthfire house doesn't pass time (5.2.0); Blade of the Rift fix (3.1.1); 1000-gold giant bounties (3.2.0); quarries 32 (2.0.2); housecarl helmet/Varied Guard Armor and Longhouse chests (4.0.0) | Requiem documentation/Changelog.md line numbers mapped to version headings
+- overturned | "a large part of bounty rewards is paid in gems (2.0.2)" as a current Requiem behaviour | Requiem Changelog.md 3.2.0 Tweaks: mixed gold+gem quest rewards "reverted to pure gold rewards" — text corrected, original noted in LoreRim notes
+- verified | LoreRim site Player Homes wording (Breezehome after Bleak Falls Barrow; city homes "after becoming Thane"; Lakeview "after helping the Jarl") | live fetch lorerim.com/guides/world/player-homes 2026-10-02 (page not in the pre-fetched imports)
+- verified | Hearthfire land prerequisites incl. Waking Nightmare + Kill the Giant (Jarl) for the Pale; 5000 gold | UESP Skyrim:Hearthfire (fetched); UESP Thane page confirms Winterhold "Find the Helm of Winterhold", no housecarl
+- verified | In My Time Of Need Early installed as the Before the Storm variant | meta.ini installationFile=MS08 Early Before the Storm-93943-…
+- note | UESP Thane page Reach route "Find Hrolfdir's Shield" = the Hagravens favor's item (UESP Dungeon Delving (Jarl - Hagravens)); digest contradiction resolved
+- mechanical | frontmatter fields valid, id matches file name, [1]-[21] all used and resolved, no orphans; quest names match official-quests.json except "Build Your Own Home" (HearthFires.esm is not in the catalog; name sourced from UESP only)

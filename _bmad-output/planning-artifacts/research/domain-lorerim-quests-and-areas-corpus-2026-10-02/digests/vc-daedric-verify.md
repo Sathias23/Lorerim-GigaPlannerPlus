@@ -1,0 +1,25 @@
+# Verify — vc-daedric (fresh-context verifier, 2026-10-02)
+
+File: lorerim-agent/knowledge/quests/vanilla-changes/daedric-quests.md (digest vc-daedric-r1.md)
+
+## Spot-checked claims
+1. VERIFIED — `LoreRim - Global Modifiers.esp` sets DA02MinLevel/DA09MinLevel/DA14MinLevel_KRY = 20, MeridiaNoVampire_KRY = 1, ANDR_HouseOfHorrorsLevelReq/ANDR_DA11_LevelReq/ANDR_DA15_LevelReq/ANDR_MS01_LevelReq = 20, DA10MinLevel_KRY = 20. Evidence: my own independent GLOB parse of C:/mods/LoreRim/mods/LoreRim - xEdit64 Output/LoreRim - Global Modifiers.esp; plugin is active at plugins.txt line 3358 (after TimingIsEverything.esp line 1265 and the Delayed Start plugins lines 2622-2625).
+2. VERIFIED — Delayed Start plugin defaults 35 (HoH) / 40 (ToD) / 35 (MoM), lowered to 20 by LoreRim. Evidence: GLOB parse of the three Delayed Start .esp files; matches DQS Nexus text in imports (ANDR_* defaults).
+3. VERIFIED — TIE plugin defaults DA02 30 / DA09 12 / DA14 14 / DA07 20 / MeridiaNoVampire 0. Evidence: GLOB parse of TimingIsEverything.esp.
+4. VERIFIED — TIE Settings Loader re-applies settings on load: tie_mcmscript.psc OnConfigInit and OnGameReload both call LoadSettings() (gated on bEnabled:Maintenance); MCM/Config/TimingIsEverything/settings.ini holds BoethiahsCalling=30, ANighttoRemember=14, TheBreakofDawn=12, TheBreakofDawnNoVampires=0, bEnabled=1; no MCM/Settings/TimingIsEverything.ini found anywhere under C:/mods/LoreRim (incl. "LoreRim - MCM and INI Settings" and overwrite). The file's "conflict, probably MCM value wins (inferred, untested)" framing is correct and appropriately hedged.
+5. VERIFIED — Vanilla level gates (1/30/10/15/1/9/20/20/12/1/1/12/14/1/1). Evidence: UESP Skyrim:Daedric_Quests (fetched 2026-10-02) and, independently, TIE settings.ini values (9/12/12/14/15/20/20/30) which the TIE README calls vanilla defaults.
+6. VERIFIED — Delayed-start helper objectives "Speak to the witchhunter about the abandoned house" and "Investigate the man wandering the streets near the Bards College" exist as strings in the HoH and MoM Delayed Start plugins (independent of the Nexus text, which says "near the Blue Palace" — contradiction already reported by writer).
+7. VERIFIED — Cursed Tribe QE start (Orc or Bloodkin, ask another stronghold chief for rumors; "at least level 10") and objective strings "Read the letter from Largashbur", "Defeat Garok Longstride", "Cast Bane of the Undead in Largashbur", plus "Sanctum of Malacath", "Necklace of the Wise Woman", "Wisdom of the Wise Woman". Evidence: meta.ini of The Cursed Tribe - Quest Expansion (modid 171220, nexusLastModified 2026-02-07) and string presence in both The Cursed Tribe - Quest Expansion.esp and The Cursed Tribe - LoreRim Patch.esp.
+8. VERIFIED — Cursed Tribe added in LoreRim 5.0. Evidence: imports/lorerim-site/quest-expansions.md line 48 ("A recent 5.0 update added The Cursed Tribe - Quest Expansion").
+9. VERIFIED — New quest names/editorIDs: The Man in Black (DA02AltQuest), Reforging the Past (DA07PlayerHasReforged), A Bitter Aftertaste (madNamiraAddonQuest), The Fate of the Ebony Blade (DA08MephalaHunt) and their objective strings. Evidence: imports/mods/*.md plugin-record sections. Note: corpus lists Man in Black objectives omitting "[26] Leave the shrine." (abridgement, not an error).
+10. VERIFIED — House of Horrors QE Tyranus route and reward (voiced follower instead of mace; refuses if he suspects vampire/werewolf; killing Tyranus before the ritual returns to vanilla path); objectives "Follow Tyranus"/"Hit the altar to destroy it"/"Escape the basement" and journal line present in HouseOfHorrorsQuestExpansion.esp. Evidence: meta.ini of House of Horrors - Quest Expansion (modid 57285, nexusLastModified 2024-06-30) — the author's own page text, which the writer's digest said was absent; plugin strings.
+11. VERIFIED (extra) — The Choice is Yours objectives "Visit a Shrine of Stendarr", "Visit the Altar of Molag Bal", "Visit the Shrine of Azura to the south of Winterhold"; The Only Cure QE objectives "Kill or Talk to Orchendor", "Speak with Peryite or Destroy his Altar". Evidence: string presence in TheChoiceIsYours.esp and TheOnlyCureQuestExpansion.esp.
+
+## Mechanical pass
+- Frontmatter: valid YAML, all template fields present; id = file name.
+- Citations [1]-[19] all used inline and all have Sources rows; no orphans.
+- All frontmatter plugins are active in profile Default plugins.txt. Not listed but active and relevant: Whispering_Door_Expansion_Addon_WSN.esp, Orc Strongholds - AIO - The Cursed Tribe - Quest Expansion Patch.esp, The Whispering Door QE - EVGAT/USSEP patches, SilusJournal_Reforge_COTN.esp, SilusJournal_COTN.esp, SilusJournal_NonSPID.esp (format note only; not edited).
+- Minor: intro says "Skyrim's 16 Daedric quests" but the per-quest list covers 15; UESP's 16th entry is Nocturnal's (Thieves Guild) chain. Not edited.
+
+## Edits made
+- Sources row [13]: added Nexus 57285 via meta.ini cache (nexusLastModified 2024-06-30) as primary source for the Tyranus follower / refusal / kill-fallback claims.

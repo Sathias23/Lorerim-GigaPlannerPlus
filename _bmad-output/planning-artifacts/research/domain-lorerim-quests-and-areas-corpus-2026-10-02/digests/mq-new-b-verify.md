@@ -1,0 +1,18 @@
+# Verify — unit mq-new-b (normal level)
+
+- gravewind: LoreRim gate (locked door; Cemetery Homestead Key on Alias_Vighar of FreeformFalkreathQuest03B) — VERIFIED — install `LoreRim Gravewind Start Tweak.esp` contains KEYM GravewindShackKey "Cemetery Homestead Key" and a QUST override of FreeformFalkreathQuest03B with Alias_Vighar; LoreRim site New Quests: "Get the key from Vighar the vampire (from the Falkreath quest)".
+- gravewind: Dark Ancestor giver Dengeir, prereq Some Light Theft, level 10, Vighar at Bloodlet Throne, unavailable if Dengeir is Jarl — VERIFIED — UESP Skyrim:Dark_Ancestor re-fetched 2026-10-02 (same publisher as cited [6]; confirms text).
+- sirenroot: start = Frissa Black-Briar at Elgrim's Elixirs; quest name Deluge of Deceit — VERIFIED — plugin journal stage 1 (import file) + LoreRim site New Quests.
+- sirenroot: LoreRim adds no gate — VERIFIED — install: evgSIRENROOTtraversalpatch.esp has only a CELL group, Sirene Wispmother.esp only ARMO/NPC_/ARMA, HD texture .esp empty; no QUST override.
+- legends-of-aetherium: Requiem patch cuts loot lists to Ascended items and creature lists to Master variants — VERIFIED — install `Legends of Aetherium - Requiem Patch.esp` LVLI/LVLN each have one LVLO pointing to *04 records, whose FULL names in LegendsOfAetherium.esp are "Ascended Aetherial …" and "Aetherial … Master".
+- legends-of-aetherium / heart-of-the-reach / sleepwalking: same author TheLootist — VERIFIED — thelootist.com/mods lists Sleepwalking Into A Nightmare, Legends of Aetherium, Heart of the Reach (fetched 2026-10-02).
+- heart-of-the-reach: start = Gwilym, Silver-Blood Inn, Markarth — VERIFIED — plugin journal stage 10 (import) + LoreRim site New Quests.
+- heart-of-the-reach: Requiem static levels (30 Forsworn bosses, 55 Spider Queen, 35 Hagraven) — VERIFIED — install `Requiem - Heart of the Reach.esp` NPC_ ACBS: HeartSentinel bases 30 static, MossSpiderBoss02 55 static, Hagraven20 35 static (Matriarch templates 20, not mentioned in file).
+- miasma: start Haj-Xul at The Retching Netch; level 20+; no LoreRim gate — VERIFIED — LoreRim site New Quests text; install `LoreRim - Miasma Patch.esp` groups MGEF/SPEL/ARMO/BOOK/DOOR/NPC_/COBJ/WRLD/FLST, no QUST; masters include Requiem trio, StridingSiltStrider.esl, Locked Chests Have Keys.esp.
+- sleepwalking: start Ralforn at Green-Tip Cabin NE of Ivarstead; no LoreRim gate; Requiem patch unlevels bow/ring/6 helm lists to …40 — VERIFIED — LoreRim site New Quests; install `Sleepwalking - Requiem Patch.esp` has no QUST group; LVLI aaaMBLitemBowReward→aaaMBBow40, aaaMBLitemRingReward→aaaMBRing40, six aaaMBLLHelm* → *40.
+- demon-of-dream: LoreRim moves Courier to Boulderfall Cave; renamed spells; Staff of Corruption Charges — VERIFIED — install `LoreRim Dreamstride.esp` strings: note text "Fort Greenwall… Autumnshade Clearing… Boulderfall Cave", FULL "Conjure Shadow Knight", "Conjure Lesser Shadow Omen", "Staff of Corruption Charges". Contradiction already reported in r1 digest (Nexus says Riverside Shack; install wins). LoreRim site New Quests start (Idol at Cragwallow Slope) matches.
+- demon-of-dream: map marker still at Riverside Shack — UNVERIFIED (not re-checked; already labelled inference/medium in file).
+
+Mechanical pass: all 7 files have valid YAML with template fields; id = filename; every [n] resolves and no orphan rows.
+Fixes: sirenroot.md frontmatter `sources` lacked 5 (row 5 is cited in body) → [1,2,3,4,5]. demon-of-dream.md "New charge prices" line given explicit [4].
+Note (not changed): legends-of-aetherium cites [2] (LoreRim site) alongside [3] for the four named inns; the site import says only "any of the following inns" (list not captured), so the inn names rest on [3] Nexus.

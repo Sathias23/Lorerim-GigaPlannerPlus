@@ -1,0 +1,143 @@
+{
+ "id": "mq-expansions-a",
+ "files": [
+  "additional-contracts-dark-brotherhood",
+  "listen-dark-brotherhood-radiant",
+  "penitus-oculatus",
+  "college-of-winterhold-quest-expansion",
+  "boethiahs-calling-alternate",
+  "destroy-the-dragon-cult",
+  "storm-the-thalmor-embassy",
+  "redeeming-fultheim",
+  "mephalas-curse"
+ ],
+ "mods": [
+  {
+   "name": "ACDB - Additional Contracts for the Dark Brotherhood",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/59211",
+   "version": "1.4.1.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/acdb-additional-contracts-for-the-dark-brotherhood.md",
+   "playableQuests": 9,
+   "newLocations": 0
+  },
+  {
+   "name": "Boethiah's Calling - Alternate Questline",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/121499",
+   "version": "2.3.0.0a",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/boethiahs-calling-alternate-questline.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Storm the Thalmor Embassy",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/104936",
+   "version": "1.0.2.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/storm-the-thalmor-embassy.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Defeat the Dragon Cult",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/86625",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/defeat-the-dragon-cult.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "College of Winterhold - Quest Expansion",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/66666",
+   "version": "1.16.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/college-of-winterhold-quest-expansion.md",
+   "playableQuests": 8,
+   "newLocations": 0
+  },
+  {
+   "name": "OMEAR Addition - CoW Quest Expansion",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/67968",
+   "version": "1.8.2.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/omear-addition-cow-quest-expansion.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Redeeming Fultheim - A Blades Quest Addon",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/136788",
+   "version": "1.2.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/redeeming-fultheim-a-blades-quest-addon.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Mephala's Curse - Whispering Door Quest Addon",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/120650",
+   "version": "2.6.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/mephalas-curse-whispering-door-quest-addon.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Mephala Revoiced",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/157081",
+   "version": "1.1.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/mephala-revoiced.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Listen - Dark Brotherhood Radiant Quests",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/59659",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/listen-dark-brotherhood-radiant-quests.md",
+   "playableQuests": 6,
+   "newLocations": 0
+  },
+  {
+   "name": "Penitus Oculatus",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/21061",
+   "version": "0.18.4.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/penitus-oculatus.md",
+   "playableQuests": 11,
+   "newLocations": 0
+  },
+  {
+   "name": "Penitus Oculatus - Andrealphus Scene Tweaks Patch",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/135150",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/penitus-oculatus-andrealphus-scene-tweaks-patch.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "OMEAR Addition - Skyrim Extended Cut S-and-S",
+   "separator": "Quests - Saints & Seducers Extended Cut",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/67968",
+   "version": "1.8.2.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/omear-addition-skyrim-extended-cut-s-and-s.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Destroy the Acolyte Priests",
+   "separator": "Gameplay - Late Loaders",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/145580",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/destroy-the-acolyte-priests.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  }
+ ],
+ "kind": "mod-added"
+}

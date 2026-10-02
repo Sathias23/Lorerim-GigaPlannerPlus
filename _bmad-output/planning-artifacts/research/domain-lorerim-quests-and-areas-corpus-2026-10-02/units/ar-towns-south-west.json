@@ -1,0 +1,229 @@
+{
+ "id": "ar-towns-south-west",
+ "files": [
+  "haafingar-and-solitude",
+  "the-reach-and-markarth",
+  "the-rift-and-riften",
+  "falkreath-hold",
+  "solstheim"
+ ],
+ "mods": [
+  {
+   "name": "Solstheim Earthquakes SE",
+   "separator": "Solstheim",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/22884",
+   "version": "6.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/solstheim-earthquakes-se.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Brazier Solstheim - Base Object Swapper",
+   "separator": "Solstheim",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/112572",
+   "version": "1.1.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/brazier-solstheim-base-object-swapper.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Skaal Village Overhaul",
+   "separator": "Solstheim",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/53733",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/skaal-village-overhaul.md",
+   "playableQuests": 0,
+   "newLocations": 1
+  },
+  {
+   "name": "Skaal Greathall Variant for Skaal Village Overhaul",
+   "separator": "Solstheim",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/108676",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/skaal-greathall-variant-for-skaal-village-overhaul.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Solstheim - Skaal Fishing Camp",
+   "separator": "Solstheim",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/14450",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/solstheim-skaal-fishing-camp.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Raven Rock Building Tweaks",
+   "separator": "Solstheim",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/53962",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/raven-rock-building-tweaks.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Subtleties of Skyrim - Red Mountain Lava - Distant Ships - Vvardenfell Mushroom",
+   "separator": "Solstheim",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/130563",
+   "version": "1.1.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/subtleties-of-skyrim-red-mountain-lava-distant-ships-vvardenfell-mushroom.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Subtleties of Skyrim - Red Mountain Lava - Distant Ships - My optimized textures SE by Xtudo",
+   "separator": "Solstheim",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/130775",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/subtleties-of-skyrim-red-mountain-lava-distant-ships-my-optimized-textures-se-by.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Rally's Solstheim AIO",
+   "separator": "Solstheim",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/36893",
+   "version": "1.2.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/rallys-solstheim-aio.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Rally's Sosltheim - for ParallaxGen",
+   "separator": "Solstheim",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/51905",
+   "version": "2.10.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/rallys-sosltheim-for-parallaxgen.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Kanjs - Dunmer Plinths Shrine Animated",
+   "separator": "Solstheim",
+   "nexus": "https://www.nexusmods.com/skyrim/mods/119081",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/kanjs-dunmer-plinths-shrine-animated.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Cities of the North - Falkreath",
+   "separator": "Falkreath",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/56731",
+   "version": "1.3.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/cities-of-the-north-falkreath.md",
+   "playableQuests": 0,
+   "newLocations": 3
+  },
+  {
+   "name": "Rob's Bug Fixes - TGC Solitude",
+   "separator": "Solitude",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/72117",
+   "version": "2.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/robs-bug-fixes-tgc-solitude.md",
+   "playableQuests": 0,
+   "newLocations": 14
+  },
+  {
+   "name": "RedBag's Solitude",
+   "separator": "Solitude",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/42052",
+   "version": "1.51.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/redbags-solitude.md",
+   "playableQuests": 0,
+   "newLocations": 22
+  },
+  {
+   "name": "Markarth Outskirts small update",
+   "separator": "Markarth",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/70213",
+   "version": "1.6.1.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/markarth-outskirts-small-update.md",
+   "playableQuests": 0,
+   "newLocations": 10
+  },
+  {
+   "name": "SKY CITY - Markarth Rising",
+   "separator": "Markarth",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/22482",
+   "version": "4.21.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/sky-city-markarth-rising.md",
+   "playableQuests": 0,
+   "newLocations": 5
+  },
+  {
+   "name": "Riften Docks Overhaul",
+   "separator": "Riften",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/40021",
+   "version": "2.5.7.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/riften-docks-overhaul.md",
+   "playableQuests": 0,
+   "newLocations": 1
+  },
+  {
+   "name": "Rob's Bug Fixes - TGC Old Hroldan",
+   "separator": "Towns",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/70764",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/robs-bug-fixes-tgc-old-hroldan.md",
+   "playableQuests": 0,
+   "newLocations": 2
+  },
+  {
+   "name": "Rob's Bug Fixes - TGC Shor's Stone",
+   "separator": "Towns",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/70502",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/robs-bug-fixes-tgc-shors-stone.md",
+   "playableQuests": 0,
+   "newLocations": 4
+  },
+  {
+   "name": "The Great Town of Karthwasten SSE",
+   "separator": "Towns",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/33032",
+   "version": "1.2.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-great-town-of-karthwasten-sse.md",
+   "playableQuests": 0,
+   "newLocations": 4
+  },
+  {
+   "name": "The Great Town of Ivarstead SSE",
+   "separator": "Towns",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/34505",
+   "version": "1.3.4.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-great-town-of-ivarstead-sse.md",
+   "playableQuests": 0,
+   "newLocations": 3
+  },
+  {
+   "name": "Rob's Bug Fixes - TGC Dragon Bridge",
+   "separator": "Towns",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/68412",
+   "version": "1.2.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/robs-bug-fixes-tgc-dragon-bridge.md",
+   "playableQuests": 0,
+   "newLocations": 2
+  },
+  {
+   "name": "Arena - Markarth Side Town",
+   "separator": "Locations - New and Vanilla Overhauls",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/114252",
+   "version": "1.7.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/arena-markarth-side-town.md",
+   "playableQuests": 2,
+   "newLocations": 10
+  },
+  {
+   "name": "Granite Hill - ESLIFIED LUX PATCH",
+   "separator": "Locations - New and Vanilla Overhauls",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/14658",
+   "version": "6.7.1.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/granite-hill-eslified-lux-patch.md",
+   "playableQuests": 1,
+   "newLocations": 3
+  }
+ ],
+ "kind": "areas"
+}

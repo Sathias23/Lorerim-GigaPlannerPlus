@@ -1,0 +1,15 @@
+# vc-thieves verification (fresh-context verifier, 2026-10-02)
+
+- VERIFIED | Less Tedious TG trophy thresholds 5/10/11/13/15/17/20, safe 25 (vanilla 5..125) | Nexus description in imports/mods/less-tedious-thieves-guild.md (meta.ini cache) lists identical numbers; LoreRim site factions.md "125 down to 25".
+- VERIFIED | GG's HQ improves with main-story progress | LoreRim site factions.md quote.
+- VERIFIED | Uncanny Luck ships as Option 2 permanent ability, text "<Maximum> pickpocket success chance is increased to <100%>." | C:/mods/LoreRim/mods/Uncanny Luck.../meta.ini installationFile "Uncanny Luck Option 2 - Permanent Ability-..."; string in ConditionalMaxPickpocketChance.esp.
+- VERIFIED | Nocturnal's Favor line + ability text | strings read directly from C:/mods/LoreRim/mods/Nocturnal's Favor/Nocturnal's Favor.esp.
+- VERIFIED | Nightingale Powers Redone effects (10 s crime-forget, pre-combat only; 2 s paralyze + proportional damage, half absorbed; 30 s frenzy, +20% speed, 30 s invulnerability broken by attacking/casting) | plugin strings in NightingalePowersRedone.esp + nexusDescription in meta.ini.
+- VERIFIED | Big Tweaks armor texts (TG 10%/piece, Guild Master 20%/piece, Nightingale "Nocturnal's Embrace" 2%/piece, gem/armor-pen passive) | strings in LoreRim - xEdit64 Output/Big Tweaks.esp (same-source re-read; changelog not re-fetched).
+- VERIFIED | Under New Management: no giver; after Darkness Returns + 4 reputation jobs (5 radiant jobs per hold); rewards Guild Master's Armor, Tribute Chest Key, Amulet of Articulation | UESP Skyrim:Under_New_Management (WebFetch).
+- VERIFIED | Brynjolf start: Riften bazaar by day, Bee and Barb by night | UESP Skyrim:A_Chance_Arrangement (WebFetch).
+- VERIFIED | Quest names / EditorIDs (TG00..TG09, TGLeadership, TGCrown, TGTQ01-04, TGR* jobs) | imports/official-quests.json; overrides list in units/vc-thieves.json matches the file's override statements.
+- VERIFIED (with addition) | No delayed start for TG | install mods/ list: Delayed Quest Starts mods cover only CC Fishing, Forsworn Conspiracy, House of Horrors, Mind of Madness, Taste of Death; no TG00 override. ADDED: LoreRim's AlternatePerspective.json offers a "Guilds -> Thieves Guild" start option (0x3CE5E5); in-game behavior unverified.
+- DISPUTED | Gray Cowl of Nocturnal requires completing the TG questline | LoreRim site new-lands.md says TG completion + steal; mod Nexus page via meta.ini (The Gray Cowl of Nocturnal - 10th anniversary, modid 141327) says "Just steal or pickpocket any item when you are at least level 10". No installed TG-gating addon seen in mods/ list. Corpus text rewritten to report both sides [5][23].
+- MECHANICAL | YAML parses; id = file name; all inline [n] resolve, no orphan rows; Sources row 21 moved into numeric order; rows 23-24 added; mods list gained LoreRim - MCM and INI Settings and The Gray Cowl of Nocturnal - 10th anniversary (v1.4.0.0).
+- NOTE (not edited) | Installed but unlisted TG-adjacent mods: "Daedric Shrines AIO by Xtudo - GG's Thieves Guild", "GG's Thieves Guild HQ Patch Collection", "Silver Objects SMIMed - ... Thieves Guild ..." — likely visual/patch only (unresearched).

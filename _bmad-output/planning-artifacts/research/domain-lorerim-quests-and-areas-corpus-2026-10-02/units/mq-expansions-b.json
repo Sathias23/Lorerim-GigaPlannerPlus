@@ -1,0 +1,173 @@
+{
+ "id": "mq-expansions-b",
+ "files": [
+  "seeking-the-cure",
+  "soldier-of-stendarr",
+  "leaps-of-faith",
+  "sissels-book",
+  "caught-red-handed",
+  "after-the-civil-war",
+  "return-aegisbane",
+  "reforging-the-past",
+  "vittorias-alternate-wedding",
+  "taste-of-death-addon",
+  "bards-college-excavation",
+  "morihaus-refuge"
+ ],
+ "mods": [
+  {
+   "name": "Bards College Excavation",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/36950",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/bards-college-excavation.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "The Taste of Death - Quest Addon",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/123173",
+   "version": "4.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-taste-of-death-quest-addon.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Leaps of Faith - A Misc Quest",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/53074",
+   "version": "f1.05",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/leaps-of-faith-a-misc-quest.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "More To Say - Sissel's Book Quest",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/22622",
+   "version": "9.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/more-to-say-sissels-book-quest.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Caught Red Handed - Quest Expansion",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/65708",
+   "version": "f1.07",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/caught-red-handed-quest-expansion.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "After the Civil War - Siege Damage Repairs",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/20668",
+   "version": "2.6.5.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/after-the-civil-war-siege-damage-repairs.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Return Aegisbane",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/108242",
+   "version": "1.2.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/return-aegisbane.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Mehrunes Dagon's Shrine Unlocked - Pieces of the Past Quest Alternative - Voiced",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/119502",
+   "version": "4.4.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/mehrunes-dagons-shrine-unlocked-pieces-of-the-past-quest-alternative-voiced.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Seeking The Cure - A Rising At Dawn Quest Overhaul - Incurable Vampirism",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/85923",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/seeking-the-cure-a-rising-at-dawn-quest-overhaul-incurable-vampirism.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Seeking the Cure - COTN Morthal Patch",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/89174",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/seeking-the-cure-cotn-morthal-patch.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "A Forlorn Hope - an addon for Seeking The Cure",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/107939",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/a-forlorn-hope-an-addon-for-seeking-the-cure.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Soldier of Stendarr",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/97984",
+   "version": "1.0.3.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/soldier-of-stendarr.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Soldier of Stendarr - Voiced",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/128739",
+   "version": "1.0.1.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/soldier-of-stendarr-voiced.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "SeranaCureQuestPlus",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/105091",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/seranacurequestplus.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Morihaus' Refuge - No Bruma Version",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/68558",
+   "version": "1.0.1.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/morihaus-refuge-no-bruma-version.md",
+   "playableQuests": 0,
+   "newLocations": 1
+  },
+  {
+   "name": "Vittorias Alternate Wedding",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/62466",
+   "version": "1.3.3.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/vittorias-alternate-wedding.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Vittorias Alternate Wedding - Patches",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/72240",
+   "version": "1.4.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/vittorias-alternate-wedding-patches.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  }
+ ],
+ "kind": "mod-added"
+}

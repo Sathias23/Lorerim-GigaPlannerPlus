@@ -1,0 +1,271 @@
+{
+ "id": "vc-companions",
+ "kind": "vanilla-changes",
+ "files": [
+  "companions"
+ ],
+ "questline": "companions",
+ "mods": [
+  {
+   "name": "CAM - Companions at Mirmulnir",
+   "separator": "Gameplay - Lines Expansions & Dialogue",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/125920",
+   "version": "1.3.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/cam-companions-at-mirmulnir.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Companions Dialogue Bundle",
+   "separator": "Gameplay - Lines Expansions & Dialogue",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/93592",
+   "version": "1.6.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/companions-dialogue-bundle.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Proving Honor Companions Quest Progression Fix",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/66128",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/proving-honor-companions-quest-progression-fix.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Customizable Companions Questline Progression Requirements",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/78308",
+   "version": "1.3.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/customizable-companions-questline-progression-requirements.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Improved Companions - Questline Tweaks",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/22300",
+   "version": "1.1.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/improved-companions-questline-tweaks.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Vilkas Spar Skip",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/127292",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/vilkas-spar-skip.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Companions Radiant Expansion",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/169920",
+   "version": "1.1.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/companions-radiant-expansion.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  }
+ ],
+ "overrides": [
+  {
+   "edid": "C00",
+   "name": "Take Up Arms",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins",
+    "Unofficial Skyrim Special Edition Patch",
+    "ArteFakes Updated Plugin",
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)",
+    "Companions Dialogue Bundle"
+   ]
+  },
+  {
+   "edid": "C01",
+   "name": "Proving Honor",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins",
+    "Unofficial Skyrim Special Edition Patch",
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)",
+    "Improved Companions - Questline Tweaks"
+   ]
+  },
+  {
+   "edid": "C02",
+   "name": "Brotherhood",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins"
+   ]
+  },
+  {
+   "edid": "C03",
+   "name": "The Silver Hand",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins",
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "C04",
+   "name": "Blood's Honor",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "C05",
+   "name": "Purity of Revenge",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins"
+   ]
+  },
+  {
+   "edid": "C06",
+   "name": "Glory of the Dead",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins",
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "CR01",
+   "name": "Animal Extermination",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "CR02",
+   "name": "Animal Extermination",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "CR03",
+   "name": "Animal Pelt Collection",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Companions Radiant Expansion"
+   ]
+  },
+  {
+   "edid": "CR04",
+   "name": "Hired Muscle",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins",
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "CR05",
+   "name": "Trouble in Skyrim",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)",
+    "Companions Radiant Expansion"
+   ]
+  },
+  {
+   "edid": "CR06",
+   "name": "Family Heirloom",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)",
+    "Companions Radiant Expansion"
+   ]
+  },
+  {
+   "edid": "CR07",
+   "name": "Escaped Criminal",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins",
+    "Unofficial Skyrim Special Edition Patch",
+    "Companions Radiant Expansion"
+   ]
+  },
+  {
+   "edid": "CR08",
+   "name": "Rescue Mission",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins",
+    "Unofficial Skyrim Special Edition Patch",
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)",
+    "Companions Radiant Expansion"
+   ]
+  },
+  {
+   "edid": "CR09",
+   "name": "Striking the Heart",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Companions Radiant Expansion"
+   ]
+  },
+  {
+   "edid": "CR10",
+   "name": "Stealing Plans",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Companions Radiant Expansion"
+   ]
+  },
+  {
+   "edid": "CR11",
+   "name": "Retrieval",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Companions Radiant Expansion"
+   ]
+  },
+  {
+   "edid": "CR12",
+   "name": "Totems of Hircine",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins",
+    "Unofficial Skyrim Special Edition Patch",
+    "Companions Radiant Expansion"
+   ]
+  },
+  {
+   "edid": "CR13",
+   "name": "Purity",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Companions Radiant Expansion"
+   ]
+  },
+  {
+   "edid": "CR14",
+   "name": "Dragon Seekers",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Narrative Gameplay Consistent Dialogue Tweaks",
+    "Companions Radiant Expansion"
+   ]
+  }
+ ],
+ "overridesDroppedNonPlayerFacing": 5
+}

@@ -1,0 +1,1278 @@
+{
+ "id": "vc-side-quests",
+ "kind": "vanilla-changes",
+ "files": [
+  "side-quests-and-misc"
+ ],
+ "questline": "side-quests",
+ "mods": [
+  {
+   "name": "More to Say - Main",
+   "separator": "Gameplay - Lines Expansions & Dialogue",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/22622",
+   "version": "9.0.2.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/more-to-say-main.md",
+   "playableQuests": 16,
+   "newLocations": 0
+  },
+  {
+   "name": "Immersive Dialogue Expansion - Thalmor",
+   "separator": "Gameplay - Lines Expansions & Dialogue",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/168432",
+   "version": "1.0.3.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/immersive-dialogue-expansion-thalmor.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Saadia to Iman - Dynamic Name Change",
+   "separator": "Gameplay - Lines Expansions & Dialogue",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/172364",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/saadia-to-iman-dynamic-name-change.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Delayed Quest Starts - Forsworn Conspriracy",
+   "separator": "Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/72751",
+   "version": "1.3.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/delayed-quest-starts-forsworn-conspriracy.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Faction Ranks",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/170776",
+   "version": "1.0.3.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/faction-ranks.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Dragon Hunting",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/99193",
+   "version": "2.0.3.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/dragon-hunting.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Bards College Excavation",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/36950",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/bards-college-excavation.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "A Lovely Letter Alternate Routes",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/21916",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/a-lovely-letter-alternate-routes.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "The Choice is Yours",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/3850",
+   "version": "2.7.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-choice-is-yours.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Skyrim Cut Content Restoration - Whiterun Stables Scene",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/90744",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/skyrim-cut-content-restoration-whiterun-stables-scene.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Finding Derkeethus",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/19550",
+   "version": "1.1.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/finding-derkeethus.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Mr. Ebony... Get Lost",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/52510",
+   "version": "2.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/mr-ebony-get-lost.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Leaps of Faith - A Misc Quest",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/53074",
+   "version": "f1.05",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/leaps-of-faith-a-misc-quest.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "More To Say - Sissel's Book Quest",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/22622",
+   "version": "9.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/more-to-say-sissels-book-quest.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Save the Icerunner - Lights Out Alternate Routes",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/34681",
+   "version": "1.1.2.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/save-the-icerunner-lights-out-alternate-routes.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Silence is Golden",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/50581",
+   "version": "1.1.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/silence-is-golden.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Toying With The Dead - minor Quest Expansion",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/124659",
+   "version": "1.2.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/toying-with-the-dead-minor-quest-expansion.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Infiltration - Quest Expansion",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/114054",
+   "version": "f1.02",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/infiltration-quest-expansion.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Search and Seizure - Quest Expansion",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/67066",
+   "version": "1.2.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/search-and-seizure-quest-expansion.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "The Heart of Dibella - Quest Expansion",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/94863",
+   "version": "f1.07",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-heart-of-dibella-quest-expansion.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Nilheim - Misc Quest Expansion",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/53792",
+   "version": "1.14.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/nilheim-misc-quest-expansion.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Caught Red Handed - Quest Expansion",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/65708",
+   "version": "f1.07",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/caught-red-handed-quest-expansion.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Paarthurnax - Quest Expansion",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/51711",
+   "version": "1.12.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/paarthurnax-quest-expansion.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Brawling - No Hitting Bystanders",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/116941",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/brawling-no-hitting-bystanders.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Brawl Lines Expansion and Fixes",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/94070",
+   "version": "f1.02",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/brawl-lines-expansion-and-fixes.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Seeking The Cure - A Rising At Dawn Quest Overhaul - Incurable Vampirism",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/85923",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/seeking-the-cure-a-rising-at-dawn-quest-overhaul-incurable-vampirism.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Seeking the Cure - COTN Morthal Patch",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/89174",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/seeking-the-cure-cotn-morthal-patch.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Collecting the Edda",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/52081",
+   "version": "2.0.3.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/collecting-the-edda.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Poetic Duel",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/126747",
+   "version": "1.0.1.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/poetic-duel.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Uncanny Luck - 100 Max Pickpocket Chance After Returning Skeleton Key",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/130008",
+   "version": "0.1.2.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/uncanny-luck-100-max-pickpocket-chance-after-returning-skeleton-key.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Immersive Dying Nurelion - The White Phial Quest",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/152547",
+   "version": "0.2.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/immersive-dying-nurelion-the-white-phial-quest.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Quantity Trade - Ysolda",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/167959",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/quantity-trade-ysolda.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Vittorias Alternate Wedding",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/62466",
+   "version": "1.3.3.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/vittorias-alternate-wedding.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Vittorias Alternate Wedding - Patches",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/72240",
+   "version": "1.4.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/vittorias-alternate-wedding-patches.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Nilheim - Misc Quest Expansion - No Infighting Bandits",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/155217",
+   "version": "1.2.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/nilheim-misc-quest-expansion-no-infighting-bandits.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Katria's Legacy - Publish the Aetherium Forge",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/150184",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/katrias-legacy-publish-the-aetherium-forge.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "The Book of Love - Fastred's Awakening",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/170043",
+   "version": "1.0.2.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-book-of-love-fastreds-awakening.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Don't Hate Me - Taking Care of Business - CHECK AGAIN IF UPDATING",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/171451",
+   "version": "1.1.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/dont-hate-me-taking-care-of-business-check-again-if-updating.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  }
+ ],
+ "overrides": [
+  {
+   "edid": "BardsCollegeDrum",
+   "name": "Rjorn's Drum",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "JS Instruments of Skyrim SE"
+   ]
+  },
+  {
+   "edid": "BardsCollegeFlute",
+   "name": "Pantea's Flute",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "JS Instruments of Skyrim SE"
+   ]
+  },
+  {
+   "edid": "BardsCollegeLute",
+   "name": "Finn's Lute",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "JS Instruments of Skyrim SE"
+   ]
+  },
+  {
+   "edid": "BardsCollegePoeticEdda",
+   "name": "Collecting the Edda",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Collecting the Edda"
+   ]
+  },
+  {
+   "edid": "BQ01",
+   "name": "Bounty: Bandit Boss",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)"
+   ]
+  },
+  {
+   "edid": "BQ02",
+   "name": "Bounty: Forsworn",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)"
+   ]
+  },
+  {
+   "edid": "BQ03",
+   "name": "Bounty: Giant",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)"
+   ]
+  },
+  {
+   "edid": "BQ04",
+   "name": "Bounty: Dragon",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)"
+   ]
+  },
+  {
+   "edid": "DarkwaterCrossingDerkeethusRescueQuest",
+   "name": "Extracting an Argonian",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Finding Derkeethus"
+   ]
+  },
+  {
+   "edid": "DialogueCidhnaMine",
+   "name": "DialogueCidhnaMine",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "dunBlindCliffQST",
+   "name": "The Affairs of Hagravens",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "dunDarklightQST",
+   "name": "Repentance",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "dunForelhostQST",
+   "name": "Siege on the Dragon Cult",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Unofficial Skyrim Modder's Patch - USMP SE",
+    "Immersive Dialogue Expansion - Thalmor"
+   ]
+  },
+  {
+   "edid": "dunFrostmereCryptQST",
+   "name": "The Pale Lady",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "dunGauldursonQST",
+   "name": "Forbidden Legend",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "dunHighGateRuinsQST",
+   "name": "A Scroll For Anska",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "dunHunterQST",
+   "name": "Kyne's Sacred Trials",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "dunNchuandZelQst",
+   "name": "The Lost Expedition",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "dunNilheimQST",
+   "name": "Telrav's Request",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Nilheim - Misc Quest Expansion",
+    "Nilheim - Misc Quest Expansion - No Infighting Bandits"
+   ]
+  },
+  {
+   "edid": "dunShipwreck04QST",
+   "name": "Trius' Trinket",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Modder's Patch - USMP SE"
+   ]
+  },
+  {
+   "edid": "dunTrevasWatchQST",
+   "name": "Infiltration",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Infiltration - Quest Expansion"
+   ]
+  },
+  {
+   "edid": "dunValthumeQST",
+   "name": "Evil in Waiting",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "dunYngolBarrowQST",
+   "name": "Yngol's Barrow",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "FavorJarlsMakeFriends",
+   "name": "Making Friends and Influencing People",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "FavorOrcsIntro",
+   "name": "The Forgemaster's Fingers",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "FreeformDushnikhYalA",
+   "name": "Gharol's Message",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "ArteFakes Updated Plugin"
+   ]
+  },
+  {
+   "edid": "FreeformFalkreathQuest03B",
+   "name": "Dark Ancestor",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "FreeformHeartwoodMill",
+   "name": "Flight or Fight",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "FreeformIvarstead01",
+   "name": "Lifting the Shroud",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "FreeformIvarstead03",
+   "name": "Grin and Bear It",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "FreeformIvarstead04",
+   "name": "Climb the Steps",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)"
+   ]
+  },
+  {
+   "edid": "FreeformKarthwastenA",
+   "name": "Sanuarach Mine",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "FreeformKolskeggrA",
+   "name": "Kolskeggr Mine",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "FreeformKynesgroveA",
+   "name": "Dravynea's Frost Salts",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "FreeformMarkarthE",
+   "name": "Lisbet's Missing Shipment",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "FreeformMarkarthM",
+   "name": "Search and Seizure",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Search and Seizure - Quest Expansion"
+   ]
+  },
+  {
+   "edid": "FreeformMarkarthO",
+   "name": "Nimhe, the Poisoned One",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "FreeformMerryfairFarm",
+   "name": "Bow to the Master",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "FreeformMorthalB",
+   "name": "For the Good of Morthal",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "FreeformRiften01",
+   "name": "Supply and Demand",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "The Choice is Yours"
+   ]
+  },
+  {
+   "edid": "FreeformRiften02",
+   "name": "The Lover's Requital",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "FreeformRiften06",
+   "name": "Sealing the Deal",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "FreeformRiften07",
+   "name": "Ice Cold",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "FreeformRiften10",
+   "name": "Stoking the Flames",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)"
+   ]
+  },
+  {
+   "edid": "FreeformRiften11",
+   "name": "Caught Red Handed",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Caught Red Handed - Quest Expansion",
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)"
+   ]
+  },
+  {
+   "edid": "FreeformRiften13",
+   "name": "Pilgrimage",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)"
+   ]
+  },
+  {
+   "edid": "FreeformRiften18",
+   "name": "Ringmaker",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "FreeformRiften20",
+   "name": "The Raid",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "The Choice is Yours"
+   ]
+  },
+  {
+   "edid": "FreeformRiften21",
+   "name": "Toying With The Dead",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Toying With The Dead - minor Quest Expansion"
+   ]
+  },
+  {
+   "edid": "FreeformRiverwood01",
+   "name": "A Lovely Letter",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "A Lovely Letter Alternate Routes",
+    "The Choice is Yours"
+   ]
+  },
+  {
+   "edid": "FreeformSalviusFarmA",
+   "name": "Rogatus's Letter",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "FreeformShipsDawnstar",
+   "name": "Salty Sea-Dogs",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "FreeformShipsWindhelm",
+   "name": "Harsh Master",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "FreeformShorsStone01",
+   "name": "Mine or Yours",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "FreeformSkyhavenTempleA",
+   "name": "Rebuilding the Blades",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Paarthurnax - Quest Expansion"
+   ]
+  },
+  {
+   "edid": "FreeformSkyHavenTempleB",
+   "name": "Dragon Hunting",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Paarthurnax - Quest Expansion"
+   ]
+  },
+  {
+   "edid": "FreeformSkyHavenTempleD",
+   "name": "Dragon Research",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Paarthurnax - Quest Expansion",
+    "Dragon Hunting"
+   ]
+  },
+  {
+   "edid": "FreeformSoljundsSinkholeA",
+   "name": "Soljund's Sinkhole",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "The Choice is Yours"
+   ]
+  },
+  {
+   "edid": "FreeformStonehillsA",
+   "name": "Payment Delivery",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "FreeformValdDebt",
+   "name": "Vald's Debt",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "FreeformWinterholdA",
+   "name": "A Bad Trade",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "More to Say - Main"
+   ]
+  },
+  {
+   "edid": "MGR01",
+   "name": "Tolfdir the Absent-Minded",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Unofficial Skyrim Modder's Patch - USMP SE",
+    "[LoreRim] Economy Overhaul"
+   ]
+  },
+  {
+   "edid": "MGR02",
+   "name": "Out of Balance",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "MGR20",
+   "name": "Fetch me that Book!",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins"
+   ]
+  },
+  {
+   "edid": "MGR20B",
+   "name": "Fetch me that Book!",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "[LoreRim] Economy Overhaul"
+   ]
+  },
+  {
+   "edid": "MGRAppBrelyna01",
+   "name": "Brelyna's Practice",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "MGRitual05",
+   "name": "Alteration Ritual Spell",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Dragon Hunting"
+   ]
+  },
+  {
+   "edid": "MS01",
+   "name": "The Forsworn Conspiracy",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "MS02",
+   "name": "No One Escapes Cidhna Mine",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins",
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "MS04",
+   "name": "Unfathomable Depths",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "MS05",
+   "name": "Tending the Flames",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "MS06",
+   "name": "The Wolf Queen Awakened",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "MS06Start",
+   "name": "The Man Who Cried Wolf",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "MS07",
+   "name": "Lights Out!",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Save the Icerunner - Lights Out Alternate Routes"
+   ]
+  },
+  {
+   "edid": "MS08",
+   "name": "In My Time Of Need",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins",
+    "Unofficial Skyrim Special Edition Patch",
+    "Saadia to Iman - Dynamic Name Change"
+   ]
+  },
+  {
+   "edid": "MS09",
+   "name": "Missing In Action",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "The Choice is Yours"
+   ]
+  },
+  {
+   "edid": "MS10",
+   "name": "Rise in the East",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "The Choice is Yours"
+   ]
+  },
+  {
+   "edid": "MS11",
+   "name": "Blood on the Ice",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins",
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "MS11b",
+   "name": "Blood on the Ice",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "MS12",
+   "name": "The White Phial",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "MS12b",
+   "name": "Repairing the Phial",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins",
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "MS13",
+   "name": "The Golden Claw",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Silence is Golden"
+   ]
+  },
+  {
+   "edid": "MS14",
+   "name": "Laid to Rest",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "The Choice is Yours"
+   ]
+  },
+  {
+   "edid": "NN01",
+   "name": "A Return To Your Roots",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "RelationshipMarriage",
+   "name": "The Bonds of Matrimony",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "SolitudeFreeform02",
+   "name": "Fit for a Jarl",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "SolitudeFreeform03",
+   "name": "Return to Grace",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "T01",
+   "name": "The Heart of Dibella",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "The Heart of Dibella - Quest Expansion"
+   ]
+  },
+  {
+   "edid": "t02",
+   "name": "The Book of Love",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Unofficial Skyrim Modder's Patch - USMP SE"
+   ]
+  },
+  {
+   "edid": "TGFenceCaravan",
+   "name": "Thieves Guild Caravan Fence Quest",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins"
+   ]
+  },
+  {
+   "edid": "TGLarceny",
+   "name": "The Litany of Larceny",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins"
+   ]
+  },
+  {
+   "edid": "VC01",
+   "name": "Rising at Dawn",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins",
+    "Unofficial Skyrim Special Edition Patch",
+    "Seeking The Cure - A Rising At Dawn Quest Overhaul - Incurable Vampirism",
+    "Seeking the Cure - COTN Morthal Patch"
+   ]
+  },
+  {
+   "edid": "WE100ObjA",
+   "name": "Treasure Hunter Objectives",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)"
+   ]
+  },
+  {
+   "edid": "WE100ObjB",
+   "name": "Treasure Hunter Objectives",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)"
+   ]
+  },
+  {
+   "edid": "WE100ObjC",
+   "name": "Treasure Hunter Objectives",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)"
+   ]
+  },
+  {
+   "edid": "WE100ObjD",
+   "name": "Treasure Hunter Objectives",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)"
+   ]
+  },
+  {
+   "edid": "WE100ObjE",
+   "name": "Treasure Hunter Objectives",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)"
+   ]
+  },
+  {
+   "edid": "WE100ObjF",
+   "name": "Treasure Hunter Objectives",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)"
+   ]
+  },
+  {
+   "edid": "WE100ObjG",
+   "name": "Treasure Hunter Objectives",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)"
+   ]
+  },
+  {
+   "edid": "WE100ObjH",
+   "name": "Treasure Hunter Objectives",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)"
+   ]
+  },
+  {
+   "edid": "WE100ObjI",
+   "name": "Treasure Hunter Objectives",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)"
+   ]
+  },
+  {
+   "edid": "WE100ObjJ",
+   "name": "Treasure Hunter Objectives",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)"
+   ]
+  },
+  {
+   "edid": "WEDA02",
+   "name": "DA02 Hook",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "WIAddItem07",
+   "name": "Buy Dwarven artifact",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "The Choice is Yours"
+   ]
+  },
+  {
+   "edid": "WIAssault02",
+   "name": "Scare my Enemy",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "WICastMagic04",
+   "name": "Shout - learn about word wall",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins",
+    "Unofficial Skyrim Special Edition Patch",
+    "Timing is Everything SE"
+   ]
+  },
+  {
+   "edid": "WIChangeLocation03",
+   "name": "Wizard Duel",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "The Choice is Yours"
+   ]
+  },
+  {
+   "edid": "WIChangeLocation04",
+   "name": "Magic Student",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins",
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "WIGamesHideAndSeek",
+   "name": "Hide and Seek",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins"
+   ]
+  },
+  {
+   "edid": "WIGamesTag",
+   "name": "Tag, you're it!",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins"
+   ]
+  },
+  {
+   "edid": "WIKill04",
+   "name": "An enemy's gratitude",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  }
+ ],
+ "overridesDroppedNonPlayerFacing": 329
+}

@@ -1,0 +1,328 @@
+{
+ "id": "vc-daedric",
+ "kind": "vanilla-changes",
+ "files": [
+  "daedric-quests"
+ ],
+ "questline": "daedric-quests",
+ "mods": [
+  {
+   "name": "Delayed Quest Starts - House of Horrors",
+   "separator": "Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/72751",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/delayed-quest-starts-house-of-horrors.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Delayed Quest Starts - Mind of Madness",
+   "separator": "Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/72751",
+   "version": "1.3.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/delayed-quest-starts-mind-of-madness.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Delayed Quest Starts - Taste of Death",
+   "separator": "Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/72751",
+   "version": "1.2.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/delayed-quest-starts-taste-of-death.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "The Taste of Death - Quest Addon",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/123173",
+   "version": "4.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-taste-of-death-quest-addon.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Boethiah's Calling - Alternate Questline",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/121499",
+   "version": "2.3.0.0a",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/boethiahs-calling-alternate-questline.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "The Choice is Yours",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/3850",
+   "version": "2.7.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-choice-is-yours.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Toying With The Dead - minor Quest Expansion",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/124659",
+   "version": "1.2.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/toying-with-the-dead-minor-quest-expansion.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "The Heart of Dibella - Quest Expansion",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/94863",
+   "version": "f1.07",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-heart-of-dibella-quest-expansion.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "The Only Cure - Quest Expansion",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/57683",
+   "version": "f1.05",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-only-cure-quest-expansion.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Peryite Revoiced - The Only Cure Patch",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/146986",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/peryite-revoiced-the-only-cure-patch.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Enigma - The Only Cure - Quest Expansion Patch",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/33084",
+   "version": "1.4.8.0Patches",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/enigma-the-only-cure-quest-expansion-patch.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "House of Horrors - Quest Expansion",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/57285",
+   "version": "1.12.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/house-of-horrors-quest-expansion.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Enigma - House of Horrors - Quest Expansion 1.12",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/33084",
+   "version": "1.4.4.0Patches",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/enigma-house-of-horrors-quest-expansion-1-12.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "The Whispering Door - Quest Expansion",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/76606",
+   "version": "1.15.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-whispering-door-quest-expansion.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Mephala's Curse - Whispering Door Quest Addon",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/120650",
+   "version": "2.6.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/mephalas-curse-whispering-door-quest-addon.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Mephala Revoiced",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/157081",
+   "version": "1.1.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/mephala-revoiced.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Mehrunes Dagon's Shrine Unlocked - Pieces of the Past Quest Alternative - Voiced",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/119502",
+   "version": "4.4.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/mehrunes-dagons-shrine-unlocked-pieces-of-the-past-quest-alternative-voiced.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Spare Anise",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/167469",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/spare-anise.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  }
+ ],
+ "overrides": [
+  {
+   "edid": "DA01",
+   "name": "The Black Star",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Wintersun and Daedric Shrines replacer"
+   ]
+  },
+  {
+   "edid": "DA02",
+   "name": "Boethiah's Calling",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins",
+    "Unofficial Skyrim Special Edition Patch",
+    "The Choice is Yours",
+    "Wintersun and Daedric Shrines replacer"
+   ]
+  },
+  {
+   "edid": "DA03",
+   "name": "A Daedra's Best Friend",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Wintersun and Daedric Shrines replacer"
+   ]
+  },
+  {
+   "edid": "DA04",
+   "name": "Discerning the Transmundane",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins",
+    "Unofficial Skyrim Special Edition Patch",
+    "Wintersun and Daedric Shrines replacer"
+   ]
+  },
+  {
+   "edid": "DA05",
+   "name": "Ill Met By Moonlight",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins",
+    "Wintersun and Daedric Shrines replacer"
+   ]
+  },
+  {
+   "edid": "DA06",
+   "name": "The Cursed Tribe",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Wintersun and Daedric Shrines replacer",
+    "The Cursed Tribe - Quest Expansion"
+   ]
+  },
+  {
+   "edid": "DA07",
+   "name": "Pieces of the Past",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins",
+    "Wintersun and Daedric Shrines replacer"
+   ]
+  },
+  {
+   "edid": "DA08",
+   "name": "The Whispering Door",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "The Whispering Door - Quest Expansion",
+    "Wintersun and Daedric Shrines replacer",
+    "The Whispering Door - Quest Expansion - Wintersun patch"
+   ]
+  },
+  {
+   "edid": "DA09",
+   "name": "The Break of Dawn",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins",
+    "Unofficial Skyrim Special Edition Patch",
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)",
+    "Wintersun and Daedric Shrines replacer"
+   ]
+  },
+  {
+   "edid": "DA10",
+   "name": "The House of Horrors",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "House of Horrors - Quest Expansion",
+    "Wintersun and Daedric Shrines replacer"
+   ]
+  },
+  {
+   "edid": "DA11",
+   "name": "The Taste of Death",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Wintersun and Daedric Shrines replacer"
+   ]
+  },
+  {
+   "edid": "DA11Intro",
+   "name": "Investigate the Hall of the Dead",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "DA13",
+   "name": "The Only Cure",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "The Only Cure - Quest Expansion",
+    "Wintersun and Daedric Shrines replacer",
+    "The Only Cure Quest Expansion - Patches"
+   ]
+  },
+  {
+   "edid": "DA14",
+   "name": "A Night To Remember",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Wintersun and Daedric Shrines replacer"
+   ]
+  },
+  {
+   "edid": "DA15",
+   "name": "The Mind of Madness",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Wintersun and Daedric Shrines replacer"
+   ]
+  },
+  {
+   "edid": "DA16",
+   "name": "Waking Nightmare",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins",
+    "Wintersun and Daedric Shrines replacer"
+   ]
+  }
+ ],
+ "overridesDroppedNonPlayerFacing": 8
+}

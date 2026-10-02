@@ -1,0 +1,303 @@
+{
+ "id": "vc-dawnguard",
+ "kind": "vanilla-changes",
+ "files": [
+  "dawnguard"
+ ],
+ "questline": "dawnguard",
+ "mods": [
+  {
+   "name": "Sensible Dawnguard Prerequisite",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/121948",
+   "version": "1.3.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/sensible-dawnguard-prerequisite.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Harvest Your Blood for Septimus",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/69861",
+   "version": "1.1.3.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/harvest-your-blood-for-septimus.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Illia leaves Darklight Tower",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/108292",
+   "version": "1.0.0.0.",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/illia-leaves-darklight-tower.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Seeking the Cure - COTN Morthal Patch",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/89174",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/seeking-the-cure-cotn-morthal-patch.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "SeranaCureQuestPlus",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/105091",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/seranacurequestplus.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Skip Vampire Lord Tutorial",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/44433",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/skip-vampire-lord-tutorial.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  }
+ ],
+ "overrides": [
+  {
+   "edid": "DLC1HunterBaseIntro",
+   "name": "A New Order",
+   "origin": "dawnguard.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)"
+   ]
+  },
+  {
+   "edid": "DLC1HunterBaseStage2",
+   "name": "Bolstering the Ranks",
+   "origin": "dawnguard.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "DLC1LD",
+   "name": "Lost to the Ages",
+   "origin": "dawnguard.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "DLC1Radiant",
+   "name": "\"Parent\" quest for Radiant Content",
+   "origin": "dawnguard.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "DLC1RH01",
+   "name": "Hide and Seek",
+   "origin": "dawnguard.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "DLC1RH03",
+   "name": "Preemptive Strike",
+   "origin": "dawnguard.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "DLC1RH06",
+   "name": "Rescue",
+   "origin": "dawnguard.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "DLC1RH07",
+   "name": "A Jarl's Justice",
+   "origin": "dawnguard.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "DLC1RH08",
+   "name": "Lost Relic",
+   "origin": "dawnguard.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "DLC1RV03",
+   "name": "Deceiving the Herd",
+   "origin": "dawnguard.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "DLC1RV06",
+   "name": "The Gift",
+   "origin": "dawnguard.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "DLC1RV07",
+   "name": "New Allegiances",
+   "origin": "dawnguard.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "DLC1RV08",
+   "name": "Rings of Blood Magic",
+   "origin": "dawnguard.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "DLC1RV10",
+   "name": "Destroying the Dawnguard",
+   "origin": "dawnguard.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "DLC1SeranaCureSelfQuest",
+   "name": "Serana's cure vampirism",
+   "origin": "dawnguard.esm",
+   "overriddenBy": [
+    "SeranaCureQuestPlus"
+   ]
+  },
+  {
+   "edid": "DLC1VampireTutorial",
+   "name": "Power of the Blood",
+   "origin": "dawnguard.esm",
+   "overriddenBy": [
+    "Skip Vampire Lord Tutorial"
+   ]
+  },
+  {
+   "edid": "DLC1VQ01MiscObjective",
+   "name": "Dawnguard",
+   "origin": "dawnguard.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)"
+   ]
+  },
+  {
+   "edid": "DLC1VQ03Hunter",
+   "name": "Prophet",
+   "origin": "dawnguard.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "DLC1VQ03Vampire",
+   "name": "Prophet",
+   "origin": "dawnguard.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "DLC1VQ04",
+   "name": "Chasing Echoes",
+   "origin": "dawnguard.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "DLC1VQ05",
+   "name": "Beyond Death",
+   "origin": "dawnguard.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "DLC1VQ05SoulGemHandler",
+   "name": "Beyond Death Soul Gem Handler",
+   "origin": "dawnguard.esm",
+   "overriddenBy": [
+    "Multilayer Parallax Soulgems and Azura's Star Realm HD SE"
+   ]
+  },
+  {
+   "edid": "DLC1VQ06",
+   "name": "Unseen Visions",
+   "origin": "dawnguard.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "DLC1VQ07",
+   "name": "Touching the Sky",
+   "origin": "dawnguard.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "DLC1VQ08",
+   "name": "Kindred Judgment",
+   "origin": "dawnguard.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)",
+    "Requiem - ST - Vampires"
+   ]
+  },
+  {
+   "edid": "DLC1VQDragon",
+   "name": "Durnehviir",
+   "origin": "dawnguard.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "DLC1VQElder",
+   "name": "Seeking Disclosure",
+   "origin": "dawnguard.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "DLC1VQFVBooks",
+   "name": "Forgotten Vale Books Quest",
+   "origin": "dawnguard.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "DLC1VQSaint",
+   "name": "Impatience of a Saint",
+   "origin": "dawnguard.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  }
+ ],
+ "overridesDroppedNonPlayerFacing": 22
+}

@@ -1,0 +1,130 @@
+{
+ "id": "mq-radiant",
+ "files": [
+  "missives",
+  "favor-quests-separated",
+  "companions-radiant-expansion",
+  "dragon-hunting",
+  "radiant-and-world-events"
+ ],
+ "mods": [
+  {
+   "name": "Solstheim Earthquakes SE",
+   "separator": "Solstheim",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/22884",
+   "version": "6.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/solstheim-earthquakes-se.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Dragons Awaken",
+   "separator": "Gameplay - Progression & Abilities",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/44550",
+   "version": "2.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/dragons-awaken.md",
+   "playableQuests": 0,
+   "newLocations": 22
+  },
+  {
+   "name": "Hunters Mark Animal Den on Map",
+   "separator": "Gameplay - Lines Expansions & Dialogue",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/128450",
+   "version": "f1.03",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/hunters-mark-animal-den-on-map.md",
+   "playableQuests": 2,
+   "newLocations": 0
+  },
+  {
+   "name": "Dragon Hunting",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/99193",
+   "version": "2.0.3.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/dragon-hunting.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Quantity Trade - Dragon Hunting",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/167959",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/quantity-trade-dragon-hunting.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Companions Radiant Expansion",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/169920",
+   "version": "1.1.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/companions-radiant-expansion.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Missives - Wyrmstooth Patch",
+   "separator": "Quests - Wyrmstooth",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/26788",
+   "version": "f2.05",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/missives-wyrmstooth-patch.md",
+   "playableQuests": 26,
+   "newLocations": 0
+  },
+  {
+   "name": "Missives - Gray Cowl Patch",
+   "separator": "Quests - The Gray Cowl of Nocturnal",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/26788",
+   "version": "2.11.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/missives-gray-cowl-patch.md",
+   "playableQuests": 27,
+   "newLocations": 0
+  },
+  {
+   "name": "Missives - Gray Cowl Map",
+   "separator": "Quests - The Gray Cowl of Nocturnal",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/107271",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/missives-gray-cowl-map.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Missives",
+   "separator": "Gameplay - Late Loaders",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/17576",
+   "version": "f2.03",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/missives.md",
+   "playableQuests": 264,
+   "newLocations": 0
+  },
+  {
+   "name": "Missives - Solstheim Patch SE",
+   "separator": "Gameplay - Late Loaders",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/26788",
+   "version": "2.11.1.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/missives-solstheim-patch-se.md",
+   "playableQuests": 27,
+   "newLocations": 0
+  },
+  {
+   "name": "Missives - Voice and Quest Expansion",
+   "separator": "Gameplay - Late Loaders",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/166094",
+   "version": "1.6.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/missives-voice-and-quest-expansion.md",
+   "playableQuests": 40,
+   "newLocations": 0
+  },
+  {
+   "name": "Favor Quests Separated",
+   "separator": "Gameplay - Late Loaders",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/73903",
+   "version": "2.11.1.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/favor-quests-separated.md",
+   "playableQuests": 68,
+   "newLocations": 0
+  }
+ ],
+ "kind": "mod-added"
+}

@@ -1,0 +1,133 @@
+{
+ "id": "ar-new-lands-b",
+ "files": [
+  "hammerfell-and-coldharbour-gray-cowl",
+  "vigilant-realms",
+  "the-forgotten-city-zenithar",
+  "undeath-dragontail-mountains",
+  "frozen-heart-areas",
+  "gravewind-area",
+  "tools-of-kagrenac-areas",
+  "nightmare-and-dream-realms"
+ ],
+ "mods": [
+  {
+   "name": "The Frozen Heart - Quest Mod",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/159911",
+   "version": "0.6.5.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-frozen-heart-quest-mod.md",
+   "playableQuests": 4,
+   "newLocations": 14
+  },
+  {
+   "name": "The Frozen Heart - Quest Mod - 3BA",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/159911",
+   "version": "0.4.2.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-frozen-heart-quest-mod-3ba.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Demon of Dream",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/118719",
+   "version": "1.1.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/demon-of-dream.md",
+   "playableQuests": 0,
+   "newLocations": 2
+  },
+  {
+   "name": "Gravewind - ESMIFIED",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/129582",
+   "version": "1.2.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/gravewind-esmified.md",
+   "playableQuests": 3,
+   "newLocations": 6
+  },
+  {
+   "name": "The Tools of Kagrenac ESMIFIED",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/14168",
+   "version": "1.62.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-tools-of-kagrenac-esmified.md",
+   "playableQuests": 5,
+   "newLocations": 7
+  },
+  {
+   "name": "Sleepwalking Into A Nightmare - New Daedric Prince Quest",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/141047",
+   "version": "1.0.9.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/sleepwalking-into-a-nightmare-new-daedric-prince-quest.md",
+   "playableQuests": 1,
+   "newLocations": 6
+  },
+  {
+   "name": "The Forgotten City",
+   "separator": "Quests - The Forgotten City",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/1179",
+   "version": "1.8.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-forgotten-city.md",
+   "playableQuests": 2,
+   "newLocations": 0
+  },
+  {
+   "name": "Undeath Remastered - CLEANED ESMIFIED",
+   "separator": "Quests - Undeath Lichdom",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/6180",
+   "version": "1.7.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/undeath-remastered-cleaned-esmified.md",
+   "playableQuests": 7,
+   "newLocations": 3
+  },
+  {
+   "name": "Undeath - Classical Lichdom - ESMIFIED",
+   "separator": "Quests - Undeath Lichdom",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/40802",
+   "version": "3.60.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/undeath-classical-lichdom-esmified.md",
+   "playableQuests": 0,
+   "newLocations": 1
+  },
+  {
+   "name": "Undeath - Classical Lichdom Cleaned and Enhanced Textures",
+   "separator": "Quests - Undeath Lichdom",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/55803",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/undeath-classical-lichdom-cleaned-and-enhanced-textures.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "The Gray Cowl of Nocturnal - 10th anniversary",
+   "separator": "Quests - The Gray Cowl of Nocturnal",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/141327",
+   "version": "1.4.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-gray-cowl-of-nocturnal-10th-anniversary.md",
+   "playableQuests": 8,
+   "newLocations": 68
+  },
+  {
+   "name": "Betalille's Hammerfell Quests Bundle - The Gray Cowl of Nocturnal",
+   "separator": "Quests - The Gray Cowl of Nocturnal",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/89977",
+   "version": "1.0.4.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/betalilles-hammerfell-quests-bundle-the-gray-cowl-of-nocturnal.md",
+   "playableQuests": 32,
+   "newLocations": 2
+  },
+  {
+   "name": "VIGILANT - English Translation (Plus Voiced Addon)",
+   "separator": "Quests - VIGILANT",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/11894",
+   "version": "1.8.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/vigilant-english-translation-plus-voiced-addon.md",
+   "playableQuests": 49,
+   "newLocations": 185
+  }
+ ],
+ "kind": "areas"
+}
