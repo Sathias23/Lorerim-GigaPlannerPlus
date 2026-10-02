@@ -6,6 +6,7 @@ import { registerApplyChangesTool } from "./tools/applyChanges";
 import { registerEvaluateBuildTool } from "./tools/evaluateBuild";
 import { registerGetEntityTool } from "./tools/getEntity";
 import { registerSearchPerksTool } from "./tools/searchPerks";
+import { registerSearchQuestsTool } from "./tools/searchQuests";
 
 export const SERVER_NAME = "lorerim";
 export const SERVER_VERSION: string = version;
@@ -20,7 +21,8 @@ export const DEFAULT_SERVER_CONFIG: ServerConfig = { plannerBaseUrl: DEFAULT_PLA
 
 /**
  * Builds the LoreRim MCP server over already-validated game data and registers
- * the `lorerim_*` tools, all of which read from `appData`.
+ * the `lorerim_*` tools. The character tools read from `appData`; the quest
+ * search reads the bundled quest corpus index.
  */
 export function createServer(appData: AppData, config: ServerConfig = DEFAULT_SERVER_CONFIG): McpServer {
   const server = new McpServer(
@@ -31,5 +33,6 @@ export function createServer(appData: AppData, config: ServerConfig = DEFAULT_SE
   registerGetEntityTool(server, appData);
   registerEvaluateBuildTool(server, appData, config.plannerBaseUrl);
   registerApplyChangesTool(server, appData, config.plannerBaseUrl);
+  registerSearchQuestsTool(server);
   return server;
 }

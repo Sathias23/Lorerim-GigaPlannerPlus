@@ -19,6 +19,7 @@ const EXPECTED_TOOL_NAMES = [
   "lorerim_evaluate_build",
   "lorerim_get_entity",
   "lorerim_search_perks",
+  "lorerim_search_quests",
 ];
 
 interface BuiltChunk {
@@ -156,6 +157,16 @@ describe("dist/server.js bundle", () => {
       });
       expect(search.isError).not.toBe(true);
       expect((search.structuredContent as { rows: unknown[] }).rows.length).toBeGreaterThan(0);
+
+      // The quest corpus index is inlined too.
+      const quests = await client.callTool({
+        name: "lorerim_search_quests",
+        arguments: { query: "wyrmstooth" },
+      });
+      expect(quests.isError).not.toBe(true);
+      expect((quests.structuredContent as { rows: Array<{ id: string }> }).rows.map((row) => row.id)).toContain(
+        "wyrmstooth",
+      );
 
       const unknown = await client.callTool({
         name: "lorerim_get_entity",

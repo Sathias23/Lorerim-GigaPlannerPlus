@@ -5,8 +5,11 @@ GigaPlanner engine and `data/`. The engine decides legality and cost; Claude int
 request and chooses.
 
 - `server/` — the MCP server (`lorerim_search_perks`, `lorerim_get_entity`,
-  `lorerim_evaluate_build`, `lorerim_apply_changes`), bundled into one self-contained
-  `dist/server.js` with the engine and game data inlined.
+  `lorerim_evaluate_build`, `lorerim_apply_changes`, `lorerim_search_quests`), bundled into one
+  self-contained `dist/server.js` with the engine, game data, and quest corpus index inlined.
+- `knowledge/quests/` — the LoreRim quest and area corpus. `lorerim_search_quests` searches its
+  `index.json` (titles, summaries, start conditions, quest and location names, mods); the
+  markdown articles are not bundled.
 - `plugin/` — the Claude Code plugin source: `.claude-plugin/plugin.json`, `.mcp.json`, and
   the `lorerim-build` skill.
 - `packaging/` — assembles `dist/plugin/` from `plugin/` plus a copy of `dist/server.js`.
@@ -44,9 +47,9 @@ self-contained, so it can be copied or zipped anywhere; the launch config runs
 ### Permissions
 
 Claude Code asks before the first call to each `lorerim_*` tool, and before the skill reads
-its own `references/` files (they live outside the project directory). All four tools only
-read game data and share codes, so it is safe to allow them for the session. To skip the
-prompts, allow them up front, e.g. for a headless run:
+its own `references/` files (they live outside the project directory). All five tools only
+read game data, share codes, and the quest index, so it is safe to allow them for the session.
+To skip the prompts, allow them up front, e.g. for a headless run:
 
 ```sh
 claude -p "/lorerim-build a stealth archer vampire, level 40" \
