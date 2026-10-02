@@ -1,6 +1,6 @@
 # LoreRim quest & area corpus
 
-Markdown knowledge for the `lorerim-agent`: quests and areas as they ship in LoreRim. Start at [`index.md`](index.md) (human-readable) or `index.json` (one entry per file: path, title, kind, category, summary, quest and location names, start conditions, mods).
+Markdown knowledge for the `lorerim-agent`: quests and areas as they ship in LoreRim. Start at [`index.md`](index.md) (human-readable) or `index.json` (one entry per file: path, title, kind, category, summary, quest and location names, start conditions, mods). [`levelling-index.md`](levelling-index.md) sorts the same quests into early, mid and end game by start or recommended level. It is hand-written, so update it when a gate changes.
 
 | Folder | Contents |
 |---|---|
