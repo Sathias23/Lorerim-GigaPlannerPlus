@@ -294,7 +294,7 @@ describe("assembled plugin", () => {
     );
   });
 
-  it("starts from its .mcp.json command with CLAUDE_PLUGIN_ROOT set and lists the 4 tools", async () => {
+  it("starts from its .mcp.json command with CLAUDE_PLUGIN_ROOT set and lists the 5 tools", async () => {
     const config = readJson<McpConfig>(join(pluginDir, ".mcp.json"));
     const server = config.mcpServers[SERVER_NAME]!;
     const args = (server.args ?? []).map((arg) => arg.split(PLUGIN_ROOT_VAR).join(pluginDir));
@@ -317,6 +317,7 @@ describe("assembled plugin", () => {
         "lorerim_evaluate_build",
         "lorerim_get_entity",
         "lorerim_search_perks",
+        "lorerim_search_quests",
       ]);
 
       // The entry point reads the planner base from the environment.
