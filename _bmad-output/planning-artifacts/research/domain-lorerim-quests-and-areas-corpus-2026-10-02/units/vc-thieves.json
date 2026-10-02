@@ -1,0 +1,238 @@
+{
+ "id": "vc-thieves",
+ "kind": "vanilla-changes",
+ "files": [
+  "thieves-guild"
+ ],
+ "questline": "thieves-guild",
+ "mods": [
+  {
+   "name": "Save the Icerunner - Lights Out Alternate Routes",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/34681",
+   "version": "1.1.2.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/save-the-icerunner-lights-out-alternate-routes.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Silence is Golden",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/50581",
+   "version": "1.1.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/silence-is-golden.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Buyable Golden Claw",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/24689",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/buyable-golden-claw.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Golden Claw - More Choices",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/110696",
+   "version": "1.1.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/golden-claw-more-choices.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Infiltration - Quest Expansion",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/114054",
+   "version": "f1.02",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/infiltration-quest-expansion.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Search and Seizure - Quest Expansion",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/67066",
+   "version": "1.2.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/search-and-seizure-quest-expansion.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Uncanny Luck - 100 Max Pickpocket Chance After Returning Skeleton Key",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/130008",
+   "version": "0.1.2.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/uncanny-luck-100-max-pickpocket-chance-after-returning-skeleton-key.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Less Tedious Thieves Guild",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/6581",
+   "version": "1.1.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/less-tedious-thieves-guild.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Respectful Ravyn",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/143950",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/respectful-ravyn.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Vittorias Alternate Wedding",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/62466",
+   "version": "1.3.3.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/vittorias-alternate-wedding.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Deceive Degaine",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/51863",
+   "version": "d2025.12.21.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/deceive-degaine.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  }
+ ],
+ "overrides": [
+  {
+   "edid": "TG01",
+   "name": "Taking Care of Business",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins",
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "TG03",
+   "name": "Dampened Spirits",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins"
+   ]
+  },
+  {
+   "edid": "TG05",
+   "name": "Speaking With Silence",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins",
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "TG06",
+   "name": "Hard Answers",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins",
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "TG07",
+   "name": "The Pursuit",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "TG08A",
+   "name": "Trinity Restored",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "TG08B",
+   "name": "Blindsighted",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Official Master Files - Cleaned Plugins",
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "TG09",
+   "name": "Darkness Returns",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Wintersun and Daedric Shrines replacer"
+   ]
+  },
+  {
+   "edid": "TGCrown",
+   "name": "No Stone Unturned",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "TGLeadership",
+   "name": "Under New Management",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "TGRGF",
+   "name": "The Fishing Job",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Carriage and Ferry Travel Overhaul - Fixes and Winterhold"
+   ]
+  },
+  {
+   "edid": "TGRNT",
+   "name": "The Bedlam Job",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "TGTQ02",
+   "name": "The Dainty Sload",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch",
+    "Vittorias Alternate Wedding"
+   ]
+  },
+  {
+   "edid": "TGTQ03",
+   "name": "Imitation Amnesty",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  },
+  {
+   "edid": "TGTQ04",
+   "name": "Summerset Shadows",
+   "origin": "skyrim.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Special Edition Patch"
+   ]
+  }
+ ],
+ "overridesDroppedNonPlayerFacing": 1
+}

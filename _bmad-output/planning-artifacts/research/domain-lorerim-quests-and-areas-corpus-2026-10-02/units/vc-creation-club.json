@@ -1,0 +1,677 @@
+{
+ "id": "vc-creation-club",
+ "kind": "vanilla-changes",
+ "files": [
+  "creation-club"
+ ],
+ "questline": "creation-club",
+ "mods": [
+  {
+   "name": "Bittercup - Tweaks and Enhancements",
+   "separator": "Creation Club - Gameplay Changes",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/81665",
+   "version": "1.3.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/bittercup-tweaks-and-enhancements.md",
+   "playableQuests": 0,
+   "newLocations": 1
+  },
+  {
+   "name": "CFTO Bittercup fix and Bittercup TnE Patch",
+   "separator": "Creation Club - Gameplay Changes",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/81665",
+   "version": "1.2.1.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/cfto-bittercup-fix-and-bittercup-tne-patch.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "CC Farming - Tweaks Enhancements and Quest Expansion",
+   "separator": "Creation Club - Gameplay Changes",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/69029",
+   "version": "1.5.6.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/cc-farming-tweaks-enhancements-and-quest-expansion.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "CC Farming - TnE - No Respawn Patch Patch",
+   "separator": "Creation Club - Gameplay Changes",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/69029",
+   "version": "1.3.2.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/cc-farming-tne-no-respawn-patch-patch.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Bow of Shadows - Reduced Cut",
+   "separator": "Creation Club - Gameplay Changes",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/81188",
+   "version": "1.3.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/bow-of-shadows-reduced-cut.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Myrwatch - Tweaks and Enhancements",
+   "separator": "Creation Club - Gameplay Changes",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/97659",
+   "version": "d2025.12.21.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/myrwatch-tweaks-and-enhancements.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Myrwatch - House Fix",
+   "separator": "Creation Club - Gameplay Changes",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/64108",
+   "version": "1.1.1.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/myrwatch-house-fix.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Myrwatch - House Fix - USCCCP Patch",
+   "separator": "Creation Club - Gameplay Changes",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/64108",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/myrwatch-house-fix-uscccp-patch.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Myrwatch - TnE - MyrwatchVaultFix - USCCCP Patch",
+   "separator": "Creation Club - Gameplay Changes",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/97659",
+   "version": "1.4.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/myrwatch-tne-myrwatchvaultfix-uscccp-patch.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Myrwatch - TnE - CC Fishing Patch",
+   "separator": "Creation Club - Gameplay Changes",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/97659",
+   "version": "1.3.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/myrwatch-tne-cc-fishing-patch.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Goldenhills Plantation (Farming CC) Reset Patch",
+   "separator": "Creation Club - Gameplay Changes",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/105134",
+   "version": "1.1.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/goldenhills-plantation-farming-cc-reset-patch.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Hendraheim - Tweaks and Enhancements",
+   "separator": "Creation Club - Gameplay Changes",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/98688",
+   "version": "2.2.4.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/hendraheim-tweaks-and-enhancements.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Hendraheim - TnE - USCCP Patch",
+   "separator": "Creation Club - Gameplay Changes",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/98688",
+   "version": "2.1.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/hendraheim-tne-usccp-patch.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Hendraheim - TnE - CC Fishing Patch",
+   "separator": "Creation Club - Gameplay Changes",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/98688",
+   "version": "2.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/hendraheim-tne-cc-fishing-patch.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "CC Myrwatch Bug fix-Anniversary Edition",
+   "separator": "Creation Club - Gameplay Changes",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/58823",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/cc-myrwatch-bug-fix-anniversary-edition.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Creation Club Home Requirements",
+   "separator": "Creation Club - Gameplay Changes",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/116032",
+   "version": "f2.01",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/creation-club-home-requirements.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "CC Tundra Homestead - Aspens to Pines (BOS) (and a No Tree Option)",
+   "separator": "Creation Club - Gameplay Changes",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/104391",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/cc-tundra-homestead-aspens-to-pines-bos-and-a-no-tree-option.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "The Cause Tweaks - Alternate Start",
+   "separator": "Creation Club - Gameplay Changes",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/112918",
+   "version": "1.0.1.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-cause-tweaks-alternate-start.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "The Cause Tweaks - Close The Gate",
+   "separator": "Creation Club - Gameplay Changes",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/112918",
+   "version": "1.0.1.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-cause-tweaks-close-the-gate.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Civil War Champions - Reduced Cut",
+   "separator": "Creation Club - Gameplay Changes",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/94999",
+   "version": "2.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/civil-war-champions-reduced-cut.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "CC Dawnfang and Duskfang - No Forced Quest",
+   "separator": "Creation Club - Gameplay Changes",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/57609",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/cc-dawnfang-and-duskfang-no-forced-quest.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Land of Razors - The Deadlands Redone",
+   "separator": "Creation Club - Gameplay Changes",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/141691",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/land-of-razors-the-deadlands-redone.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Voiced Narrative - Farming (Creation Club)",
+   "separator": "Creation Club - Gameplay Changes",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/158966",
+   "version": "1.0.0.0a",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/voiced-narrative-farming-creation-club.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "CC Pets - Hide Quest Logs",
+   "separator": "Creation Club - Gameplay Changes",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/169557",
+   "version": "1.2.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/cc-pets-hide-quest-logs.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "CC Pets - Hide Quest Logs - Sleeping Wolves Requir",
+   "separator": "Creation Club - Gameplay Changes",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/169557",
+   "version": "1.2.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/cc-pets-hide-quest-logs-sleeping-wolves-requir.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "CC Tundra Homestead - Tweaks and Enhancements (THTE)",
+   "separator": "Creation Club - Gameplay Changes",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/149552",
+   "version": "1.6.3.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/cc-tundra-homestead-tweaks-and-enhancements-thte.md",
+   "playableQuests": 1,
+   "newLocations": 1
+  },
+  {
+   "name": "CC Tundra Homestead - Tweaks and Enhancements (THTE) - CC Fishing",
+   "separator": "Creation Club - Gameplay Changes",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/149552",
+   "version": "1.6.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/cc-tundra-homestead-tweaks-and-enhancements-thte-cc-fishing.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Guard Dialogue Overhaul Creation Club Patch (KID)",
+   "separator": "Gameplay - Lines Expansions & Dialogue",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/101592",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/guard-dialogue-overhaul-creation-club-patch-kid.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Bow of Shadows (CC) - Invisibility Patch",
+   "separator": "Gameplay - Lines Expansions & Dialogue",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/91480",
+   "version": "1.11.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/bow-of-shadows-cc-invisibility-patch.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Delayed Quest Starts - CC Fishing",
+   "separator": "Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/72751",
+   "version": "1.5.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/delayed-quest-starts-cc-fishing.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Morihaus' Refuge - No Bruma Version",
+   "separator": "Quests - Vanilla Expansions",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/68558",
+   "version": "1.0.1.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/morihaus-refuge-no-bruma-version.md",
+   "playableQuests": 0,
+   "newLocations": 1
+  },
+  {
+   "name": "Knight of the North",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/45869",
+   "version": "3.0.1.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/knight-of-the-north.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  }
+ ],
+ "overrides": [
+  {
+   "edid": "",
+   "name": "The Edge of Ruin",
+   "origin": "ccbgssse004-ruinsedge.esl",
+   "overriddenBy": [
+    "Trad - AE - CC - Collection - Requiem Patch",
+    "Skyrim Extended Cut - Saints and Seducers"
+   ]
+  },
+  {
+   "edid": "BGSSSE018_ShadowrendQuest",
+   "name": "Through a Glass, Darkly",
+   "origin": "ccbgssse018-shadowrend.esl",
+   "overriddenBy": [
+    "Skyrim Extended Cut - Saints and Seducers"
+   ]
+  },
+  {
+   "edid": "ccASVSSE001_Quest",
+   "name": "Ghosts of the Tribunal",
+   "origin": "ccasvsse001-almsivi.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Creation Club Content Patches"
+   ]
+  },
+  {
+   "edid": "ccBGSSSE001_Crab_MQ1",
+   "name": "In A Pinch",
+   "origin": "ccbgssse001-fish.esm",
+   "overriddenBy": [
+    "Delayed Quest Starts - CC Fishing"
+   ]
+  },
+  {
+   "edid": "ccBGSSSE001_Fish_MQ1",
+   "name": "Catch of the Day",
+   "origin": "ccbgssse001-fish.esm",
+   "overriddenBy": [
+    "Delayed Quest Starts - CC Fishing"
+   ]
+  },
+  {
+   "edid": "ccBGSSSE001_Start_MQ2",
+   "name": "Angler Acquaintances",
+   "origin": "ccbgssse001-fish.esm",
+   "overriddenBy": [
+    "Delayed Quest Starts - CC Fishing"
+   ]
+  },
+  {
+   "edid": "ccBGSSSE008_Quest",
+   "name": "Legends Lost",
+   "origin": "ccbgssse008-wraithguard.esl",
+   "overriddenBy": [
+    "Unofficial Skyrim Creation Club Content Patches"
+   ]
+  },
+  {
+   "edid": "ccBGSSSE010_PetPurchaseQuest",
+   "name": "My Pet Mudcrab",
+   "origin": "ccbgssse010-petdwarvenarmoredmudcrab.esl",
+   "overriddenBy": [
+    "CC Pets - Hide Quest Logs"
+   ]
+  },
+  {
+   "edid": "ccBGSSSE013_AquisitionQuest",
+   "name": "A Soul Divided",
+   "origin": "ccbgssse013-dawnfang.esl",
+   "overriddenBy": [
+    "Unofficial Skyrim Creation Club Content Patches"
+   ]
+  },
+  {
+   "edid": "ccBGSSSE014_SpellPack_StartupQuest",
+   "name": "The Lost Library",
+   "origin": "ccbgssse014-spellpack01.esl",
+   "overriddenBy": [
+    "Trad - AE - CC - Collection - Requiem Patch"
+   ]
+  },
+  {
+   "edid": "ccBGSSSE016_UmbraMainQuest",
+   "name": "Vile Whispers",
+   "origin": "ccbgssse016-umbra.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Creation Club Content Patches"
+   ]
+  },
+  {
+   "edid": "ccBGSSSE019_StaffOfSheogorathQuest",
+   "name": "Put A Fork In It",
+   "origin": "ccbgssse019-staffofsheogorath.esl",
+   "overriddenBy": [
+    "Unofficial Skyrim Creation Club Content Patches",
+    "Skyrim Extended Cut - Saints and Seducers"
+   ]
+  },
+  {
+   "edid": "ccBGSSSE021_LordsMailQuest",
+   "name": "Gift of Kynareth",
+   "origin": "ccbgssse021-lordsmail.esl",
+   "overriddenBy": [
+    "Morihaus' Refuge - No Bruma Version"
+   ]
+  },
+  {
+   "edid": "ccBGSSSE025_MiscQuest_AmberMadnessGear",
+   "name": "Amber and Madness Smithing",
+   "origin": "ccbgssse025-advdsgs.esm",
+   "overriddenBy": [
+    "Skyrim Extended Cut - Saints and Seducers"
+   ]
+  },
+  {
+   "edid": "ccBGSSSE025_MiscQuest_GSDSGearBook",
+   "name": "Golden and Dark Smithing",
+   "origin": "ccbgssse025-advdsgs.esm",
+   "overriddenBy": [
+    "Skyrim Extended Cut - Saints and Seducers"
+   ]
+  },
+  {
+   "edid": "ccBGSSSE025_MiscQuest_Nerveshatter",
+   "name": "Nerveshatter",
+   "origin": "ccbgssse025-advdsgs.esm",
+   "overriddenBy": [
+    "Skyrim Extended Cut - Saints and Seducers"
+   ]
+  },
+  {
+   "edid": "ccBGSSSE025_QuestA",
+   "name": "Balance of Power",
+   "origin": "ccbgssse025-advdsgs.esm",
+   "overriddenBy": [
+    "Skyrim Extended Cut - Saints and Seducers"
+   ]
+  },
+  {
+   "edid": "ccBGSSSE025_QuestB",
+   "name": "Restoring Order",
+   "origin": "ccbgssse025-advdsgs.esm",
+   "overriddenBy": [
+    "Skyrim Extended Cut - Saints and Seducers"
+   ]
+  },
+  {
+   "edid": "ccBGSSSE025_StaadaQuest",
+   "name": "Staada Quest",
+   "origin": "ccbgssse025-advdsgs.esm",
+   "overriddenBy": [
+    "Skyrim Extended Cut - Saints and Seducers"
+   ]
+  },
+  {
+   "edid": "ccBGSSSE034_WildHorsesQuest",
+   "name": "Horse Whisperer",
+   "origin": "ccbgssse034-mntuni.esl",
+   "overriddenBy": [
+    "Unofficial Skyrim Creation Club Content Patches"
+   ]
+  },
+  {
+   "edid": "ccBGSSSE035_PetAcquireQuest",
+   "name": "My Pet Nix-Hound",
+   "origin": "ccbgssse035-petnhound.esl",
+   "overriddenBy": [
+    "CC Pets - Hide Quest Logs"
+   ]
+  },
+  {
+   "edid": "ccBGSSSE036_PetBWolfAcquisitionQuest",
+   "name": "Let Sleeping Wolves Lie",
+   "origin": "ccbgssse036-petbwolf.esl",
+   "overriddenBy": [
+    "CC Pets - Hide Quest Logs",
+    "CC Pets - Hide Quest Logs - Sleeping Wolves Requir"
+   ]
+  },
+  {
+   "edid": "ccBGSSSE038_Quest",
+   "name": "In the Shadows",
+   "origin": "ccbgssse038-bowofshadows.esl",
+   "overriddenBy": [
+    "Bow of Shadows - Reduced Cut"
+   ]
+  },
+  {
+   "edid": "ccBGSSSE041_Quest",
+   "name": "More than you can Chew",
+   "origin": "ccbgssse041-netchleather.esl",
+   "overriddenBy": [
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)"
+   ]
+  },
+  {
+   "edid": "ccBGSSSE043_VampireHunterQuest",
+   "name": "Night Hunter",
+   "origin": "ccbgssse043-crosselv.esl",
+   "overriddenBy": [
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)"
+   ]
+  },
+  {
+   "edid": "ccBGSSSE050_Quest",
+   "name": "Beyond the Grave",
+   "origin": "ccbgssse050-ba_daedric.esl",
+   "overriddenBy": [
+    "Unofficial Skyrim Creation Club Content Patches"
+   ]
+  },
+  {
+   "edid": "ccBGSSSE051_Quest",
+   "name": "Missing Merchant",
+   "origin": "ccbgssse051-ba_daedricmail.esl",
+   "overriddenBy": [
+    "Restored Helmets",
+    "Trad - AE - CC - Collection - Requiem Patch"
+   ]
+  },
+  {
+   "edid": "ccBGSSSE060_Quest",
+   "name": "Tilted Scales",
+   "origin": "ccbgssse060-ba_dragonscale.esl",
+   "overriddenBy": [
+    "Trad - AE - CC - Collection - Requiem Patch"
+   ]
+  },
+  {
+   "edid": "ccBGSSSE064_Quest",
+   "name": "Once a Hunter",
+   "origin": "ccbgssse064-ba_elven.esl",
+   "overriddenBy": [
+    "Restored Helmets"
+   ]
+  },
+  {
+   "edid": "ccBGSSSE067_Quest",
+   "name": "The Cause",
+   "origin": "ccbgssse067-daedinv.esm",
+   "overriddenBy": [
+    "The Cause Tweaks - Alternate Start"
+   ]
+  },
+  {
+   "edid": "ccEDHSSE002_Quest",
+   "name": "Crypt of the Heart",
+   "origin": "ccedhsse002-splkntset.esl",
+   "overriddenBy": [
+    "Unofficial Skyrim Creation Club Content Patches",
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)"
+   ]
+  },
+  {
+   "edid": "ccEDHSSE003_Quest",
+   "name": "Interception",
+   "origin": "ccedhsse003-redguard.esl",
+   "overriddenBy": [
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)"
+   ]
+  },
+  {
+   "edid": "ccEEJSSE004_Quest",
+   "name": "Hendraheim",
+   "origin": "cceejsse004-hall.esl",
+   "overriddenBy": [
+    "Creation Club Home Requirements",
+    "Hendraheim - Tweaks and Enhancements"
+   ]
+  },
+  {
+   "edid": "ccEEJSSE005_Quest",
+   "name": "Guests for Dinner",
+   "origin": "cceejsse005-cave.esm",
+   "overriddenBy": [
+    "Creation Club Home Requirements"
+   ]
+  },
+  {
+   "edid": "ccFFBSSE001_CorpseCheck",
+   "name": "Corpse Check",
+   "origin": "ccffbsse001-imperialdragon.esl",
+   "overriddenBy": [
+    "Unofficial Skyrim Creation Club Content Patches",
+    "Civil War Champions - Reduced Cut"
+   ]
+  },
+  {
+   "edid": "ccFFBSSE001_Quest",
+   "name": "Battle of the Champions",
+   "origin": "ccffbsse001-imperialdragon.esl",
+   "overriddenBy": [
+    "Civil War Champions - Reduced Cut"
+   ]
+  },
+  {
+   "edid": "ccKRTSSE001_QuestFortune",
+   "name": "Fortunate Son",
+   "origin": "cckrtsse001_altar.esl",
+   "overriddenBy": [
+    "Unofficial Skyrim Creation Club Content Patches"
+   ]
+  },
+  {
+   "edid": "ccKRTSSE001_zQuest",
+   "name": "A Dying Wish",
+   "origin": "cckrtsse001_altar.esl",
+   "overriddenBy": [
+    "Bittercup - Tweaks and Enhancements"
+   ]
+  },
+  {
+   "edid": "ccMTYSSE001_DES_RelicsoftheCrusader",
+   "name": "Relics of the Crusader",
+   "origin": "ccmtysse001-knightsofthenine.esl",
+   "overriddenBy": [
+    "Knight of the North"
+   ]
+  },
+  {
+   "edid": "ccMTYSSE002_Quest",
+   "name": "Unholy Vigil",
+   "origin": "ccmtysse002-ve.esl",
+   "overriddenBy": [
+    "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)"
+   ]
+  },
+  {
+   "edid": "ccRMSSSE001_Quest",
+   "name": "Dreams of the Dead",
+   "origin": "ccrmssse001-necrohouse.esl",
+   "overriddenBy": [
+    "Creation Club Home Requirements"
+   ]
+  },
+  {
+   "edid": "ccVSVSSE002_MainQuest",
+   "name": "Pets of Skyrim",
+   "origin": "ccvsvsse002-pets.esl",
+   "overriddenBy": [
+    "Unofficial Skyrim Creation Club Content Patches",
+    "CC Pets - Hide Quest Logs"
+   ]
+  },
+  {
+   "edid": "ccVSVSSE004_MainQuest",
+   "name": "The Unquiet Dead",
+   "origin": "ccvsvsse004-beafarmer.esl",
+   "overriddenBy": [
+    "CC Farming - Tweaks Enhancements and Quest Expansion"
+   ]
+  },
+  {
+   "edid": "DLCDwarvenPuzzleDungeonQuest01",
+   "name": "Forgotten Seasons",
+   "origin": "cctwbsse001-puzzledungeon.esm",
+   "overriddenBy": [
+    "Unofficial Skyrim Creation Club Content Patches"
+   ]
+  },
+  {
+   "edid": "EC_SS_ElytraPetAcquisition_Dementia",
+   "name": "My Pet Elytra (Dementia)",
+   "origin": "ccbgssse025-advdsgs.esm",
+   "overriddenBy": [
+    "Skyrim Extended Cut - Saints and Seducers"
+   ]
+  },
+  {
+   "edid": "EC_SS_ElytraPetAcquisition_Mania",
+   "name": "My Pet Elytra (Mania)",
+   "origin": "ccbgssse025-advdsgs.esm",
+   "overriddenBy": [
+    "Skyrim Extended Cut - Saints and Seducers"
+   ]
+  }
+ ],
+ "overridesDroppedNonPlayerFacing": 58
+}

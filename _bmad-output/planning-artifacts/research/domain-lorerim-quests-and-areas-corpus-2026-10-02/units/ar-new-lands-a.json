@@ -1,0 +1,66 @@
+{
+ "id": "ar-new-lands-a",
+ "files": [
+  "wyrmstooth-island",
+  "hjorkvild-isles",
+  "vvardenfell-and-baan-malur",
+  "shivering-isles-saints-and-seducers"
+ ],
+ "mods": [
+  {
+   "name": "Stonehollow Overhaul for Wyrmstooth",
+   "separator": "Locations - New and Vanilla Overhauls",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/131619",
+   "version": "1.0.2.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/stonehollow-overhaul-for-wyrmstooth.md",
+   "playableQuests": 0,
+   "newLocations": 1
+  },
+  {
+   "name": "Journey to Baan Malur and Morrowind",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/114518",
+   "version": "i1.1.9b",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/journey-to-baan-malur-and-morrowind.md",
+   "playableQuests": 10,
+   "newLocations": 22
+  },
+  {
+   "name": "Siege at Icemoth",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/109541",
+   "version": "1.4.2.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/siege-at-icemoth.md",
+   "playableQuests": 4,
+   "newLocations": 16
+  },
+  {
+   "name": "Baan Malur - A Landscape Overhaul - UNDELETED",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/152707",
+   "version": "f0.04RC",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/baan-malur-a-landscape-overhaul-undeleted.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Wyrmstooth",
+   "separator": "Quests - Wyrmstooth",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/45565",
+   "version": "1.20.3.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/wyrmstooth.md",
+   "playableQuests": 20,
+   "newLocations": 43
+  },
+  {
+   "name": "Skyrim Extended Cut - Saints and Seducers",
+   "separator": "Quests - Saints & Seducers Extended Cut",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/72772",
+   "version": "1.1.1.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/skyrim-extended-cut-saints-and-seducers.md",
+   "playableQuests": 5,
+   "newLocations": 13
+  }
+ ],
+ "kind": "areas"
+}

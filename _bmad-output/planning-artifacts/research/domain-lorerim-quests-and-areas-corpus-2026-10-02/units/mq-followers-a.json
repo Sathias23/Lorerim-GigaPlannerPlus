@@ -1,0 +1,94 @@
+{
+ "id": "mq-followers-a",
+ "files": [
+  "inigo",
+  "katana",
+  "remiel",
+  "gore",
+  "lucien"
+ ],
+ "mods": [
+  {
+   "name": "INIGO",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/1461",
+   "version": "2.4.0.0C",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/inigo.md",
+   "playableQuests": 6,
+   "newLocations": 2
+  },
+  {
+   "name": "Katana - Journey in the Shadows",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/69622",
+   "version": "3.0.5.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/katana-journey-in-the-shadows.md",
+   "playableQuests": 12,
+   "newLocations": 2
+  },
+  {
+   "name": "Katana - Journey in the Shadows - Raven Replacer",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/69622",
+   "version": "1.1.2.0RR",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/katana-journey-in-the-shadows-raven-replacer.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Katana - Raven Replacer - LoreCut - Reqtificated",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/132964",
+   "version": "1.8.4.0KRL",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/katana-raven-replacer-lorecut-reqtificated.md",
+   "playableQuests": 0,
+   "newLocations": 1
+  },
+  {
+   "name": "Remiel-Custom Voiced Follower",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/51874",
+   "version": "1.7.4.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/remiel-custom-voiced-follower.md",
+   "playableQuests": 10,
+   "newLocations": 2
+  },
+  {
+   "name": "Gore - A Companion Mod",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/85298",
+   "version": "1.8.18.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/gore-a-companion-mod.md",
+   "playableQuests": 12,
+   "newLocations": 2
+  },
+  {
+   "name": "Lucien - Immersive Fully Voiced Male Follower",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/20035",
+   "version": "1.6.3.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/lucien-immersive-fully-voiced-male-follower.md",
+   "playableQuests": 4,
+   "newLocations": 2
+  },
+  {
+   "name": "Lucien - Anniversary Edition - All-In-One Creation Club Patch",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/20035",
+   "version": "1.6.3.0a",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/lucien-anniversary-edition-all-in-one-creation-club-patch.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Lucien - A Visual Replacer",
+   "separator": "Gameplay - Followers",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/130080",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/lucien-a-visual-replacer.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  }
+ ],
+ "kind": "mod-added"
+}

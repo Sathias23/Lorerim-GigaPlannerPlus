@@ -1,0 +1,144 @@
+{
+ "id": "mq-new-c",
+ "files": [
+  "knight-of-the-north",
+  "belethors-sister",
+  "unmasking-sybille",
+  "revealing-rune",
+  "finding-velehk-sain",
+  "the-gift-of-saturalia",
+  "more-to-do-in-the-soul-cairn",
+  "the-welkynar-knight",
+  "fists-of-fury",
+  "ascend-hidden-peaks"
+ ],
+ "mods": [
+  {
+   "name": "Knight of the North",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/45869",
+   "version": "3.0.1.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/knight-of-the-north.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Belethor's Sister - Quest",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/92381",
+   "version": "0.3.5.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/belethors-sister-quest.md",
+   "playableQuests": 5,
+   "newLocations": 0
+  },
+  {
+   "name": "Belethor's General Goods WeelBones' Replacers",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/119993",
+   "version": "2.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/belethors-general-goods-weelbones-replacers.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Unmasking Sybille",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/109265",
+   "version": "1.2.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/unmasking-sybille.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Revealing Rune",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/120935",
+   "version": "1.1.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/revealing-rune.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Finding Velehk Sain",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/19815",
+   "version": "1.0.15.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/finding-velehk-sain.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "The Gift Of Saturalia",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/105697",
+   "version": "f1.03",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-gift-of-saturalia.md",
+   "playableQuests": 6,
+   "newLocations": 0
+  },
+  {
+   "name": "More to do in the Soul Cairn",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/115962",
+   "version": "1.1.1.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/more-to-do-in-the-soul-cairn.md",
+   "playableQuests": 3,
+   "newLocations": 0
+  },
+  {
+   "name": "Ascend - Hidden Peaks of Skyrim",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/120802",
+   "version": "f1.01",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/ascend-hidden-peaks-of-skyrim.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Welkynar Hussar Armor",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/89496",
+   "version": "1.2.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/welkynar-hussar-armor.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "The Welkynar Knight - Quest",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/89510",
+   "version": "0.4.1.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-welkynar-knight-quest.md",
+   "playableQuests": 4,
+   "newLocations": 5
+  },
+  {
+   "name": "Fists of Fury - Skyrim",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/73835",
+   "version": "1.3.1.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/fists-of-fury-skyrim.md",
+   "playableQuests": 3,
+   "newLocations": 1
+  },
+  {
+   "name": "Daedric Shrines - All in One - My Patches by Xtudo - Fists of Fury - Skyrim patch",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/78809",
+   "version": "2.2.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/daedric-shrines-all-in-one-my-patches-by-xtudo-fists-of-fury-skyrim-patch.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Unmasking Sybille - Dialogue Tweak",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/163004",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/unmasking-sybille-dialogue-tweak.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  }
+ ],
+ "kind": "mod-added"
+}

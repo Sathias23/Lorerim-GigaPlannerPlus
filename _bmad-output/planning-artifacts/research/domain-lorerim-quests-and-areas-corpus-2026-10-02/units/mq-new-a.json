@@ -1,0 +1,120 @@
+{
+ "id": "mq-new-a",
+ "files": [
+  "journey-to-baan-malur",
+  "siege-at-icemoth",
+  "tools-of-kagrenac",
+  "meridias-order"
+ ],
+ "mods": [
+  {
+   "name": "Journey to Baan Malur and Morrowind",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/114518",
+   "version": "i1.1.9b",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/journey-to-baan-malur-and-morrowind.md",
+   "playableQuests": 10,
+   "newLocations": 22
+  },
+  {
+   "name": "Journey to Baan Malur and Morrowind - LOD",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/114518",
+   "version": "i1.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/journey-to-baan-malur-and-morrowind-lod.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Siege at Icemoth",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/109541",
+   "version": "1.4.2.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/siege-at-icemoth.md",
+   "playableQuests": 4,
+   "newLocations": 16
+  },
+  {
+   "name": "Siege at Icemoth - Fishing Patch",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/109541",
+   "version": "1.0.1.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/siege-at-icemoth-fishing-patch.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Metallurgy - Siege at Icemoth",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/124223",
+   "version": "1.0.0.0f",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/metallurgy-siege-at-icemoth.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Meridia's Order ESMIFIED",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/102584",
+   "version": "1.5.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/meridias-order-esmified.md",
+   "playableQuests": 17,
+   "newLocations": 1
+  },
+  {
+   "name": "Northern Roads - Meridia's Order Patch",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/106422",
+   "version": "2.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/northern-roads-meridias-order-patch.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "BETA Great Village of Old Hroldan - Meridia's Order Patch",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/106422",
+   "version": "2.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/beta-great-village-of-old-hroldan-meridias-order-patch.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "The Tools of Kagrenac ESMIFIED",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/14168",
+   "version": "1.62.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-tools-of-kagrenac-esmified.md",
+   "playableQuests": 5,
+   "newLocations": 7
+  },
+  {
+   "name": "Draugrs - SE by Xtudo - Tools of Kagrenac 2K",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/123225",
+   "version": "4.6.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/draugrs-se-by-xtudo-tools-of-kagrenac-2k.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Baan Malur - A Landscape Overhaul - UNDELETED",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/152707",
+   "version": "f0.04RC",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/baan-malur-a-landscape-overhaul-undeleted.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Tools of Kagrenac - Forgotten Cities Patch",
+   "separator": "Quests - The Forgotten City",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/92206",
+   "version": "f1.01",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/tools-of-kagrenac-forgotten-cities-patch.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  }
+ ],
+ "kind": "mod-added"
+}

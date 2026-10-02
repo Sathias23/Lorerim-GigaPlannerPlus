@@ -1,0 +1,46 @@
+{
+ "id": "mq-requiem-lorerim",
+ "files": [
+  "requiem-quests",
+  "lorerim-specific-quests"
+ ],
+ "mods": [
+  {
+   "name": "Requiem - The Roleplaying Overhaul (No Messages ESLIFIED)",
+   "separator": "Requiem",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/60888",
+   "version": "6.0.2.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/requiem-the-roleplaying-overhaul-no-messages-eslified.md",
+   "playableQuests": 4,
+   "newLocations": 0
+  },
+  {
+   "name": "Requiem - Improved Spell Learning",
+   "separator": "Requiem",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/74010",
+   "version": "1.5.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/requiem-improved-spell-learning.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Trad - AE - CC - Collection - Requiem Patch",
+   "separator": "Requiem",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/64829",
+   "version": "2.3.2.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/trad-ae-cc-collection-requiem-patch.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "LoreRim - xEdit64 Output",
+   "separator": "Outputs & Final Overwrites",
+   "nexus": null,
+   "version": null,
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/lorerim-xedit64-output.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  }
+ ],
+ "kind": "mod-added"
+}

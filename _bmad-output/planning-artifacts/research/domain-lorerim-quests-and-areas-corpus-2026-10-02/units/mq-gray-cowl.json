@@ -1,0 +1,181 @@
+{
+ "id": "mq-gray-cowl",
+ "files": [
+  "gray-cowl-of-nocturnal",
+  "hammerfell-quests-bundle"
+ ],
+ "mods": [
+  {
+   "name": "DynDOLOD TexGen Fixes",
+   "separator": "Quests - The Gray Cowl of Nocturnal",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/69323/",
+   "version": "2.3.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/dyndolod-texgen-fixes.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "The Gray Cowl of Nocturnal - 10th anniversary",
+   "separator": "Quests - The Gray Cowl of Nocturnal",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/141327",
+   "version": "1.4.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-gray-cowl-of-nocturnal-10th-anniversary.md",
+   "playableQuests": 8,
+   "newLocations": 68
+  },
+  {
+   "name": "The Gray Cowl of Nocturnal - 10th anniversary - NPCs PLUS",
+   "separator": "Quests - The Gray Cowl of Nocturnal",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/151398",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-gray-cowl-of-nocturnal-10th-anniversary-npcs-plus.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Under New Management Start",
+   "separator": "Quests - The Gray Cowl of Nocturnal",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/145535",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/under-new-management-start.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Daedric Shrines AIO by Xtudo - The Gray Cowl 10th",
+   "separator": "Quests - The Gray Cowl of Nocturnal",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/78809",
+   "version": "4.7.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/daedric-shrines-aio-by-xtudo-the-gray-cowl-10th.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "SKYBLIVION - Umbra",
+   "separator": "Quests - The Gray Cowl of Nocturnal",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/98487",
+   "version": "5.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/skyblivion-umbra.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Missives - Gray Cowl Patch",
+   "separator": "Quests - The Gray Cowl of Nocturnal",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/26788",
+   "version": "2.11.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/missives-gray-cowl-patch.md",
+   "playableQuests": 27,
+   "newLocations": 0
+  },
+  {
+   "name": "Missives - Gray Cowl Map",
+   "separator": "Quests - The Gray Cowl of Nocturnal",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/107271",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/missives-gray-cowl-map.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "The Gray Cowl of Nocturnal - We Don't Need Two Boards",
+   "separator": "Quests - The Gray Cowl of Nocturnal",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/107288",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-gray-cowl-of-nocturnal-we-dont-need-two-boards.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "The Gray Cowl of Nocturnal - Immersive interaction",
+   "separator": "Quests - The Gray Cowl of Nocturnal",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/126661",
+   "version": "1.0.2.0ImmersiveFML",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-gray-cowl-of-nocturnal-immersive-interaction.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "The Gray Cowl of Nocturnal - NAT III Weather patch",
+   "separator": "Quests - The Gray Cowl of Nocturnal",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/126661",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-gray-cowl-of-nocturnal-nat-iii-weather-patch.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "The Gray Cowl of Nocturnal SE - Moveable Lanterns and Signs",
+   "separator": "Quests - The Gray Cowl of Nocturnal",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/100019",
+   "version": "1.3.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-gray-cowl-of-nocturnal-se-moveable-lanterns-and-signs.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Gray Cowl of Nocturnal - Bounty fix",
+   "separator": "Quests - The Gray Cowl of Nocturnal",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/94939",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/gray-cowl-of-nocturnal-bounty-fix.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "The Gray Cowl of Nocturnal SE - Retexture",
+   "separator": "Quests - The Gray Cowl of Nocturnal",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/91897",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-gray-cowl-of-nocturnal-se-retexture.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Gray Cowl of Nocturnal - Retexture - Parallax Gen",
+   "separator": "Quests - The Gray Cowl of Nocturnal",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/92180",
+   "version": "1.11.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/gray-cowl-of-nocturnal-retexture-parallax-gen.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Unmarked Locations Pack - The Gray Cowl of Nocturnal Addon",
+   "separator": "Quests - The Gray Cowl of Nocturnal",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/159443",
+   "version": "1.1.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/unmarked-locations-pack-the-gray-cowl-of-nocturnal-addon.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Betalille's Hammerfell Quests Bundle - The Gray Cowl of Nocturnal",
+   "separator": "Quests - The Gray Cowl of Nocturnal",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/89977",
+   "version": "1.0.4.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/betalilles-hammerfell-quests-bundle-the-gray-cowl-of-nocturnal.md",
+   "playableQuests": 32,
+   "newLocations": 2
+  },
+  {
+   "name": "Betalille's Hammerfell Quests Bundle - The Gray Cowl of Nocturnal - 10th Anniversary Patch",
+   "separator": "Quests - The Gray Cowl of Nocturnal",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/89977",
+   "version": "1.0.4.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/betalilles-hammerfell-quests-bundle-the-gray-cowl-of-nocturnal-10th-anniversary-.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Betalille's Hammerfell Quests Bundle - The Gray Cowl of Nocturnal - Hotfix",
+   "separator": "Quests - The Gray Cowl of Nocturnal",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/89977",
+   "version": "1.0.4.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/betalilles-hammerfell-quests-bundle-the-gray-cowl-of-nocturnal-hotfix.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  }
+ ],
+ "kind": "mod-added"
+}

@@ -1,0 +1,159 @@
+{
+ "id": "mq-new-b",
+ "files": [
+  "gravewind",
+  "sirenroot",
+  "legends-of-aetherium",
+  "heart-of-the-reach",
+  "miasma",
+  "sleepwalking-into-a-nightmare",
+  "demon-of-dream"
+ ],
+ "mods": [
+  {
+   "name": "Demon of Dream",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/118719",
+   "version": "1.1.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/demon-of-dream.md",
+   "playableQuests": 0,
+   "newLocations": 2
+  },
+  {
+   "name": "Gravewind - ESMIFIED",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/129582",
+   "version": "1.2.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/gravewind-esmified.md",
+   "playableQuests": 3,
+   "newLocations": 6
+  },
+  {
+   "name": "Gravewind - Landscape Patch",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/129582",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/gravewind-landscape-patch.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Draugrs - SE by Xtudo - Gravewind - 2K",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/123225",
+   "version": "4.9.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/draugrs-se-by-xtudo-gravewind-2k.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Heart of the Reach - New Quest - Dungeon - Weapons - 3 Creature Variants - Ring - Spell",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/76494",
+   "version": "1.0.7.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/heart-of-the-reach-new-quest-dungeon-weapons-3-creature-variants-ring-spell.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Requiem - Heart of the Reach",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/76940",
+   "version": "f1.03",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/requiem-heart-of-the-reach.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "SIRENROOT - Deluge of Deceit",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/70917",
+   "version": "1.21.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/sirenroot-deluge-of-deceit.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "SIRENROOT - HD Texture Pack",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/70917",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/sirenroot-hd-texture-pack.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "SIRENROOT CBBE 3BA and HIMBO Patch",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/107792",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/sirenroot-cbbe-3ba-and-himbo-patch.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Sirene Wispmother - A SIRENROOT Replacer",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/123252",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/sirene-wispmother-a-sirenroot-replacer.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Legends of Aetherium - New Dungeon - Quest - Armour - Weapons",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/69807",
+   "version": "1.1.3.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/legends-of-aetherium-new-dungeon-quest-armour-weapons.md",
+   "playableQuests": 1,
+   "newLocations": 0
+  },
+  {
+   "name": "Metallurgy - Legends of Aetherium",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/124223",
+   "version": "1.0.0.0g",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/metallurgy-legends-of-aetherium.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Ancient Dwemer Metal - My patches - Legends of Aetherium",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/38845",
+   "version": "LofA-v1",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/ancient-dwemer-metal-my-patches-legends-of-aetherium.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Sleepwalking Into A Nightmare - New Daedric Prince Quest",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/141047",
+   "version": "1.0.9.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/sleepwalking-into-a-nightmare-new-daedric-prince-quest.md",
+   "playableQuests": 1,
+   "newLocations": 6
+  },
+  {
+   "name": "Enigma - Sleep Walking Into A Nightmare Patch",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/33084",
+   "version": "1.5.0.0Patches",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/enigma-sleep-walking-into-a-nightmare-patch.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Miasma",
+   "separator": "Quests - New Quests",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/149879",
+   "version": "1.1.6.1",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/miasma.md",
+   "playableQuests": 2,
+   "newLocations": 2
+  }
+ ],
+ "kind": "mod-added"
+}

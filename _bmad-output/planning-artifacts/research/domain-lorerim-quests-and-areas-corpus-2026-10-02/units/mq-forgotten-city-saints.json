@@ -1,0 +1,118 @@
+{
+ "id": "mq-forgotten-city-saints",
+ "files": [
+  "the-forgotten-city",
+  "saints-and-seducers-extended-cut"
+ ],
+ "mods": [
+  {
+   "name": "Skyrim Extended Cut - Saints and Seducers",
+   "separator": "Quests - Saints & Seducers Extended Cut",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/72772",
+   "version": "1.1.1.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/skyrim-extended-cut-saints-and-seducers.md",
+   "playableQuests": 5,
+   "newLocations": 13
+  },
+  {
+   "name": "OMEAR Addition - Skyrim Extended Cut S-and-S",
+   "separator": "Quests - Saints & Seducers Extended Cut",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/67968",
+   "version": "1.8.2.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/omear-addition-skyrim-extended-cut-s-and-s.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Extended Cut - Saints and Seducers 2K",
+   "separator": "Quests - Saints & Seducers Extended Cut",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/80307",
+   "version": "2.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/extended-cut-saints-and-seducers-2k.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Skyrim Extended Cut - Saints and Seducers - My optimized textures by Xtudo",
+   "separator": "Quests - Saints & Seducers Extended Cut",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/108519",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/skyrim-extended-cut-saints-and-seducers-my-optimized-textures-by-xtudo.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Extended Cut Saints and Seducers - Tomato Complex Parallax Support - Standalone",
+   "separator": "Quests - Saints & Seducers Extended Cut",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/127969",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/extended-cut-saints-and-seducers-tomato-complex-parallax-support-standalone.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Skyking Signs - Saints and Seducers Extended Cut",
+   "separator": "Quests - Saints & Seducers Extended Cut",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/112902",
+   "version": "1.3.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/skyking-signs-saints-and-seducers-extended-cut.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "The Forgotten City",
+   "separator": "Quests - The Forgotten City",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/1179",
+   "version": "1.8.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/the-forgotten-city.md",
+   "playableQuests": 2,
+   "newLocations": 0
+  },
+  {
+   "name": "Modpocalypse NPCs - The Forgotten City",
+   "separator": "Quests - The Forgotten City",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/56739",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/modpocalypse-npcs-the-forgotten-city.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Ancient Dwemer Metal - My patches - The Forgotten City",
+   "separator": "Quests - The Forgotten City",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/38845",
+   "version": "TFC-v1",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/ancient-dwemer-metal-my-patches-the-forgotten-city.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Forgotten City Music Fixer",
+   "separator": "Quests - The Forgotten City",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/54019",
+   "version": "2.2.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/forgotten-city-music-fixer.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Forgotten City Music Fixer - Cassia's Plea Remover",
+   "separator": "Quests - The Forgotten City",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/54019",
+   "version": "2.2.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/forgotten-city-music-fixer-cassias-plea-remover.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Tools of Kagrenac - Forgotten Cities Patch",
+   "separator": "Quests - The Forgotten City",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/92206",
+   "version": "f1.01",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/tools-of-kagrenac-forgotten-cities-patch.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  }
+ ],
+ "kind": "mod-added"
+}

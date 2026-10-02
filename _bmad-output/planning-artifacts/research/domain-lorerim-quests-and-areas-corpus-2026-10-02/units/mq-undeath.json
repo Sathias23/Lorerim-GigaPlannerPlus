@@ -1,0 +1,72 @@
+{
+ "id": "mq-undeath",
+ "files": [
+  "undeath"
+ ],
+ "mods": [
+  {
+   "name": "Undeath Remastered - CLEANED ESMIFIED",
+   "separator": "Quests - Undeath Lichdom",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/6180",
+   "version": "1.7.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/undeath-remastered-cleaned-esmified.md",
+   "playableQuests": 7,
+   "newLocations": 3
+  },
+  {
+   "name": "Undeath - Classical Lichdom - ESMIFIED",
+   "separator": "Quests - Undeath Lichdom",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/40802",
+   "version": "3.60.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/undeath-classical-lichdom-esmified.md",
+   "playableQuests": 0,
+   "newLocations": 1
+  },
+  {
+   "name": "Undeath - Classical Lichdom Cleaned and Enhanced Textures",
+   "separator": "Quests - Undeath Lichdom",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/55803",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/undeath-classical-lichdom-cleaned-and-enhanced-textures.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Draugrs - SE by Xtudo - Undeath Classical Lichdom",
+   "separator": "Quests - Undeath Lichdom",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/123225",
+   "version": "5.3.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/draugrs-se-by-xtudo-undeath-classical-lichdom.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Draugrs - SE by Xtudo - Undeath Remastered",
+   "separator": "Quests - Undeath Lichdom",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/123225",
+   "version": "4.9.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/draugrs-se-by-xtudo-undeath-remastered.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Sensible Undeath Prerequisite - No Level",
+   "separator": "Quests - Undeath Lichdom",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/121948",
+   "version": "1.2.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/sensible-undeath-prerequisite-no-level.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Requiem - Undeath",
+   "separator": "Quests - Undeath Lichdom",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/69009",
+   "version": "f1.01",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/requiem-undeath.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  }
+ ],
+ "kind": "mod-added"
+}

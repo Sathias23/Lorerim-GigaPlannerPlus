@@ -1,0 +1,198 @@
+{
+ "id": "mq-wyrmstooth",
+ "files": [
+  "wyrmstooth"
+ ],
+ "mods": [
+  {
+   "name": "Wyrmstooth",
+   "separator": "Quests - Wyrmstooth",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/45565",
+   "version": "1.20.3.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/wyrmstooth.md",
+   "playableQuests": 20,
+   "newLocations": 43
+  },
+  {
+   "name": "Sensible Wyrmstooth Prerequisite",
+   "separator": "Quests - Wyrmstooth",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/121948",
+   "version": "1.2.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/sensible-wyrmstooth-prerequisite.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Wyrmstooth Upscaled Textures",
+   "separator": "Quests - Wyrmstooth",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/39992",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/wyrmstooth-upscaled-textures.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Wyrmstooth - Dragons SE",
+   "separator": "Quests - Wyrmstooth",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/132683",
+   "version": "2.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/wyrmstooth-dragons-se.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Halffaces - Wyrmstooth alcohol redone - All-in-One",
+   "separator": "Quests - Wyrmstooth",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/117707",
+   "version": "1.1.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/halffaces-wyrmstooth-alcohol-redone-all-in-one.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Wyrmstooth Animated ENB Light",
+   "separator": "Quests - Wyrmstooth",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/72668",
+   "version": "0.1.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/wyrmstooth-animated-enb-light.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Wyrmstooth Suleyk Retexture SE",
+   "separator": "Quests - Wyrmstooth",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/68073",
+   "version": "2.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/wyrmstooth-suleyk-retexture-se.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Dovah Names and Wyrmstooth compatibility patch",
+   "separator": "Quests - Wyrmstooth",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/110728",
+   "version": "1.1.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/dovah-names-and-wyrmstooth-compatibility-patch.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Missives - Wyrmstooth Patch",
+   "separator": "Quests - Wyrmstooth",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/26788",
+   "version": "f2.05",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/missives-wyrmstooth-patch.md",
+   "playableQuests": 26,
+   "newLocations": 0
+  },
+  {
+   "name": "Metallurgy - Wyrmstooth",
+   "separator": "Quests - Wyrmstooth",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/124223",
+   "version": "1.0.0.0d",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/metallurgy-wyrmstooth.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Wyrmstooth - Rare Curios Patch",
+   "separator": "Quests - Wyrmstooth",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/59459",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/wyrmstooth-rare-curios-patch.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Wyrmstooth - The Cause Patch",
+   "separator": "Quests - Wyrmstooth",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/59459",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/wyrmstooth-the-cause-patch.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Wyrmstooth Uses The Cause Style Oblivion Gate",
+   "separator": "Quests - Wyrmstooth",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/59459",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/wyrmstooth-uses-the-cause-style-oblivion-gate.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Wyrmstooth - Assorted Patches",
+   "separator": "Quests - Wyrmstooth",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/99102",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/wyrmstooth-assorted-patches.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Wyrmstooth - Skeleton Replacer HD - Vulom Fix and Retexture",
+   "separator": "Quests - Wyrmstooth",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/108230",
+   "version": "2.2.1.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/wyrmstooth-skeleton-replacer-hd-vulom-fix-and-retexture.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Daedric Shrines AIO by Xtudo - Wyrmstooth",
+   "separator": "Quests - Wyrmstooth",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/78809",
+   "version": "3.8.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/daedric-shrines-aio-by-xtudo-wyrmstooth.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Wyrmstooth - Icy Mesh Remaster - Tweak",
+   "separator": "Quests - Wyrmstooth",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/102307",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/wyrmstooth-icy-mesh-remaster-tweak.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Requiem - Wyrmstooth (Updated)",
+   "separator": "Quests - Wyrmstooth",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/116468",
+   "version": "f1.01",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/requiem-wyrmstooth-updated.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Unmarked Locations Pack - Wyrmstooth Addon",
+   "separator": "Quests - Wyrmstooth",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/169188",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/unmarked-locations-pack-wyrmstooth-addon.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Rally's Banners of Skyrim - Wyrmstooth",
+   "separator": "Quests - Wyrmstooth",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/116289",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/rallys-banners-of-skyrim-wyrmstooth.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Enigma - Wyrmstooth Patch",
+   "separator": "Quests - Wyrmstooth",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/33084",
+   "version": "1.20.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/enigma-wyrmstooth-patch.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  }
+ ],
+ "kind": "mod-added"
+}

@@ -1,0 +1,58 @@
+{
+ "id": "mq-town-quests",
+ "files": [
+  "capital-windhelm-expansion-quests",
+  "capital-whiterun-expansion-quests",
+  "arena-markarth-side-quests",
+  "granite-hill-quests",
+  "more-to-say-quests"
+ ],
+ "mods": [
+  {
+   "name": "Rob's Bug Fixes - Capital Whiterun Expansion",
+   "separator": "Whiterun",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/63355",
+   "version": "3.3.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/robs-bug-fixes-capital-whiterun-expansion.md",
+   "playableQuests": 8,
+   "newLocations": 19
+  },
+  {
+   "name": "Capital Windhelm Expansion",
+   "separator": "Windhelm",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/42990",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/capital-windhelm-expansion.md",
+   "playableQuests": 13,
+   "newLocations": 32
+  },
+  {
+   "name": "Arena - Markarth Side Town",
+   "separator": "Locations - New and Vanilla Overhauls",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/114252",
+   "version": "1.7.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/arena-markarth-side-town.md",
+   "playableQuests": 2,
+   "newLocations": 10
+  },
+  {
+   "name": "Granite Hill - ESLIFIED LUX PATCH",
+   "separator": "Locations - New and Vanilla Overhauls",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/14658",
+   "version": "6.7.1.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/granite-hill-eslified-lux-patch.md",
+   "playableQuests": 1,
+   "newLocations": 3
+  },
+  {
+   "name": "More to Say - Main",
+   "separator": "Gameplay - Lines Expansions & Dialogue",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/22622",
+   "version": "9.0.2.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/more-to-say-main.md",
+   "playableQuests": 16,
+   "newLocations": 0
+  }
+ ],
+ "kind": "mod-added"
+}

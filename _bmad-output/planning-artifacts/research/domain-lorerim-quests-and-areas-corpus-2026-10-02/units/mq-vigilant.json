@@ -1,0 +1,243 @@
+{
+ "id": "mq-vigilant",
+ "files": [
+  "vigilant"
+ ],
+ "mods": [
+  {
+   "name": "VIGILANT SE",
+   "separator": "Quests - VIGILANT",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/11849",
+   "version": "1.8.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/vigilant-se.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "VIGILANT - NPC Overhaul",
+   "separator": "Quests - VIGILANT",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/22146",
+   "version": "2.8.3.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/vigilant-npc-overhaul.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "VIGILANT - NPCs Refined",
+   "separator": "Quests - VIGILANT",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/103222",
+   "version": "1.1.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/vigilant-npcs-refined.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "VIGILANT - English Translation (Plus Voiced Addon)",
+   "separator": "Quests - VIGILANT",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/11894",
+   "version": "1.8.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/vigilant-english-translation-plus-voiced-addon.md",
+   "playableQuests": 49,
+   "newLocations": 185
+  },
+  {
+   "name": "VIGILANT SE - Settings Loader",
+   "separator": "Quests - VIGILANT",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/69353",
+   "version": "1.2.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/vigilant-se-settings-loader.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "VIGILANT Revised Scripts for MCO",
+   "separator": "Quests - VIGILANT",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/69400",
+   "version": "f1.01",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/vigilant-revised-scripts-for-mco.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Vigilant Soundtrack Extended",
+   "separator": "Quests - VIGILANT",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/89102",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/vigilant-soundtrack-extended.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Vigilant Armors and Weapons Retexture SE",
+   "separator": "Quests - VIGILANT",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/45735",
+   "version": "4.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/vigilant-armors-and-weapons-retexture-se.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Vigilant - Greymarch Retexture",
+   "separator": "Quests - VIGILANT",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/58390",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/vigilant-greymarch-retexture.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Vigilant - Coldharbour Landscape and Architecture Retexture",
+   "separator": "Quests - VIGILANT",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/81411",
+   "version": "d2025.12.21.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/vigilant-coldharbour-landscape-and-architecture-retexture.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "VIGILANT - JS Common Cages Patch",
+   "separator": "Quests - VIGILANT",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/99830",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/vigilant-js-common-cages-patch.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Vigilant's Molag Bal Dragon Retexture SE",
+   "separator": "Quests - VIGILANT",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/82040",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/vigilants-molag-bal-dragon-retexture-se.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Vigilant DeadPile Flesh 2k",
+   "separator": "Quests - VIGILANT",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/56089",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/vigilant-deadpile-flesh-2k.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "VIGILANT - Enb light chest Fix",
+   "separator": "Quests - VIGILANT",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/76205",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/vigilant-enb-light-chest-fix.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Vigilant - Book Covers",
+   "separator": "Quests - VIGILANT",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/32940",
+   "version": "1.5.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/vigilant-book-covers.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Nature of the Wild Lands - Vigilant",
+   "separator": "Quests - VIGILANT",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/127787",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/nature-of-the-wild-lands-vigilant.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "VIGILANT - My patches by Xtudo SE - Daedric Shrines - Meridia patch",
+   "separator": "Quests - VIGILANT",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/70958",
+   "version": "2.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/vigilant-my-patches-by-xtudo-se-daedric-shrines-meridia-patch.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "VIGILANT - My patches by Xtudo SE - Molag Bal statue replacer",
+   "separator": "Quests - VIGILANT",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/70958",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/vigilant-my-patches-by-xtudo-se-molag-bal-statue-replacer.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Vigilant Immersion Tweaks",
+   "separator": "Quests - VIGILANT",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/131649",
+   "version": "f1.00",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/vigilant-immersion-tweaks.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "VIGILANT - Delayed Start",
+   "separator": "Quests - VIGILANT",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/57961",
+   "version": "2.3.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/vigilant-delayed-start.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Song of the Green (Auri Follower) - VIGILANT",
+   "separator": "Quests - VIGILANT",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/11278",
+   "version": "0.2.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/song-of-the-green-auri-follower-vigilant.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "TrueHUD - Vigilant Boss Bars ini",
+   "separator": "Quests - VIGILANT",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/53708",
+   "version": "1.2.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/truehud-vigilant-boss-bars-ini.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Vigilant Boss Moveset",
+   "separator": "Quests - VIGILANT",
+   "nexus": null,
+   "version": "d2025.10.14",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/vigilant-boss-moveset.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Rally's Banners of Skyrim - Vigilant",
+   "separator": "Quests - VIGILANT",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/116289",
+   "version": "1.0.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/rallys-banners-of-skyrim-vigilant.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Vigilant - Covered Female Robes",
+   "separator": "Quests - VIGILANT",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/44883",
+   "version": "1.1.0.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/vigilant-covered-female-robes.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  },
+  {
+   "name": "Covered Female Robes CBBE",
+   "separator": "Quests - VIGILANT",
+   "nexus": "https://www.nexusmods.com/skyrimspecialedition/mods/43676",
+   "version": "1.1.1.0",
+   "importFile": "C:/Users/Sathias/Projects/Lorerim-GigaPlannerPlus/_bmad-output/planning-artifacts/research/domain-lorerim-quests-and-areas-corpus-2026-10-02/imports/mods/covered-female-robes-cbbe.md",
+   "playableQuests": 0,
+   "newLocations": 0
+  }
+ ],
+ "kind": "mod-added"
+}
