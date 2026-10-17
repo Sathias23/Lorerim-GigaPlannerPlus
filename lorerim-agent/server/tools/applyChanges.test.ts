@@ -18,6 +18,7 @@ import { createTestBuildState, getTestAppData, getTestGameData } from "@/test/he
 import { diffBuildStates, isListField } from "../diff";
 import { MAX_OPS, applyOp, type Op } from "../ops";
 import { DEFAULT_PLANNER_URL } from "../plannerLink";
+import { getSkillGrowthCap } from "../skillCaps";
 import { connectTestClient, type TestClient, type ToolCallOutcome } from "../testClient";
 import {
   APPLY_CHANGES_TOOL,
@@ -212,6 +213,8 @@ describe(`${APPLY_CHANGES_TOOL} on a fresh build`, () => {
     const final = expectRoundTrip(output, undefined, STEALTH_ARCHER_OPS);
     expectDiffCoversChanges(openedBuild(), final, output.diff);
     expect(output.diff.filter((row) => row.cause === "requested").map((row) => row.op)).toEqual([0, 1, 2, 3, 4, 5]);
+    // The skill raise lifts the level, but the later set_player_level is high enough: nothing to warn about.
+    expect(output.warnings).toEqual([]);
   });
 
   it("links the new code to the deployed planner, at the top level and in its evaluation", async () => {
@@ -257,6 +260,8 @@ describe(`${APPLY_CHANGES_TOOL} on a fresh build`, () => {
       expect.objectContaining({ op: 0, cause: "requested", field: "skillLevels.marksman", to: 60 }),
     );
     expect(final.playerLevel).toBeGreaterThan(baseLevel);
+    // No set_player_level asked for a level, so the raise is only a diff row.
+    expect(output.warnings).toEqual([]);
     expectRoundTrip(output, undefined, ops);
   });
 
@@ -287,6 +292,230 @@ describe(`${APPLY_CHANGES_TOOL} on a fresh build`, () => {
     expectDiffCoversChanges(openedBuild(), final, output.diff);
     expect(final.oghmaSkillIds).toEqual(["block", "smithing"]);
     expect(final.attributeBonus).toEqual({ health: 10, magicka: 0, stamina: 9 });
+  });
+});
+
+describe(`${APPLY_CHANGES_TOOL} player-level raise warnings`, () => {
+  it("warns when the growth cap forces the level above the requested one, keeping legal and the diff", async () => {
+    const requestedLevel = baseLevel + 1;
+    const ops: Op[] = [
+      { op: "set_race", id: "dunmer" },
+      { op: "set_player_level", level: requestedLevel },
+      { op: "set_skill_level", skill: "marksman", level: 15 },
+    ];
+
+    const output = await applyOk({ ops });
+
+    const final = expectRoundTrip(output, undefined, ops);
+    const replayed = replay(undefined, ops);
+    const growthCap = getSkillGrowthCap(game, replayed, "marksman", requestedLevel)!;
+    expect(growthCap).toBeLessThan(15);
+    expect(final.playerLevel).toBeGreaterThan(requestedLevel);
+    expect(output.evaluation.legal).toBe(true);
+    expect(output.diff).toContainEqual(
+      expect.objectContaining({
+        op: 2,
+        stage: "op",
+        cause: "engine",
+        field: "playerLevel",
+        from: requestedLevel,
+        to: final.playerLevel,
+      }),
+    );
+
+    expect(output.warnings).toHaveLength(1);
+    const [warning] = output.warnings;
+    expect(warning).toMatchObject({
+      type: "player_level_raised",
+      requestedLevel,
+      resultingLevel: final.playerLevel,
+    });
+    expect(warning!.skills).toContainEqual({
+      skill: { id: "marksman", name: "Marksman" },
+      level: 15,
+      cap: "growth",
+      maxAtRequestedLevel: growthCap,
+      requiredPlayerLevel: final.playerLevel,
+    });
+    expect(warning!.message).toContain(`Treat level ${requestedLevel} as failed`);
+    expect(warning!.message).toContain(`Marksman to ${growthCap}`);
+  });
+
+  it("names the global skill cap when that is what the requested level breaks", async () => {
+    const { maxSkillAbovePlayerLevel } = game.mechanics.leveling;
+    const over = 10;
+    const probe = replay(undefined, [
+      { op: "set_race", id: "nord" },
+      { op: "set_major_skills", skills: ["marksman"] },
+    ]);
+    // The first level at which the growth cap is looser than the global cap by more than `over`.
+    let requestedLevel = baseLevel;
+    while (
+      requestedLevel < maxPlayerLevel &&
+      getSkillGrowthCap(game, probe, "marksman", requestedLevel)! <= requestedLevel + maxSkillAbovePlayerLevel + over
+    ) {
+      requestedLevel += 1;
+    }
+    const globalCap = requestedLevel + maxSkillAbovePlayerLevel;
+    const level = globalCap + over;
+    expect(level).toBeLessThanOrEqual(getMaxSkillLevel(game));
+    const ops: Op[] = [
+      { op: "set_race", id: "nord" },
+      { op: "set_major_skills", skills: ["marksman"] },
+      { op: "set_player_level", level: requestedLevel },
+      { op: "set_skill_level", skill: "marksman", level },
+    ];
+
+    const output = await applyOk({ ops });
+
+    expect(output.warnings).toEqual([
+      expect.objectContaining({
+        type: "player_level_raised",
+        requestedLevel,
+        resultingLevel: requestedLevel + over,
+        skills: [
+          {
+            skill: { id: "marksman", name: "Marksman" },
+            level,
+            cap: "global",
+            maxAtRequestedLevel: globalCap,
+            requiredPlayerLevel: requestedLevel + over,
+          },
+        ],
+      }),
+    ]);
+    expect(output.evaluation.playerLevel).toBe(requestedLevel + over);
+    expect(output.warnings[0]!.message).toContain(`global skill cap of ${globalCap}`);
+  });
+
+  it("warns with no skills when perks or budgets force the raise, pointing at the minimum player level", async () => {
+    const oghmaPerkPoints = game.mechanics.oghmaInfinium?.perkPoints ?? 0;
+    expect(oghmaPerkPoints).toBeGreaterThan(0);
+    const perkPoints = game.mechanics.leveling.initialPerkPoints + oghmaPerkPoints;
+    const freePerks = Object.values(game.perkById)
+      .filter(
+        (perk) =>
+          perk.skillReq === 0 &&
+          perk.prerequisites.length === 0 &&
+          (perk.prerequisitesAny ?? []).length === 0 &&
+          (perk.playerLevelReq ?? 0) <= baseLevel &&
+          perk.costsPerkPoint &&
+          perk.allocation === undefined &&
+          !["destiny", "vampire", "werewolf", "lich"].includes(game.perkSkillIdByPerkId[perk.id] ?? ""),
+      )
+      .map((perk) => perk.id)
+      .sort()
+      .slice(0, perkPoints);
+    expect(freePerks).toHaveLength(perkPoints);
+    const oghma = game.characterOptions.find((option) => option.id === "oghma-infinium")!;
+    const ops: Op[] = [
+      { op: "set_race", id: "nord" },
+      { op: "set_option_choice", option: "oghma-infinium", choice: "claimed" },
+      { op: "set_player_level", level: baseLevel },
+      ...freePerks.map((id): Op => ({ op: "take_perk", id })),
+      // Dropping the Oghma perk points leaves the perks over budget at the requested level.
+      { op: "set_option_choice", option: "oghma-infinium", choice: oghma.defaultChoice },
+    ];
+
+    const output = await applyOk({ ops });
+
+    expect(output.evaluation.playerLevel).toBeGreaterThan(baseLevel);
+    expect(output.warnings).toEqual([
+      expect.objectContaining({
+        type: "player_level_raised",
+        requestedLevel: baseLevel,
+        resultingLevel: output.evaluation.playerLevel,
+        skills: [],
+      }),
+    ]);
+    expect(output.warnings[0]!.message).toContain("evaluation.minimumPlayerLevel");
+    expect(output.warnings[0]!.message).toContain(`Treat level ${baseLevel} as failed`);
+  });
+
+  it("reports the lower cap, and the higher level needed, for a skill over both caps", async () => {
+    const { maxSkillAbovePlayerLevel, skillLevelIncreasesPerPlayerLevel } = game.mechanics.leveling;
+    const requestedLevel = baseLevel + 1;
+    const level = 70;
+    const setup: Op[] = [
+      { op: "set_race", id: "nord" },
+      { op: "set_major_skills", skills: ["marksman"] },
+      { op: "set_player_level", level: requestedLevel },
+    ];
+    const probe = replay(undefined, setup);
+    const growthCap = getSkillGrowthCap(game, probe, "marksman", requestedLevel)!;
+    const globalCap = requestedLevel + maxSkillAbovePlayerLevel;
+    expect(level).toBeGreaterThan(Math.max(growthCap, globalCap));
+    expect(growthCap).toBeLessThan(globalCap);
+    const growthNeed =
+      baseLevel + Math.ceil((level - getSkillGrowthCap(game, probe, "marksman", baseLevel)!) / skillLevelIncreasesPerPlayerLevel);
+    const globalNeed = level - maxSkillAbovePlayerLevel;
+
+    const output = await applyOk({ ops: [...setup, { op: "set_skill_level", skill: "marksman", level }] });
+
+    const rows = output.warnings[0]!.skills.filter((row) => row.skill.id === "marksman");
+    expect(rows).toEqual([
+      {
+        skill: { id: "marksman", name: "Marksman" },
+        level,
+        cap: "growth",
+        maxAtRequestedLevel: growthCap,
+        requiredPlayerLevel: Math.max(growthNeed, globalNeed),
+      },
+    ]);
+    expect(output.warnings[0]!.message).toContain(`Marksman to ${growthCap}`);
+
+    // Following the advice keeps the requested level.
+    const lowered = await applyOk({ ops: [...setup, { op: "set_skill_level", skill: "marksman", level: growthCap }] });
+    expect(lowered.evaluation.playerLevel).toBe(requestedLevel);
+    expect(lowered.warnings).toEqual([]);
+  });
+
+  it("lists the skills over their caps by the level they need, highest first", async () => {
+    const requestedLevel = baseLevel + 1;
+    const probe = replay(undefined, [{ op: "set_race", id: "nord" }]);
+    const marksmanLevel = getSkillGrowthCap(game, probe, "marksman", requestedLevel)! + 3;
+    const sneakLevel = getSkillGrowthCap(game, probe, "sneak", requestedLevel)! + 12;
+    expect(Math.max(marksmanLevel, sneakLevel)).toBeLessThanOrEqual(requestedLevel + game.mechanics.leveling.maxSkillAbovePlayerLevel);
+
+    const output = await applyOk({
+      ops: [
+        { op: "set_race", id: "nord" },
+        { op: "set_player_level", level: requestedLevel },
+        { op: "set_skill_level", skill: "marksman", level: marksmanLevel },
+        { op: "set_skill_level", skill: "sneak", level: sneakLevel },
+      ],
+    });
+
+    const { skills } = output.warnings[0]!;
+    expect(skills.map((row) => row.skill.id)).toEqual(["sneak", "marksman"]);
+    expect(skills[0]!.requiredPlayerLevel).toBeGreaterThan(skills[1]!.requiredPlayerLevel);
+    expect(output.warnings[0]!.message).toContain(`need at least player level ${skills[0]!.requiredPlayerLevel}`);
+  });
+
+  it("takes the requested level from the last set_player_level", async () => {
+    const requestedLevel = baseLevel + 1;
+    const probe = replay(undefined, [{ op: "set_race", id: "nord" }]);
+    const level = getSkillGrowthCap(game, probe, "marksman", requestedLevel)! + 5;
+
+    const output = await applyOk({
+      ops: [
+        { op: "set_race", id: "nord" },
+        { op: "set_player_level", level: 30 },
+        { op: "set_player_level", level: requestedLevel },
+        { op: "set_skill_level", skill: "marksman", level },
+      ],
+    });
+
+    expect(output.warnings).toHaveLength(1);
+    expect(output.warnings[0]!.requestedLevel).toBe(requestedLevel);
+    expect(output.warnings[0]!.resultingLevel).toBe(output.evaluation.playerLevel);
+  });
+
+  it("does not warn when the build stays at the requested level", async () => {
+    const output = await applyOk({ code: prerequisiteChainCode(), ops: [{ op: "set_player_level", level: 15 }] });
+
+    expect(output.evaluation.playerLevel).toBe(15);
+    expect(output.warnings).toEqual([]);
   });
 });
 

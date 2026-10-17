@@ -39,6 +39,7 @@ import {
   type OptionLabels,
 } from "../ids";
 import { DEFAULT_PLANNER_URL, buildPlannerUrl } from "../plannerLink";
+import { describeSkillCaps, skillCapsSchema } from "../skillCaps";
 import { READ_ONLY_TOOL_ANNOTATIONS, errorResult, jsonResult } from "../toolResult";
 import { getOptionLabels } from "./getEntity";
 
@@ -160,6 +161,7 @@ export const evaluateBuildOutputSchema = z.object({
       levels: z.record(z.string(), z.number()),
     }),
   }),
+  skillCaps: skillCapsSchema,
   violations: z.array(violationSchema),
   unknownIds: z.array(unknownIdSchema),
   notes: z.array(z.string()),
@@ -617,6 +619,7 @@ function evaluateDecoded(
     legal: violations.length === 0 && unknownIds.length === 0 && dropped.length === 0,
     build: describeBuild(game, build, labels),
     budgets,
+    skillCaps: describeSkillCaps(game, build),
     violations,
     unknownIds,
     notes,
@@ -635,6 +638,7 @@ export function registerEvaluateBuildTool(
       description:
         "Check a LoreRim build, given as a planner share code, with the planner's own engine. " +
         "Returns the code, a plannerUrl that opens it in the web planner, what the build contains, perk-point, skill-point, training, and attribute budgets used vs available, skill levels against the level cap, " +
+        "skillCaps per skill (stored level, floor, growthCap from the per-player-level growth limit, effectiveMax = the lower of growthCap and the level cap, and nextLevelCost in skill points, null when the skill is already at effectiveMax at this player level; nextLevelCost is the price only and does not check budgets.skillPoints.remaining), " +
         "every violation (budget overruns, unmet skill or player-level requirements, missing prerequisite perks) with the entity, required vs actual, and shortfall, " +
         "and every id the current data does not know with did-you-mean suggestions. legal is true only when there are no violations, no unknown ids, and the planner opens the code without dropping anything (see notes). " +
         "Use it after every change to a build and trust its numbers over your own arithmetic.",
