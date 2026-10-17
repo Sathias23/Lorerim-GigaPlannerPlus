@@ -31,7 +31,7 @@ context:
 - **Plugin.** The plugin is named `lorerim` and the server key is `lorerim`. The plugin source lives in `lorerim-agent/plugin/`, and the build copies it into `dist/plugin/` together with the same `server.js`. It must load with `claude --plugin-dir lorerim-agent/dist/plugin` and pass `claude plugin validate`.
 - **Skill limits** (`stack.md`): `name` equals the folder name. The description is at most 1,024 chars, is written in the third person, and puts trigger phrases first. The description plus `when_to_use` is at most 1,536 chars. The body is at most 500 lines.
 - **Skill rules:** every perk, race, or other id the skill names comes from a tool result in the same conversation. The LLM does no build arithmetic, so budgets and legality come only from tool output. Repair uses the violations and did-you-mean suggestions the tools return. Output-format rules live only in the skill.
-- **`plannerUrl`** = `<base>/planner?build=<encodeURIComponent(code)>`, the same shape as `buildShareUrl`. The base comes from the env var `LORERIM_PLANNER_URL` and defaults to `https://sathias23.github.io/Lorerim-GigaPlannerPlus`, with any trailing slash removed.
+- **`plannerUrl`** = `<base>/planner?build=<encodeURIComponent(code)>`, the same shape as `buildShareUrl`. The base comes from the env var `LORERIM_PLANNER_URL` and defaults to `https://watchis.github.io/Lorerim-GigaPlannerPlus`, with any trailing slash removed.
 
 **Never:**
 - Edit files outside `lorerim-agent/` and this spec folder.

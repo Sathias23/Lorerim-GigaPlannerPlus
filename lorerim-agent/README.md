@@ -75,7 +75,10 @@ claude mcp add --scope user lorerim -- node /abs/path/to/Lorerim-GigaPlannerPlus
 
 `lorerim_evaluate_build` and `lorerim_apply_changes` return a `plannerUrl` that opens the
 build in the web planner: `<base>/planner?build=<share code>`. The base defaults to the
-deployed planner, `https://sathias23.github.io/Lorerim-GigaPlannerPlus`. Set
+upstream (watchis) live planner, `https://watchis.github.io/Lorerim-GigaPlannerPlus`, not a
+fork's own deployment. Codes encoded from this repo's data decode there only while its data
+and codec match upstream; if they diverge, point `LORERIM_PLANNER_URL` at a planner built
+from this repo, such as a fork's own Pages site or a local dev server. Set
 `LORERIM_PLANNER_URL` in the environment Claude Code runs in to point links elsewhere, such
 as a local dev server (a trailing slash is fine):
 

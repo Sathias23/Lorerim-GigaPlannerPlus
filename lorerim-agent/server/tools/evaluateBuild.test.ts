@@ -642,7 +642,7 @@ describe(`${EVALUATE_BUILD_TOOL} on input that is not a share code`, () => {
     ["plain text", "hello"],
     ["corrupt base64", "3.!!!!not-base64!!!!"],
     ["corrupt gzip", "3.AAAAAAAAAAAA"],
-    ["a planner URL", `https://sathias23.github.io/Lorerim-GigaPlannerPlus/?build=${legal}`],
+    ["a planner URL", `https://watchis.github.io/Lorerim-GigaPlannerPlus/?build=${legal}`],
     ["whitespace", "   "],
   ])("returns an actionable isError for %s", async (_label, code) => {
     const result = await evaluateError({ code });

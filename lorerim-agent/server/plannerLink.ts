@@ -1,5 +1,5 @@
 /** The deployed web planner (GitHub Pages), without a trailing slash. */
-export const DEFAULT_PLANNER_URL = "https://sathias23.github.io/Lorerim-GigaPlannerPlus";
+export const DEFAULT_PLANNER_URL = "https://watchis.github.io/Lorerim-GigaPlannerPlus";
 
 /** Environment variable that overrides the planner base, e.g. a local `npm run dev` server. */
 export const PLANNER_URL_ENV = "LORERIM_PLANNER_URL";

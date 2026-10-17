@@ -79,7 +79,7 @@ A vision plus an opportunity, for personal use. The owner wants Claude Code and 
 
 ## Assumptions
 
-- The web planner's public base URL is `https://sathias23.github.io/Lorerim-GigaPlannerPlus/` (from the git remote and Vite `base`); the server takes it from config rather than calling `buildShareUrl`, which needs `window`.
+- The web planner's public base URL is `https://watchis.github.io/Lorerim-GigaPlannerPlus/` (the live site linked from the root README); the server takes it from config rather than calling `buildShareUrl`, which needs `window`.
 - The directory name `lorerim-agent/` is a proposal.
 - Setting skill levels directly (via `applySkillLevelChange`) is enough for v1; training-tier ops wait for phase 2 unless evals show the agent needs them.
 - The agent package has no CI job; one is added only if the tool is released.

@@ -1,3 +1,5 @@
+import { readFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
 import { describe, expect, it } from "vitest";
 import { encodeBuild } from "@/engine/buildCodec";
 import { createTestBuildState, getTestGameData } from "@/test/helpers";
@@ -60,5 +62,25 @@ describe("resolvePlannerBase", () => {
 
   it("has a default without a trailing slash", () => {
     expect(DEFAULT_PLANNER_URL.endsWith("/")).toBe(false);
+  });
+
+  it("defaults to the live planner the repo-root README links to", () => {
+    const readme = readFileSync(fileURLToPath(new URL("../../README.md", import.meta.url)), "utf8");
+    const plannerLinks = [
+      ...new Set(
+        [
+          ...readme.matchAll(
+            /https:\/\/[^\s/)"'\]>`]+\.github\.io\/Lorerim-GigaPlannerPlus\b[^\s)"'\]>`]*/g,
+          ),
+        ].map(([link]) => link),
+      ),
+    ];
+    const stale = plannerLinks.filter((link) => !link.startsWith(DEFAULT_PLANNER_URL));
+
+    expect(plannerLinks.length, "README.md links to no *.github.io/Lorerim-GigaPlannerPlus planner").toBeGreaterThan(0);
+    expect(
+      stale,
+      `DEFAULT_PLANNER_URL is ${DEFAULT_PLANNER_URL}, but README.md links to ${stale.join(", ")}`,
+    ).toEqual([]);
   });
 });
