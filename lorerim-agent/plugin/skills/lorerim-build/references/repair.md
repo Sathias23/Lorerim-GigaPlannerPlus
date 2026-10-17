@@ -36,13 +36,40 @@ and a `message` that names its own fix.
 | `training_levels` | The ops cannot change training; raise the player level within the target, or tell the user this code's training needs the planner. |
 | `skill_requirement` | `set_skill_level` for the violation's `skill` to its `required` value, or remove the perk (`entity`). |
 | `skill_level_cap` | `set_skill_level` for that skill down to `required` (the cap), then remove perks whose `skillReq` no longer fits, or raise the player level within the target. |
-| `skill_increase_limit` | Lower the skill, or raise the player level to `required` if that is within the target. |
+| `skill_increase_limit` | Lower the skill, or raise the player level to `required` if that is within the target. Only a code the user brought shows this: on the apply path the engine raises the level instead (section C). |
 | `player_level_requirement` | Raise the player level to `required` if within the target; otherwise remove the perk. |
 | `attribute_choices` | `set_attribute_bonus` with a smaller split. |
 | `prerequisite` | `take_perk` each perk in `missing` (for a "one of" list, pick one), or remove the perk. |
 
 `unknownIds` rows (only for a code the user brought) name ids the current data does not
 know, each with `suggestions`. Replace each with a suggestion that fits, or drop it.
+
+## C. The call succeeded but warned `player_level_raised`
+
+A skill set above its growth cap or the global cap does not fail and is not a violation:
+the engine raises the player level until it fits, shown as an `engine` diff row on
+`playerLevel` and a `player_level_raised` warning (fields under "Leveling rules" in
+[ops.md](ops.md)). `legal` can still be `true`. Either:
+
+- **Undo it:** one batch with the latest `code`: `set_skill_level` for each skill in the
+  warning's `skills` to its `maxAtRequestedLevel`, then `set_player_level` back to
+  `requestedLevel`. Then remove any perk whose `skillReq` no longer fits (it comes back as
+  a `skill_requirement` violation).
+- **Accept it:** keep the higher level only if it is within the user's level target, and
+  say so in the summary.
+
+An empty `skills` list means perks or budgets forced the raise: follow "Staying on target".
+
+## Trading perks in a full build
+
+When every perk point is spent and the user wants a different perk, a point has to come
+from somewhere:
+
+- Removing a perk also removes every perk that depends on it, so freeing one point can
+  cost two or more perks. Check the `engine` rows before you settle on the trade.
+- Choose what to drop by effect, not by its place in the tree. Read each candidate with
+  `lorerim_get_entity` first: a perk that looks like a stepping stone can carry a useful
+  effect of its own.
 
 ## Staying on target
 

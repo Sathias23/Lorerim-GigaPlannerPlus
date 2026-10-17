@@ -34,9 +34,11 @@ interpret the request and choose. The engine decides what is legal and what it c
 Read the request for:
 
 - **Playstyle**: weapons, armor, magic schools, stealth, crafting, companions.
-- **Level target**: the player level the build is for.
+- **Level target**: the player level the build is for, and whether the user wants a
+  level-by-level route to it or only the finished build.
 - **Supernatural path**: vampire, werewolf, lich, or none.
-- **Difficulty and priorities**: survival vs damage, early game vs end game.
+- **Difficulty and priorities**: survival vs damage, early game vs end game, and which
+  skills come first once perk requirements are met.
 - **Restrictions**: skills or trees the user excludes ("never uses destruction"), a race or
   birthsign they want, anything they will not play.
 
@@ -62,6 +64,8 @@ Look up only what the build needs, and keep the ids you get back:
   `maxPlayerLevel` set to the level target, plus `query` words for the effects the playstyle
   wants. Page with `offset` or narrow the query when the result says it was truncated.
 - Never take a perk from a tree the user excluded.
+- Read each perk's description before recommending it: some only work with one weapon
+  type (heavy bows, say), and a sibling perk often covers the other.
 
 Pick a small, coherent core: two to four main skill trees, the perks in them that serve the
 playstyle, and supporting choices (race, birthsign, deity, traits, major/minor skills,
@@ -87,9 +91,10 @@ call after an edit.
 Check, in this order:
 
 1. `evaluation.legal` is `true`.
-2. `evaluation.playerLevel` is not above the user's level target. The engine raises the
-   player level when an op needs it; those raises appear as diff rows with cause `engine`
-   and field `playerLevel`.
+2. `evaluation.playerLevel` is not above the user's level target, and `warnings` has no
+   `player_level_raised` entry. The engine raises the player level when an op needs it,
+   most often a skill above its growth cap; those raises appear as diff rows with cause
+   `engine` and field `playerLevel`.
 3. Every restriction from intake holds (no perks from excluded trees, the requested race,
    and so on).
 
@@ -103,10 +108,25 @@ plan (drop that perk or tree) instead of retrying the same fix.
 [references/repair.md](references/repair.md); the evaluation's `notes` explain the rest
 (for example content the planner drops when it opens the code).
 
-Once legal, if `evaluation.budgets.perkPoints.remaining` is above zero, spend those points on
-more perks that serve the playstyle (another apply call with the latest `code`), then check
-again. Leave points unspent only when nothing useful is left to take at the level target, and
-say so in the summary.
+Once legal, spend what is left (another apply call with the latest `code`), then check
+again. Skills rise only when skill points are spent on them, and banked points are a nerf.
+
+- **Perk points**: if `evaluation.budgets.perkPoints.remaining` is above zero, take more
+  perks that serve the playstyle.
+- **Skill points**: raise skills past their perk requirements in the user's priority
+  order, within each skill's `skillCaps` `effectiveMax`. If the playstyle does not settle
+  the order, ask. Skill points are fully spent when
+  `evaluation.budgets.skillPoints.remaining` is below the lowest non-null `nextLevelCost`
+  in `evaluation.skillCaps`. The rules and `skillCaps` fields are under "Leveling rules"
+  in [references/ops.md](references/ops.md).
+
+Leave points unspent only when nothing useful is left to take at the level target, and say
+so in the summary. To swap a perk in a full build, see "Trading perks" in
+[references/repair.md](references/repair.md).
+
+For a level-by-level route, settle the final build first (it fixes the perks the route
+must reach), then step the route one level at a time as
+[references/routes.md](references/routes.md) describes.
 
 ## 5. Present
 
@@ -114,6 +134,18 @@ Present only a build whose latest evaluation has `legal: true`. If you had to st
 one, say plainly that the build is **not legal**, list the remaining violations' `message`
 text, any `unknownIds`, and the evaluation's `notes`, and still give the code and link so
 the user can fix it in the planner.
+
+The planner does not model everything the game does. Before presenting:
+
+- **Fill every trait slot.** Add traits that suit the build until `add_trait` fails with
+  "trait limit reached" (the error gives the slot count); some options add a slot.
+- **Flag quest-gated choices.** The planner accepts choices the game locks behind a quest
+  (a deity can need a quest finished first). Say which, and what to follow until then.
+- **Cover the start.** LoreRim replaces the Helgen opening with Alternate Perspective.
+  Suggest a start that fits the character; `lorerim_search_quests` has the start list.
+- **Mark what the tools cannot confirm** (lock tiers, spell lists, gear stats) as
+  unverified.
+- **Never say a skill levels up by use.** Skills rise only when skill points are spent.
 
 Use this format, filling every value from the final tool result:
 
@@ -131,6 +163,7 @@ Use this format, filling every value from the final tool result:
 ### How it plays
 - 2–4 bullets tying the key perks and choices to the request (what the build does in a
   fight, how it covers its weaknesses). No numbers the tools did not return.
+- One line on the start and any quest-gated choice.
 
 ### Budget
 Perk points <used>/<available> · Skill points <used>/<available> · Destiny perk points

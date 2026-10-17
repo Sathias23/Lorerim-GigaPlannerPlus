@@ -22,7 +22,9 @@ must already be met). Order a fresh draft like this:
 7. `set_skill_level`, one op per skill tree you take perks in, set to the highest
    `skillReq` among the perks you will take in that tree (read it from the search rows).
    Skip the op when no perk in the tree has a `skillReq`. If it is rejected because the
-   level is below the skill's floor, the skill already starts high enough: drop the op.
+   level is below the skill's floor, the skill already starts high enough: drop the op. A
+   level above the skill's growth cap at the target raises the player level instead of
+   failing (see Leveling rules below).
 8. `take_perk`, tree by tree, each perk after its prerequisites and each rank after the rank
    before it. `lorerim_search_perks` with `response_format: "detailed"` lists prerequisite
    ids; `lorerim_get_entity` (kind `perk`) names them.
@@ -56,3 +58,51 @@ something.
   every `engine` row: it is the engine telling you a side effect you did not ask for.
 - `evaluation` is the `lorerim_evaluate_build` result for the new `code`.
 - `plannerUrl` opens the new `code` in the web planner.
+- `warnings` is always present and usually empty. A `player_level_raised` warning means the
+  build ended above the level of the batch's last `set_player_level` (see below). `legal` can
+  still be `true`: the build is legal, just not at the level you asked for.
+
+## Leveling rules
+
+The numbers live in the game data (`data/game/mechanics.json`, under `leveling`) and in the
+evaluation. Outside a route draft ([routes.md](routes.md)), never work them out yourself;
+read them from `evaluation.budgets` and `evaluation.skillCaps`. Skills rise **only** when skill points are spent on them, never by
+use.
+
+| Rule | Source, and where to read it |
+|---|---|
+| Skill points | `skillPointsPerLevel` for each player level above `baseLevel`, none at the base level; effects can add more. Read `budgets.skillPoints`. |
+| Cost per skill level | `skillLevelCosts`: tiered by the level being bought, dearer each tier. Read `skillCaps.<skill>.nextLevelCost`. |
+| Free levels | Levels up to the skill's floor cost nothing (`skillPointFreeThroughFloor`). The floor is the race's starting level plus the major or minor skill bonus (`skillFloorSources`); an untagged skill has only the race value. Read `skillCaps.<skill>.floor`. |
+| Growth cap | Each player level above `baseLevel` lets a skill grow `skillLevelIncreasesPerPlayerLevel` levels above its floor (`playerLevelSkillBaseline`). Read `skillCaps.<skill>.growthCap`. |
+| Global cap | `maxSkillAbovePlayerLevel` above the player level, never above `maxSkillLevel`. Read `budgets.skillLevels.maxAllowed`. |
+| Training levels | Earned each player level and capped by `maxTrainingSkillLevel`, tracked in `budgets.trainingLevels`. The ops cannot spend them. |
+
+Other budgets each level brings, all in `evaluation.budgets` (`used`, `available`,
+`remaining`):
+
+- `perkPoints`: `initialPerkPoints` at the base level, then `perkPointsPerLevel` per level,
+  plus any that effects grant.
+- `destinyPerkPoints`: a separate budget for Destiny perks, earned at set player levels.
+- `attributeChoices`: one per level above the base level. `set_attribute_bonus` takes the
+  running totals, and fails when they add up to more than are earned.
+
+**`skillCaps`**, one entry per skill id, says what each skill can still take at the current
+player level:
+
+- `level`: the stored level (what skill points bought; `budgets.skillLevels.levels` adds
+  grants on top), and `floor`, the lowest level it can be set to.
+- `growthCap` (null when the data sets no growth limit) and `effectiveMax`, the lower of
+  `growthCap` and `budgets.skillLevels.maxAllowed`. Never set a skill above its
+  `effectiveMax`.
+- `nextLevelCost`: the skill points the next level costs, or null at `effectiveMax`. It is
+  the price only; compare it with `budgets.skillPoints.remaining` yourself.
+
+**The growth cap does not fail an op.** A `set_skill_level` above a cap succeeds, and the
+engine quietly raises the player level until the skill fits: an `engine` diff row on
+`playerLevel` plus a `player_level_raised` warning. The warning carries `requestedLevel`
+(the last `set_player_level`), `resultingLevel`, a `message`, and `skills`, one row per
+skill over a cap at the requested level: `skill`, `level`, `cap` (`growth` or `global`),
+`maxAtRequestedLevel` (the level to lower it to), and `requiredPlayerLevel`. An empty
+`skills` list means perks or budgets forced the raise instead. The warning needs a
+`set_player_level` in the batch; without one, only the `engine` row shows the raise.
