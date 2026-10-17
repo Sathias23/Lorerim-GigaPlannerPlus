@@ -14,11 +14,13 @@ import {
   getMaxAllowedSkillLevel,
   getRemainingAttributePoints,
   getUsedAttributeChoices,
+  isAllocatableSkill,
   reconcileBuild,
   type BuildState,
 } from "@/engine/buildEngine";
 import { createTestBuildState, getTestAppData, getTestGameData } from "@/test/helpers";
 import { DEFAULT_PLANNER_URL } from "../plannerLink";
+import { describeSkillCaps } from "../skillCaps";
 import { connectTestClient, type TestClient, type ToolCallOutcome } from "../testClient";
 import {
   EVALUATE_BUILD_TOOL,
@@ -180,6 +182,7 @@ function expectEngineParity(
     maxAllowed: getMaxAllowedSkillLevel(game, build),
     levels: computed.skillLevels,
   });
+  expect(output.skillCaps).toEqual(describeSkillCaps(game, build));
   expect(output.build.perks.map((perk) => perk.id)).toEqual(build.selectedPerkIds);
 }
 
@@ -197,6 +200,51 @@ describe(`${EVALUATE_BUILD_TOOL} on a legal build`, () => {
     expect(output.dataVersion).toBe(game.manifest.version);
     expect(output.codeDataVersion).toBe(game.manifest.version);
     expectEngineParity(code, output);
+  });
+
+  it("reports skillCaps for every allocatable skill, as describeSkillCaps computes them", async () => {
+    const code = encodeState({
+      raceId: "nord",
+      majorSkillIds: ["marksman"],
+      minorSkillIds: ["sneak"],
+      playerLevel: baseLevel + 4,
+      skillLevels: { marksman: 30 },
+    });
+
+    const output = await evaluateOk(code);
+
+    const build = decodeBuild(code, game);
+    expect(output.skillCaps).toEqual(describeSkillCaps(game, build));
+    expect(Object.keys(output.skillCaps)).toEqual(game.manifest.skills.filter((id) => isAllocatableSkill(game, id)));
+    expect(Object.values(output.skillCaps).some((cap) => cap.nextLevelCost !== null)).toBe(true);
+    for (const cap of Object.values(output.skillCaps)) {
+      expect(cap.effectiveMax).toBeLessThanOrEqual(output.budgets.skillLevels.maxAllowed);
+      expect(cap.nextLevelCost === null).toBe(cap.level >= cap.effectiveMax);
+    }
+
+    // Concrete values from the data for a major, a minor, and an untagged skill.
+    const { skillLevelIncreasesPerPlayerLevel, skillLevelCosts } = game.mechanics.leveling;
+    const nord = game.races.find((race) => race.id === "nord")!;
+    const untagged = game.manifest.skills.find(
+      (id) => isAllocatableSkill(game, id) && id !== "marksman" && id !== "sneak",
+    )!;
+    const bonuses: Array<[string, number]> = [
+      ["marksman", game.mechanics.majorSkillBonus],
+      ["sneak", game.mechanics.minorSkillBonus],
+      [untagged, 0],
+    ];
+    for (const [skillId, bonus] of bonuses) {
+      const cap = output.skillCaps[skillId]!;
+      const floor = (nord.startingSkills[skillId] ?? 0) + bonus;
+      const growthCap = floor + skillLevelIncreasesPerPlayerLevel * (output.playerLevel - baseLevel);
+      expect(cap.floor, skillId).toBe(floor);
+      expect(cap.growthCap, skillId).toBe(growthCap);
+      expect(cap.effectiveMax, skillId).toBe(Math.min(growthCap, output.budgets.skillLevels.maxAllowed));
+    }
+    const marksman = output.skillCaps.marksman!;
+    expect(marksman.level).toBe(output.budgets.skillLevels.levels.marksman);
+    const nextTier = skillLevelCosts.find((tier) => marksman.level + 1 >= tier.minLevel && marksman.level + 1 <= tier.maxLevel);
+    expect(marksman.nextLevelCost).toBe(marksman.level >= marksman.effectiveMax ? null : nextTier!.cost);
   });
 
   it("links the code to the deployed planner", async () => {

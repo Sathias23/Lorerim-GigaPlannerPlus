@@ -8,8 +8,12 @@ import {
   encodeBuild,
   type DecodedBuildPackage,
 } from "@/engine/buildCodec";
+import type { GameData } from "@/data/schemas";
 import {
+  clampPlayerLevel,
   createInitialBuildState,
+  getSkillsExceedingPlayerLevelCap,
+  getSkillsExceedingSkillLevelIncreaseLimit,
   migrateBuildState,
   reconcileBuild,
   type BuildState,
@@ -22,7 +26,9 @@ import {
   type DiffRow,
 } from "../diff";
 import { MAX_OPS, applyOp, opSchema, requestedItem, type Op } from "../ops";
+import { skillRef } from "../ids";
 import { DEFAULT_PLANNER_URL } from "../plannerLink";
+import { getSkillGrowthCap } from "../skillCaps";
 import { READ_ONLY_TOOL_ANNOTATIONS, errorResult, jsonResult } from "../toolResult";
 import {
   DECODE_ERROR_MESSAGE,
@@ -72,6 +78,33 @@ const appliedDiffRowSchema = z.object({
 
 export type AppliedDiffRow = z.infer<typeof appliedDiffRowSchema>;
 
+export const WARNING_TYPES = ["player_level_raised"] as const;
+export const SKILL_CAP_KINDS = ["growth", "global"] as const;
+
+const playerLevelRaisedWarningSchema = z.object({
+  type: z.enum(WARNING_TYPES),
+  /** The level of the last set_player_level op. */
+  requestedLevel: z.number(),
+  /** The player level of the returned build. */
+  resultingLevel: z.number(),
+  /**
+   * Skills over a cap at requestedLevel, one row each, the highest requiredPlayerLevel first; empty when perks or budgets forced the raise.
+   * For a skill over both caps, cap and maxAtRequestedLevel name the lower (binding) cap, and requiredPlayerLevel is the higher of the two caps' needs.
+   */
+  skills: z.array(
+    z.object({
+      skill: z.object({ id: z.string(), name: z.string() }),
+      level: z.number(),
+      cap: z.enum(SKILL_CAP_KINDS),
+      maxAtRequestedLevel: z.number(),
+      requiredPlayerLevel: z.number(),
+    }),
+  ),
+  message: z.string(),
+});
+
+export type ApplyChangesWarning = z.infer<typeof playerLevelRaisedWarningSchema>;
+
 export const applyChangesOutputSchema = z.object({
   code: z.string(),
   plannerUrl: z.string(),
@@ -80,6 +113,7 @@ export const applyChangesOutputSchema = z.object({
   diff: z.array(appliedDiffRowSchema),
   evaluation: evaluateBuildOutputSchema,
   notes: z.array(z.string()),
+  warnings: z.array(playerLevelRaisedWarningSchema),
 });
 
 export type ApplyChangesOutput = z.infer<typeof applyChangesOutputSchema>;
@@ -169,6 +203,85 @@ function formatFailures(failures: ReadonlyArray<{ index: number; op: Op; message
   return lines.join("\n");
 }
 
+type RaisedSkill = ApplyChangesWarning["skills"][number];
+
+/**
+ * Skills of `state` over a cap at `playerLevel`, one row per skill. A skill over
+ * both caps keeps the lower cap (the one it must be lowered to; growth on a tie)
+ * and the higher player level the two caps need. Sorted by that level, highest first.
+ */
+function findSkillsOverCapAt(game: GameData, state: BuildState, playerLevel: number): RaisedSkill[] {
+  const rows = new Map<string, RaisedSkill>();
+  const keep = (row: RaisedSkill) => {
+    const existing = rows.get(row.skill.id);
+    if (!existing) {
+      rows.set(row.skill.id, row);
+      return;
+    }
+    const binding = row.maxAtRequestedLevel < existing.maxAtRequestedLevel ? row : existing;
+    rows.set(row.skill.id, {
+      ...binding,
+      requiredPlayerLevel: Math.max(row.requiredPlayerLevel, existing.requiredPlayerLevel),
+    });
+  };
+
+  for (const conflict of getSkillsExceedingSkillLevelIncreaseLimit(game, state, playerLevel)) {
+    keep({
+      skill: skillRef(game, conflict.skillId),
+      level: conflict.skillLevel,
+      cap: "growth",
+      maxAtRequestedLevel: getSkillGrowthCap(game, state, conflict.skillId, playerLevel)!,
+      requiredPlayerLevel: clampPlayerLevel(game, conflict.requiredLevel),
+    });
+  }
+  const { baseLevel, maxSkillAbovePlayerLevel } = game.mechanics.leveling;
+  for (const cap of getSkillsExceedingPlayerLevelCap(game, state, playerLevel)) {
+    keep({
+      skill: skillRef(game, cap.skillId),
+      level: cap.skillLevel,
+      cap: "global",
+      maxAtRequestedLevel: cap.maxAllowed,
+      requiredPlayerLevel: clampPlayerLevel(game, Math.max(baseLevel, cap.skillLevel - maxSkillAbovePlayerLevel)),
+    });
+  }
+
+  return [...rows.values()].sort((a, b) => b.requiredPlayerLevel - a.requiredPlayerLevel);
+}
+
+/**
+ * A warning when the build ends above the last `set_player_level` the batch
+ * asked for: the engine raised it so the skills (or perks and budgets) fit.
+ */
+function describePlayerLevelRaise(
+  game: GameData,
+  state: BuildState,
+  requestedLevel: number,
+  minimumPlayerLevel: number,
+): ApplyChangesWarning | null {
+  const resultingLevel = state.playerLevel;
+  if (resultingLevel <= requestedLevel) return null;
+
+  const skills = findSkillsOverCapAt(game, state, requestedLevel);
+  const raised = `The batch asked for player level ${requestedLevel} (its last set_player_level), but the engine raised the build to level ${resultingLevel}`;
+  let message: string;
+  if (skills.length > 0) {
+    const reasons = skills.map(
+      (row) =>
+        `${row.skill.name} ${row.level} is above its ${row.cap === "growth" ? "growth cap" : "global skill cap"} of ${row.maxAtRequestedLevel} (needs player level ${row.requiredPlayerLevel})`,
+    );
+    const lowered = skills.map((row) => `${row.skill.name} to ${row.maxAtRequestedLevel}`);
+    message =
+      `${raised}: at level ${requestedLevel}, ${reasons.join("; ")}. ` +
+      `The listed skills need at least player level ${skills[0]!.requiredPlayerLevel}. Treat level ${requestedLevel} as failed, or lower each listed skill to its cap at level ${requestedLevel} (${lowered.join(", ")}) and apply again.`;
+  } else {
+    message =
+      `${raised}. No skill is over a cap at level ${requestedLevel}, so perks or point budgets need the higher level; see evaluation.minimumPlayerLevel (${minimumPlayerLevel}) and evaluation.budgets. ` +
+      `Treat level ${requestedLevel} as failed, or remove what needs the higher level and apply again.`;
+  }
+
+  return { type: "player_level_raised", requestedLevel, resultingLevel, skills, message };
+}
+
 type ApplyResult = { ok: true; output: ApplyChangesOutput } | { ok: false; message: string };
 
 /**
@@ -214,6 +327,7 @@ function applyToOpened(
   );
 
   let state = base;
+  let requestedLevel: number | null = null;
   const failures: Array<{ index: number; op: Op; message: string }> = [];
   ops.forEach((op, index) => {
     const result = applyOp(data, state, op);
@@ -223,6 +337,7 @@ function applyToOpened(
     }
     diff.push(...classifyOpDiff(diffBuildStates(data, state, result.state), result.requestedFields, index));
     state = result.state;
+    if (op.op === "set_player_level") requestedLevel = op.level;
   });
   if (failures.length > 0) return { ok: false, message: formatFailures(failures, ops.length) };
 
@@ -252,6 +367,12 @@ function applyToOpened(
     notes.push('Encoding normalized the edited build (diff rows with stage "encode").');
   }
 
+  const warnings: ApplyChangesWarning[] = [];
+  if (requestedLevel !== null) {
+    const raise = describePlayerLevelRaise(game, state, requestedLevel, evaluated.output.minimumPlayerLevel);
+    if (raise) warnings.push(raise);
+  }
+
   return {
     ok: true,
     output: {
@@ -262,6 +383,7 @@ function applyToOpened(
       diff,
       evaluation: evaluated.output,
       notes,
+      warnings,
     },
   };
 }
@@ -284,7 +406,10 @@ export function registerApplyChangesTool(
         "take_perk is strict: its prerequisites, skill level, player level, and a free perk point must already be in place, so raise levels and take prerequisites in earlier ops. " +
         "Out-of-range levels are rejected, never clamped. If any op fails, nothing is returned but an error explaining every failing op by index. " +
         "On success returns the new share code, a plannerUrl that opens it in the web planner, a diff of every change (cause \"requested\" for what an op asked for, \"engine\" for adjustments the engine made, such as player-level raises or dependent perks removed), " +
-        "and the lorerim_evaluate_build evaluation of the new code. A code holding several variants is edited through the one the planner opens and comes back as a single build.",
+        "the lorerim_evaluate_build evaluation of the new code, and warnings (always present, usually empty). " +
+        "A player_level_raised warning means the build ended above the level of the last set_player_level op because the engine raised it: " +
+        "it lists each skill over its growth cap (per-player-level growth limit) or global skill cap at the requested level, with that cap (maxAtRequestedLevel) and the player level it needs. " +
+        "legal can still be true; when stepping a route level by level, treat that level as failed or lower the skills to their caps. A code holding several variants is edited through the one the planner opens and comes back as a single build.",
       inputSchema: applyChangesInputSchema,
       outputSchema: applyChangesOutputSchema,
       annotations: READ_ONLY_TOOL_ANNOTATIONS,
